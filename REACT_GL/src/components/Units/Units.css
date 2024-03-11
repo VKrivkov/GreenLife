@@ -210,7 +210,6 @@
   }
 
   .headline-units{
-    font-size: 40px;
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -243,7 +242,7 @@
   }
 
 .units{
-  padding:75px 50px 50px 50px;
+  padding:75px 50px 0px 50px;
 
 }
 
@@ -280,9 +279,14 @@
 
 @media (max-width: 650px){
 
+  .headline-units{
+    font-size: 40px;
+
+  }
+
   .plan-container {
     margin-top: 35px;
-
+    margin-bottom: 100px;
   }
   
   .plan-container img {

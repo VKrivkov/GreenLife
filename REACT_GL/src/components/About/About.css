@@ -222,9 +222,6 @@
     }
     
   }
-
-
-
 @media (max-width: 1280px){
   .image-container-about img {
     width: 500px; /* Adjust as needed */
@@ -241,7 +238,6 @@
   }
   
 }
-
 
 @media (max-width: 1050px){
 
@@ -311,6 +307,7 @@
     margin-bottom: 10px; /* Adjust the space between list items */
   }
 }
+
 @media (min-width: 791px) and (max-width: 1049px) {
   /* Adjustments for this specific range */
   .image-container-about img {
@@ -320,6 +317,7 @@
     object-fit: cover; /* Covers the area, may crop the image */
   }
 }
+
 @media (max-width: 650px){
 
 .about-project {

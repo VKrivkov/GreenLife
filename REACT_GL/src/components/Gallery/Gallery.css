@@ -114,6 +114,14 @@
   .text-block{
     margin-bottom: 50px;
   }
+
+  .headline-gallery{
+
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -136,11 +144,9 @@
     font-size: 40px;
     font-weight: 300;
     color: #66952F; /* Adjust the color value to match the desired shade of green */
-    text-align: center;
     margin-top: 35px;
     margin-bottom: 35px;
-    margin-left: auto;
-    margin-right: auto;
+
   }
 
   .text-block{

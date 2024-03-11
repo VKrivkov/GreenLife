@@ -30,7 +30,7 @@ const Benefits = () => {
         </div>
         <div className='community-container'>
           <img src = {Community} alt = 'Community Spaces'/>
-          <h6>Enhanced Community Spaces</h6>
+          <h6>Community Spaces</h6>
           <p>Our neighborhood features charming paths and a large park, 
             with no further construction to preserve its tranquility.</p>
         </div>

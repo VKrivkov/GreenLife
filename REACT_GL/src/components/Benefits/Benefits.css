@@ -175,7 +175,7 @@
 }
 
 
-/* Medium screens: 700-1280px */
+
 @media (max-width: 1280px) {
   .head-container {
       flex-direction: column;
@@ -231,14 +231,16 @@
   }
 }
 
-/* Small screens: 600-700px */
-@media only screen and (min-width: 600px) and (max-width: 700px) {
-  .HeadlineBenefits {
-      font-size: 40px; /* Reduce font size */
-  }
 
-  .content-container {
-      grid-template-columns: 1fr; /* Only one column */
+@media (max-width: 1050px) {
+
+  .benefits-container{
+    padding-top: 125px;
+}
+
+  .HeadlineBenefits {
+    margin-bottom: 50px;
+
   }
 
   .quality-container img, .solars-container img, .community-container img {
@@ -249,26 +251,107 @@
   .quality-container p, .community-container p, .solars-container p {
       width: 200px; /* Match image width */
   }
+  .solars-container img{
+    height: 200px; /* Further scale down image size */
+    width: 300px;
+  }
+  .solars-container p{
+    width: 300px; /* Match image width */
+  }
+
+  .head-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .head-container p{
+    margin: 0px 0px 25px 0px;
+  }
 }
 
-/* Very small screens: 350-600px */
-@media only screen and (min-width: 350px) and (max-width: 600px) {
-  .HeadlineBenefits {
-      font-size: 30px; /* Further reduce font size */
+
+@media (max-width: 900px){
+
+.solars-container{
+  grid-row: 1 / 2;
+}
+  .content-container {
+    grid-template-columns: 1fr;
+    gap: 50px; /* Adjust this value to control space between grid items */
+    margin: 0px 80px; /* Consider adjusting this if necessary */
   }
 
-  .quality-container, .solars-container, .community-container {
-      margin: 15px 0; /* Adjust spacing */
+  .solars-container, .quality-container, .community-container{
+    /* Reset margins if they're no longer necessary in a single-column layout */
+    margin: 0px;
   }
 
-  .quality-container img, .solars-container img, .community-container img {
-      height: 150px; /* Further scale down image size */
-      width: 150px;
+  /* Adjust image and text spacing if needed */
+  .solars-container h6, .community-container h6, .quality-container h6{
+    margin-top: 50px; /* Adjust top margin to control spacing above the header */
+    margin-bottom: 25px; /* Control spacing between the header and paragraph */
   }
 
+  .quality-container img, .solars-container img, .community-container img{
+    width: 100%; /* Makes image responsive within the container */
+    height: 300px; /* Adjust height automatically to maintain aspect ratio */
+  }
+
+  .solars-container p, .community-container p, .quality-container p{
+    width: 100%; /* Allow text to fill the container width */
+  }
+}
+
+
+
+
+
+@media (max-width:650px)
+{
+  .head-container h2{
+    font-size: 40px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .head-container p{
+    width: 60%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
   .quality-container p, .community-container p, .solars-container p {
-      width: 150px; /* Match image width */
       font-size: 16px; /* Adjust font size */
-      letter-spacing: normal; /* Reset letter spacing */
   }
+
+  .quality-container h6, .community-container h6, .solars-container h6 {
+    font-size: 16px; /* Adjust font size */
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+  .benefits-container{
+    padding: 50px 0px 50px 0px;
+  }
+  .content-container {
+      grid-template-columns: 1fr;
+      gap: 35px; /* Adjust this value to control space between grid items */
+      margin: 0px 50px;
+  }
+  .quality-container img, .solars-container img, .community-container img{
+    width: 100%; /* Makes image responsive within the container */
+    height: 200px; /* Adjust height automatically to maintain aspect ratio */
+  }
+
+
+
+}
+
+
+
+
+@media (max-width: 420px){
+
+.content-container{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 }
