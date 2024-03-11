@@ -1,0 +1,48 @@
+.NoDataFound{
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 500;
+    align-self: center;
+    padding: 200px 80px 200px 80px;
+    text-align: center;
+    color: #d9d9d9; 
+    background-color: #f5f5f5;
+  }
+
+  .location-gallery-header, .pool-gallery-header, .gym-gallery-header, .solar-panels-gallery-header{
+    display: flex;
+    flex-direction: column;
+}
+
+  .gym-gallery, .pool-gallery, .location-gallery, .solar-panels-gallery{
+    padding-top: 150px;
+    font-family: Inter;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 75px;
+  }
+
+  .gym-gallery h1, .pool-gallery h1, .location-gallery h1, .solar-panels-gallery h1{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 50px;
+    font-weight: 300;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+
+  .gym-gallery p, .pool-gallery p, .location-gallery p, .solar-panels-gallery p{
+    width: 70%;    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    color: #090909;
+    align-self: center;
+}
+
+
+.location-gallery{
+    padding-bottom: 0;
+}

@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+    overflow-y: scroll;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+
+.main-page {
+    width: 100%;
+    height: 100vh; /* Set the height to full viewport height */
+    position: relative; /* For positioning the scroll indicator */
+    background-image: url('../../assets/BGMain.jpg');
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  
+  .headline {
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    text-align: center; /* Centers the text */
+    font-size: 80px; /* Adjust as needed */
+    color: #090909; /* Default text color */
+    position: absolute;
+    top: 35%; /* Adjust as necessary to position vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; 
+    line-height: 0.3;
+  }
+  
+  .regular-text {
+    font-weight: 400; /* Standard font weight */
+  }
+  
+  .green-text {
+    font-weight: 500; /* Heavier font weight for 'GREEN' */
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    margin: 0 10px; /* Optional: adds spacing around 'GREEN' */
+  }
+  a.request-link{
+    display: none;
+  }
+  
+  .scroll-indicator {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    color: #090909;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 0.6;
+    text-align: center; /* Center the text */
+    align-items: center;
+  }
+  
+
+
+  @media (min-width: 1600px) {
+    .headline {
+      font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+      text-align: center; /* Centers the text */
+      font-size: 90px; /* Adjust as needed */
+      color: #090909; /* Default text color */
+      position: absolute;
+      top: 35%; /* Adjust as necessary to position vertically */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0; 
+      line-height: 0.3;
+    }
+    
+    .regular-text {
+      font-weight: 400; /* Standard font weight */
+    }
+    
+    .green-text {
+      font-weight: 500; /* Heavier font weight for 'GREEN' */
+      color: #66952F; /* Adjust the color value to match the desired shade of green */
+      margin: 0 10px; /* Optional: adds spacing around 'GREEN' */
+    }
+
+
+
+  
+  .scroll-indicator {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    color: #090909;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 0.6;
+    text-align: center; /* Center the text */
+    align-items: center;
+  }
+  
+    
+  }
+
+
+
+
+
+  @media (max-width: 700px) {
+
+ 
+    a.request-link{
+      display: block;
+      position: absolute;
+      top: 70%;
+      border-radius: 15px;
+      align-self: center;
+      justify-self: center;
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: 400;
+      color: #66952F;
+      padding: 20px 50px;
+      background: rgba(255, 255, 255, 0.7); /* Example background with slight transparency */
+      box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(80px);
+      border: 2px solid #fff;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      white-space: nowrap; /* Prevents text from wrapping */
+
+    }
+
+    .headline {
+      font-size: 70px; /* Adjust as needed */
+    }
+    
+    .regular-text {
+      font-weight: 400; /* Standard font weight */
+    }
+    
+    .green-text {
+      font-weight: 500; /* Heavier font weight for 'GREEN' */
+      color: #66952F; /* Adjust the color value to match the desired shade of green */
+      margin: 0 10px; /* Optional: adds spacing around 'GREEN' */
+    }
+
+
+  }
+
+
+  @media (max-width: 600px) {
+    .headline {
+      font-size: 60px; /* Adjust as needed */
+    }
+
+    a.request-link{
+      font-weight: 400;
+    }
+  }
+
+
+  @media (max-width: 400px) {
+    .headline {
+      font-size: 50px; /* Adjust as needed */
+    }
+  }
+
+

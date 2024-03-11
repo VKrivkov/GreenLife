@@ -1,0 +1,76 @@
+.card {
+  position: relative; /* Add this to position child elements absolutely relative to this container */
+  width: 250px; /* Adjust width as needed */
+  border-radius: 15px;
+  border: 1px solid #66952F;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Inter; /* Use your desired font-family */
+  font-weight: 400;
+  font-size: 20px;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow and lift effect */
+  cursor: pointer;
+}
+  
+
+  .card-title  {
+    background-color: #66952F;
+    color: white;
+    padding: 5px 20px;
+    margin-left: 10px;
+    position: absolute; /* Position the footer absolutely within the card */
+    bottom: 40px; /* Align it to the bottom */
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+
+
+  .card-title[title = 'sea view']{
+    background-color: #256EB9;
+  }
+
+  .card-title[title = 'rooftop']{
+    background-color: #E2725B;
+  }
+  .card-title[title = 'veranda']{
+    background-color: #E3AB3C;
+  }
+
+  .card-title:empty{
+    display:none;
+    }
+  
+    .card-content {
+      background-color: #fff;
+      color: #333;
+      padding: 20px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .card-footer {
+      position: absolute; /* Position the footer absolutely within the card */
+      bottom: 0; /* Align it to the bottom */
+      left: 0; /* Align it to the left */
+      width: 100%; /* Span the full width of the card */
+      background-color: #66952F;
+      color: white;
+      padding: 13px 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+
+    span.area{
+        font-weight: 300;
+    }
+  
+
+    .card:hover{
+      box-shadow: 0 0px 30px rgb(102, 149, 47, 0.5); 
+
+    }

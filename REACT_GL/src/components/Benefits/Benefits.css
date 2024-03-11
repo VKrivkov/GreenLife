@@ -1,0 +1,274 @@
+.benefits-container{
+    padding-top: 150px;
+    font-family: Inter;
+    font-weight: 300;
+    overflow: hidden;
+    padding-bottom: 75px;
+}
+
+
+.HeadlineBenefits{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 50px;
+    font-weight: 300;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    text-align: center;
+    
+    margin-top: 0px;
+    margin-bottom: 75px;
+  }
+  .head-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 160px;
+    margin-right: 80px;
+    justify-content: space-between;
+  }
+
+
+  .head-container p{
+    font-weight: 400;
+  }
+
+  .content-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-content: space-between;
+    color: #090909;
+
+  }
+
+  
+
+  .quality-container, .solars-container, .community-container{
+    display: flex;
+    flex-direction: column; /* Organizes the icon and text in a column */
+    align-items: center; /* Centers the content */
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .solars-container img{
+    margin-right: 50px;
+    margin-left: 50px;
+    
+  }
+
+  .quality-container img{
+    align-items: start; /* Centers the content */
+  }
+
+
+  .community-container img{
+    align-items: end; /* Centers the content */
+  }
+
+  .quality-container img, .solars-container img, .community-container img{
+    display: block;
+    height: 300px;
+    border-radius: 15px;
+    width: 300px;
+  }
+
+  .solars-container img{
+    width: 400px;
+
+  }
+
+
+  .quality-container h6, .solars-container h6, .community-container h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 75px;
+    margin-bottom: 35px;
+  }
+
+  .quality-container p, .community-container p{
+    font-size: 18px;
+    width: 300px;
+    margin: 0px;
+    letter-spacing: 110%;
+    text-align: justify;
+  }
+
+
+
+  .solars-container p{
+    font-size: 18px;
+    width: 400px;
+    margin: 0px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+
+  }
+
+
+@media (min-width: 1600px){
+
+  .benefits-container{
+    padding: 160px 100px 80px 100px;
+  }
+
+
+  .quality-container h6, .solars-container h6, .community-container h6{
+    font-size: 20px;
+  }
+  .quality-container p, .community-container p{
+    font-size: 20px;
+    width: 300px;
+    margin: 0px;
+    letter-spacing: 110%;
+  }
+
+
+
+  .solars-container p{
+    font-size: 20px;
+    margin: 0px;
+    letter-spacing: 110%;
+  }
+
+  .quality-container img, .community-container img {
+      height: 375px;
+      width: 375px;
+  }
+
+  .solars-container img {
+      width: 450px;
+      height: 375px;
+  }
+
+  .quality-container p, .community-container p {
+      width: 375px; /* Adjust if needed */
+  }
+
+  .solars-container p{
+    width:450px;
+  }
+
+
+  .HeadlineBenefits{
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+  }
+
+  .head-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 160px;
+    margin-right: 50px;
+    justify-content: space-between;
+  }
+
+
+  .head-container p{
+    font-size: 20px;
+  }
+
+  .solars-container img{
+    margin-right: 100px;
+    margin-left: 100px;
+    
+  }
+
+}
+
+
+/* Medium screens: 700-1280px */
+@media (max-width: 1280px) {
+  .head-container {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 40px;
+  }
+
+  .content-container {
+      grid-template-columns: repeat(3, 1fr); /* Decrease number of columns */
+  }
+
+  .quality-container, .solars-container, .community-container {
+      margin: 20px 0; /* Adjust spacing */
+  }
+
+  .quality-container img,  .community-container img {
+      height: 250px; /* Scale down image size */
+      width: 250px;
+  }
+
+  .solars-container img{
+    height: 250px;
+    width: 350px;
+  }
+  .solars-container p, .quality-container p, .community-container p {
+      width: 250px; /* Match image width */
+  }
+  .solars-container p{
+    width: 350px;
+  }
+
+  .HeadlineBenefits{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 50px;
+    font-weight: 300;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    text-align: center;
+    
+    margin-top: 0px;
+    margin-bottom: 75px;
+  }
+  .head-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 160px;
+    margin-right: 80px;
+    justify-content: space-between;
+  }
+
+
+  .head-container p{
+    font-weight: 400;
+  }
+}
+
+/* Small screens: 600-700px */
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+  .HeadlineBenefits {
+      font-size: 40px; /* Reduce font size */
+  }
+
+  .content-container {
+      grid-template-columns: 1fr; /* Only one column */
+  }
+
+  .quality-container img, .solars-container img, .community-container img {
+      height: 200px; /* Further scale down image size */
+      width: 200px;
+  }
+
+  .quality-container p, .community-container p, .solars-container p {
+      width: 200px; /* Match image width */
+  }
+}
+
+/* Very small screens: 350-600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .HeadlineBenefits {
+      font-size: 30px; /* Further reduce font size */
+  }
+
+  .quality-container, .solars-container, .community-container {
+      margin: 15px 0; /* Adjust spacing */
+  }
+
+  .quality-container img, .solars-container img, .community-container img {
+      height: 150px; /* Further scale down image size */
+      width: 150px;
+  }
+
+  .quality-container p, .community-container p, .solars-container p {
+      width: 150px; /* Match image width */
+      font-size: 16px; /* Adjust font size */
+      letter-spacing: normal; /* Reset letter spacing */
+  }
+}

@@ -1,0 +1,274 @@
+.NoDataFound{
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 500;
+  align-self: center;
+  padding: 200px 80px 200px 80px;
+  text-align: center;
+  color: #d9d9d9; 
+  background-color: #f5f5f5;
+}
+
+.single-flat-card-container{
+  padding: 100px 80px 75px 80px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  background-color: #f5f5f5;
+  column-gap: 75px;
+  /* Ensure the card is placed in the first row and second column */
+}
+
+.flat-text-container{
+  display: flex;
+  flex-direction: column;
+  color: #090909;
+}
+
+
+.single-flat-head{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 40px
+}
+
+.plan-flat-container img{
+  width: 450px;
+  height: 450px;
+}
+
+.single-flat-card-container h1{
+  font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+  font-size: 80px;
+  font-weight: 300;
+  color: #66952F; /* Adjust the color value to match the desired shade of green */
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.single-flat-icon-container {
+  color: #090909;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates five columns */
+  gap: 50px;
+  align-self: center;
+}
+
+.flat-icon-item {
+  display: flex;
+  flex-direction: column; /* Organizes the icon and text in a column */
+  align-items: center; /* Centers the content */
+  gap: 10px; /* Space between icon and text */
+  text-align: center;
+
+}
+
+
+.flat-icon-item img {
+  display: block;
+  height: 40px;
+}
+
+
+.room-floor-container{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.room-floor-container h6, .room-floor-container h5{
+  padding: 20px 40px;
+  width: 200px;
+  border: 1px solid #090909;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.room-floor-container h5{
+  border-left: none;
+
+}
+
+
+.flat-text-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+.flat-text-container ul li{
+  margin-bottom: 30px;
+}
+
+.flat-text-container li {
+  padding-left: 30px; /* Creates space for bullet points */
+  text-align: left;
+  position: relative; /* Needed for absolute positioning of pseudo-elements */
+  margin-bottom: 10px; /* Adjust the space between list items */
+}
+
+.flat-text-container li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../../../assets/Ellipse.svg'); /* Adjust path as needed */
+  width: 5px; /* Adjust size as needed */
+  height: 5px; /* Adjust size as needed */
+  background-size: cover;
+  border-radius: 50%; /* Makes it round */
+}
+
+
+/* Align the card container to the right side of the screen */
+
+.plan-flat-container{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: end; /* Aligns the card to the right border of the grid area */
+  perspective: 1000px;
+  width: 100%;
+  min-width: 500px;
+  height: 500px;
+  margin-top: 75px;
+  position: relative;
+  display: flex; /* Changed from block to flex for alignment purposes */
+  flex-direction: column;
+  align-items: center; /* Center align the card vertically if needed */
+  
+}
+
+.plan-flat-container p{
+  margin-top: 15px;
+  color: #d9d9d9;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+
+.plan-flat-container p:hover{
+  color: rgb(102, 149, 47, 0.3);
+}
+
+
+
+/* Style for the card that will flip */
+.card-plan {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  cursor: pointer;
+  
+}
+
+
+/* Hide the back face initially */
+.card-plan img.plan-back {
+  display: none;
+}
+
+
+/* When the card is flipped, rotate around the Y axis */
+.card-plan.flipped {
+  transform: rotateY(180deg);
+}
+
+
+/* Front and back face styling */
+.card-plan img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* Hide the back side when it's turned away */
+  border-radius: 15px;
+  border: 1px #090909 solid;
+  transition: border 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.card-plan img:hover {
+  border: 1px solid #66952F;
+  box-shadow: 0 0px 30px rgb(102, 149, 47, 0.3); 
+
+}
+
+
+/* Position the back image and rotate it to match the flip */
+.card-plan img.plan-back {
+  display: block;
+  transform: rotateY(180deg);
+}
+
+.flat-footer-container{
+  grid-column: -3 / -1;
+  margin-top: 25px;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 75px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+.price-contact-container h2{
+  display: inline;
+  color: #66952F;
+}
+
+.price-contact-container p{
+  padding-right: 15px;
+  display: inline;
+}
+.contact-pdf-buttons{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap:25px;
+}
+
+.contact-us-button, .contact-pdf-buttons p{
+  padding: 20px 40px;
+  width: 200px;
+  border: 1px solid #090909;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: #090909;
+  cursor: pointer;
+}
+
+
+.contact-us-button{
+  border-color: #f5f5f5;
+  background-color: #66952F;
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow and lift effect */
+}
+
+.contact-us-button:hover{
+  box-shadow: 0 0px 30px rgb(102, 149, 47, 0.5); 
+}
+
+
+a.contact-us-button{
+  color: #f5f5f5; 
+}

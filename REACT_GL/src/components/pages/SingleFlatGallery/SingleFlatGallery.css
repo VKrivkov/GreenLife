@@ -1,0 +1,31 @@
+.single-flat-gallery-container{
+    padding-top: 75px;
+    font-family: Inter;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+
+.single-flat-gallery-header{
+    display: flex;
+    flex-direction: column;
+}
+.single-flat-gallery-header h1{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 50px;
+    font-weight: 300;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    margin-top: 0px;
+    margin-bottom: 75px;
+}
+.single-flat-gallery-header p{
+    width: 70%;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    font-weight: 300;
+    color: #090909;
+    align-self: center;
+}

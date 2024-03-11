@@ -1,0 +1,50 @@
+/* Navbar.css */
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Or any other color you prefer */
+    height: 100px;
+    z-index: 100;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    width: 100vw;
+    position: fixed;  /* Fix the navbar's position relative to the viewport */
+    padding-right: 80px;
+    top: 0px;
+  }
+  
+  .nav2-left-side{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar2-brand {
+    align-items: center;
+  }
+
+  img.navbar-ArrowBack {
+    margin-right: 40px;
+    margin-left: 80px;
+    width: 30px;
+    height:40px;
+    cursor: pointer;
+  }
+  
+  .navbar-logo {
+    /* Set the size of your logo if needed */
+    height: 35px; 
+    margin-right: 10px;
+    
+  }
+
+  .nav2-label{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  
+
+
+

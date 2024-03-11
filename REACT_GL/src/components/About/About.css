@@ -1,0 +1,389 @@
+.about-project {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 75px;
+    align-items: center; /* Aligns items to the start of the container */
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+
+  }
+  .Slogan{
+    left: 50%;
+    font-weight: 500;
+    margin-bottom: 70px;
+    margin-top: 0;
+    color: #090909;
+  }
+
+  .image-container-about img {
+    max-width: 631px; /* Adjust as needed */
+    border-radius: 15px;
+    display: grid; /* Ensures the image is a block element to respect max-width */
+  }
+  
+  .content-container-about {
+    display: flex;
+    justify-content: center;
+    color: #090909;
+
+  }
+
+  .text-container-about{
+    margin-left: 10%; /* Aligns items to the start of the container */
+}
+
+  .HeadlineAbout{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 50px;
+    font-weight: 300;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  
+  
+  .content-container-about ul {
+    list-style: none;
+    padding: 0;
+    align-self: center;
+
+  }
+
+  .content-container-about ul li{
+    margin-top: 30px;
+  }
+  
+  .content-container-about li {
+    padding-left: 30px; /* Creates space for bullet points */
+    text-align: left;
+    position: relative; /* Needed for absolute positioning of pseudo-elements */
+    margin-bottom: 10px; /* Adjust the space between list items */
+  }
+  
+  .content-container-about li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../../assets/Ellipse.svg'); /* Adjust path as needed */
+    width: 5px; /* Adjust size as needed */
+    height: 5px; /* Adjust size as needed */
+    background-size: cover;
+    border-radius: 50%; /* Makes it round */
+  }
+  
+
+  a:-webkit-any-link {
+    text-decoration: none;
+    color: #090909;
+
+  }
+
+  .icons-container-about {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Creates five columns */
+    gap: 35px;
+    margin-top: 75px;
+  }
+  
+  .icon-item {
+    display: flex;
+    flex-direction: column; /* Organizes the icon and text in a column */
+    align-items: center; /* Centers the content */
+    gap: 10px; /* Space between icon and text */
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .icon-item:hover{
+    color:  #66952F; /* or use border-bottom if that's the design */
+    transition: color 0.2s ease-in-out; /* Transition effect for color property */
+  }
+  
+  .icon-item img {
+    display: block;
+    height: 40px;
+  }
+  
+
+
+  @media (min-width: 1600px) {
+    .about-project {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 80px;
+      align-items: center; /* Aligns items to the start of the container */
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: 300;
+  
+    }
+    .Slogan{
+      left: 50%;
+      font-weight: 500;
+      margin-bottom: 80px;
+      margin-top: 0;
+      color: #090909;
+    }
+  
+    .image-container-about img {
+      max-width: 700px; /* Adjust as needed */
+      border-radius: 15px;
+      display: grid; /* Ensures the image is a block element to respect max-width */
+    }
+    
+    .content-container-about {
+      display: flex;
+      justify-content: center;
+      color: #090909;
+  
+    }
+  
+    .text-container-about{
+      margin-left: 10%; /* Aligns items to the start of the container */
+  }
+  
+    .HeadlineAbout{
+      font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+      font-size: 60px;
+      font-weight: 300;
+      color: #66952F; /* Adjust the color value to match the desired shade of green */
+      text-align: center;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+    
+    
+    .content-container-about ul {
+      list-style: none;
+      padding: 0;
+      align-self: center;
+  
+    }
+  
+    .content-container-about ul li{
+      margin-top: 35px;
+    }
+    
+    .content-container-about li {
+      padding-left: 30px; /* Creates space for bullet points */
+      text-align: left;
+      position: relative; /* Needed for absolute positioning of pseudo-elements */
+      margin-bottom: 15px; /* Adjust the space between list items */
+    }
+    
+    .content-container-about li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../../assets/Ellipse.svg'); /* Adjust path as needed */
+      width: 7px; /* Adjust size as needed */
+      height: 7px; /* Adjust size as needed */
+      background-size: cover;
+      border-radius: 50%; /* Makes it round */
+    }
+    
+  
+    a:-webkit-any-link {
+      text-decoration: none;
+      color: #090909;
+  
+    }
+  
+    .icons-container-about {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* Creates five columns */
+      gap:40px;
+      margin-top: 80px;
+    }
+    
+    .icon-item {
+      display: flex;
+      flex-direction: column; /* Organizes the icon and text in a column */
+      align-items: center; /* Centers the content */
+      gap: 15px; /* Space between icon and text */
+      cursor: pointer;
+      text-align: center;
+    }
+  
+    .icon-item:hover{
+      color:  #66952F; /* or use border-bottom if that's the design */
+      transition: color 0.2s ease-in-out; /* Transition effect for color property */
+    }
+    
+    .icon-item img {
+      display: block;
+      height: 50px;
+    }
+    
+  }
+
+
+
+@media (max-width: 1280px){
+  .image-container-about img {
+    width: 500px; /* Adjust as needed */
+    border-radius: 15px;
+    display: grid; /* Ensures the image is a block element to respect max-width */
+  }
+  
+  .Slogan{
+    display: none;
+  }
+
+  .text-container-about{
+    margin-top: -20px;
+  }
+  
+}
+
+
+@media (max-width: 1050px){
+
+
+  .image-container-about {
+    width: 100%; /* Full width of its parent */
+    height: 500px; /* Fixed height */
+    overflow: hidden; /* Hide parts of the image that exceed the container */
+    position: relative; /* Position context for absolute positioning of the image */
+    border-radius: 15px; /* Apply border-radius to the container */
+  }
+
+  .image-container-about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container, may crop the image */
+    position: absolute; /* Position image absolutely within its container */
+    top: 0;
+    left: 0;
+  }
+  
+  .content-container-about {
+    display: flex;
+    justify-content: center;
+    color: #090909;
+    flex-direction: column;
+    /* Ensure there's enough space for your content container too */
+  }
+
+
+  .icons-container-about {
+    display: grid;
+    grid-template-columns: repeat(3, 150px); /* Creates five columns */
+    justify-content: center;
+
+    gap: 75px;
+    margin-top: 50px;
+  }
+
+
+  .text-container-about{
+    margin-top: 50px;
+    margin-left: 0px; /* Aligns items to the start of the container */
+}
+
+  .HeadlineAbout{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  
+  .content-container-about ul {
+    list-style: none;
+    padding: 0;
+    align-self: center;
+
+  }
+
+  .content-container-about ul li{
+    margin-top: 30px;
+  }
+  
+  .content-container-about li {
+    padding-left: 30px; /* Creates space for bullet points */
+    text-align: left;
+    position: relative; /* Needed for absolute positioning of pseudo-elements */
+    margin-bottom: 10px; /* Adjust the space between list items */
+  }
+}
+@media (min-width: 791px) and (max-width: 1049px) {
+  /* Adjustments for this specific range */
+  .image-container-about img {
+    width: auto; /* Adjust based on the container's size */
+    max-width: 100%; /* Ensures the image does not exceed the container's width */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    object-fit: cover; /* Covers the area, may crop the image */
+  }
+}
+@media (max-width: 650px){
+
+.about-project {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  align-items: center; /* Aligns items to the start of the container */
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+
+}
+
+.HeadlineAbout{
+  font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+  font-size: 40px;
+  font-weight: 300;
+  color: #66952F; /* Adjust the color value to match the desired shade of green */
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.icons-container-about {
+  grid-template-columns: repeat(2, 150px); /* Creates five columns */
+
+}
+}
+
+
+@media (max-width: 550px){
+
+  .image-container-about {
+    width: 100%; /* Full width of its parent */
+    height:300px;
+  } 
+
+  .text-container-about{
+    margin-top: 10px; /* Aligns items to the start of the container */
+}
+
+
+
+}
+
+
+@media (max-width: 420px){
+
+  .image-container-about {
+    width: 100%; /* Full width of its parent */
+    height:230px;
+  }
+
+  .about-project {
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center; /* Aligns items to the start of the container */
+    font-family: Inter;
+    font-weight: 300;
+  
+  }
+
+  .icons-container-about {
+    row-gap: 75px;
+    column-gap: 25px;
+  }
+
+}

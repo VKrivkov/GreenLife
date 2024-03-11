@@ -1,0 +1,426 @@
+.units {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    padding-top : 75px;
+    font-weight: 400;
+  }
+  
+  .headline-units{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 50px;
+    font-weight: 300;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  .units-header {
+    width: 50%;
+    font-weight: 300;
+    color: #090909;
+
+
+  }
+  
+  .content {
+    display: inline-flex;
+    justify-content: flex-end;
+    columns: 2;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-right: 5px;
+
+  }
+  
+  .unit-selector {
+    margin-top: 115px;
+    text-align: left;
+    align-self: left;
+    z-index: 1;
+    color: #090909;
+    width: 240px;
+    margin-right: 50px;
+    
+  }
+  
+  .unit-option {
+    cursor: pointer;
+    margin-bottom: 50px;
+    position: relative; /* Establish a positioning context */
+
+    /* Add styles for active and normal states */
+  }
+  
+
+
+  .unit-option:hover{
+    color: #66952F;
+    transition: color 0.3s ease-in-out;
+
+  }
+  
+
+
+  .unit-option.active {
+   color: #66952F;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .unit-option.active::after {
+    content: ''; /* Required for pseudo-elements */
+    display: block; /* Treat the pseudo-element like a block */
+    position: absolute;
+    left: 0; /* Align with the left edge of the element */
+    bottom: -8px; /* Position 8px below the text */
+    width: 50px; /* Fixed width of the underline */
+    height: 1.5px; /* Fixed height of the underline */
+    background: #66952F; /* The color of the underline */
+    transition: 0.2s ease-in-out; /* Smooth transition for the underline */
+  }
+  
+  .unit-option:not(.active)::after {
+    content: none; /* No pseudo-element when the class is not active */
+  }
+
+  
+  .price{
+    margin-top: 150px;
+    margin-left: 0px;
+    font-weight: 300;
+   
+  }
+
+.price-value{
+  padding-left: 5px;
+  text-align: center;
+}
+
+  .price p{
+    margin-bottom: 0;
+    color: #090909;
+
+
+  }
+  .price .price-value{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+
+  }
+  
+  .plan-container {
+    display: block;
+    margin-left: 100px;
+    position: relative;
+    margin-top: 75px;
+    z-index: 1;
+  }
+  
+  .plan-container img {
+
+    width: 847px;
+    height: 514px;
+    border-radius: 15px;
+    border: solid #090909;
+  }
+  
+  .plan-container button{
+    cursor: pointer;
+
+  }
+  
+  .available-units {
+    bottom: 35px; /* 25px from the bottom of the image */
+    position: absolute;
+    right: 35px; /* 25px from the right of the image */
+    background-color: #66952F;
+    border: solid #ffffff;
+    color: #F5F5F5;
+    width: 225px;
+    height: 70px;
+    border-radius: 15px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow and lift effect */
+  }
+  
+.available-units:hover{
+  box-shadow: 0 0px 30px rgb(102, 149, 47, 0.7); 
+  ; /* Green glow spread */
+}
+
+
+.units-header p{
+  margin-top: 0px;
+  margin-bottom: 0;
+  color: #090909;
+
+}
+
+
+@media (min-width: 1600px){
+  .units {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    padding-top : 80px;
+    font-weight: 400;
+  }
+  
+  .headline-units{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 60px;
+    font-weight: 300;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 1280px){
+    
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    justify-content: center;
+  }
+
+  .unit-selector {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-right: 0px;
+    gap:0px;
+    row-gap: 0px;
+    justify-items: center;
+  }
+
+  .headline-units{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+  .units-header {
+    width: 80%;
+ 
+
+  }
+  .price{
+    margin-top: 0px;
+    margin-left: 50px;
+    font-weight: 300;
+    display: inline-flex;
+    grid-row: 2 / 3;
+    grid-column: -4 / -1;
+    
+  }
+
+.price-value{
+  padding-left: 5px;
+  text-align: center;
+}
+
+  .price p{
+    margin-bottom: 0;
+    color: #090909;
+    margin-right: 50px;
+
+  }
+
+.units{
+  padding:75px 50px 50px 50px;
+
+}
+
+  .plan-container {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+    margin-top: 50px;
+    z-index: 1;
+  }
+
+}
+
+
+
+@media (max-width: 900px){
+  .plan-container {
+    display: block;
+    margin-left: 0px;
+    position: relative;
+    margin-top: 50px;
+    z-index: 1;
+  }
+  
+  .plan-container img {
+
+    width: 600px;
+    height: 350px;
+  }
+
+}
+
+
+@media (max-width: 650px){
+
+  .plan-container {
+    margin-top: 35px;
+
+  }
+  
+  .plan-container img {
+
+    width: 450px;
+    height: 300px;
+  }
+  
+  .plan-container button{
+    cursor: pointer;
+  }
+
+  .units {
+    font-size: 16px;
+    padding-top : 50px;
+    font-weight: 400;
+  }
+
+  .available-units {
+    bottom: -100px; /* 25px from the bottom of the image */
+    right: 100px;
+    width: 250px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .price-value{
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .headline-units{
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+  }
+    .price{
+      margin-left:20px;
+    }
+
+    .price .price-value{
+      font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+      font-size: 30px;
+      font-weight: 300;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #66952F; /* Adjust the color value to match the desired shade of green */
+  
+    }
+    .units-header {
+      width: 100%;
+   
+    }
+
+
+  .unit-selector {
+    margin-top:35px;
+}
+}
+
+@media (max-width: 500px){
+
+  .plan-container img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .price-value{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    white-space: nowrap;
+  }
+
+  .price p{
+
+    white-space: nowrap;
+    margin-right: 25px;
+  }
+
+  .available-units {
+    bottom: -100px; /* 25px from the bottom of the image */
+    right: 75px;
+    width: 250px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+
+  .unit-selector {
+    gap:50px;
+    row-gap: 0px;
+    justify-items: center;
+}
+}
+
+@media (max-width: 450px){
+
+  .plan-container img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .price-value{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    white-space: nowrap;
+  }
+
+  .price p{
+
+    white-space: nowrap;
+    margin-right: 25px;
+  }
+
+  .available-units {
+    bottom: -100px; /* 25px from the bottom of the image */
+    right: 22px;
+    width: 250px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .unit-selector {
+    gap:30px;
+    row-gap: 0px;
+    justify-items: center;
+}
+}
