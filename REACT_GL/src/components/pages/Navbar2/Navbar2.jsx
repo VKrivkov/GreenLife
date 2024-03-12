@@ -34,7 +34,7 @@ const Navbar2 = () => {
         <p>The best way to be healthy is to be happy</p>
       </div>
       <div className="nav2-links">
-        <Link to="/contact" className="contact-us">Contact Us</Link>
+        <Link to="/contact" className="contact-us2">Contact Us</Link>
       </div>
     </nav>
   );

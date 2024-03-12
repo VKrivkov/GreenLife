@@ -74,3 +74,43 @@
       box-shadow: 0 0px 30px rgb(102, 149, 47, 0.5); 
 
     }
+
+
+    @media (max-width: 420px){
+      .card {
+        width: 200px; /* Adjust width as needed */
+        font-size: 18px;
+      }
+    
+    .card-content {
+      padding: 15px;
+      height: 230px;
+    }
+  
+    .card-footer {
+      position: absolute; /* Position the footer absolutely within the card */
+      bottom: 0; /* Align it to the bottom */
+      left: 0; /* Align it to the left */
+      width: 100%; /* Span the full width of the card */
+      background-color: #66952F;
+      color: white;
+      padding: 13px 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+
+  .card-title  {
+    background-color: #66952F;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 10px;
+    position: absolute; /* Position the footer absolutely within the card */
+    bottom: 40px; /* Align it to the bottom */
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+
+    }

@@ -10,6 +10,9 @@ import gallerypool1 from '../../../assets/gallery-page/gallery-pool/gallery-pool
 import gallerypool2 from '../../../assets/gallery-page/gallery-pool/gallery-pool2.jpg';
 import gallerypool3 from '../../../assets/gallery-page/gallery-pool/gallery-pool3.jpg';
 
+import galleryloc1 from '../../../assets/gallery-page/gallery-location/gallery-location1.jpg';
+import galleryloc2 from '../../../assets/gallery-page/gallery-location/gallery-location2.jpg';
+import galleryloc3 from '../../../assets/gallery-page/gallery-location/gallery-location3.jpg';
 
 
 const solarArray = [
@@ -33,4 +36,11 @@ const poolArray = [
     gallerypool3
 ]
 
-export {solarArray, gymArray, poolArray}
+
+const locArray = [
+    galleryloc1, 
+    galleryloc2,
+    galleryloc3
+]
+
+export {solarArray, gymArray, poolArray, locArray}

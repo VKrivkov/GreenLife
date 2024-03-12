@@ -195,7 +195,7 @@ function ContactPage() {
         <p>By sending this form, you agree to our privacy policy.</p>
 
         <button type="submit" className="submit-button">SEND A REQUEST</button>
-        {isSubmitted && <div className="success-popup">SUCCESS</div>}
+        {isSubmitted && <div className="success-popup">Your request is sent. </div>}
 
       </form>
     </div>

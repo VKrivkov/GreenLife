@@ -3,8 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff; /* Or any other color you prefer */
-    height: 100px;
+    background-color: #f5f5f5;
+    box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(80px);
+    border: 1px solid #fff;
+    height: 80px;
     z-index: 100;
     font-family: Inter;
     font-size: 18px;
@@ -40,11 +43,89 @@
   }
 
   .nav2-label{
+    display: block;
+    font-family: Inter;
+    position: absolute;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     opacity: 0.5;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  
 
+
+  .nav2-links{
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  @media (min-width: 1600px) {
+    .nav2-label{
+      font-size: 16px;
+    }
+  }
+
+@media (max-width:1100px){
+  .nav2-label{
+    display:none;
+  }
+}
+  @media (max-width:930px){
+   
+
+    img.navbar-ArrowBack {
+      margin-right: 25px;
+      margin-left: 50px;
+    }
+
+    /* Navbar.css */
+  .navbar2 {
+  padding-right: 50px;
+  top: 0px;
+  }
+
+}
+
+
+@media (max-width: 650px){
+
+  .nav2-links{
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width:535px) {
+  img.navbar-ArrowBack {
+    margin-right: 25px;
+    margin-left: 35px;
+  }
+
+  /* Navbar.css */
+  .navbar2 {
+    padding-right: 35px;
+    top: 0px;
+  }
+
+  .navbar-logo {
+    /* Set the size of your logo if needed */
+    display: none;
+  }
+}
+
+
+@media (max-width:530px) {
+  img.navbar-ArrowBack {
+    margin-right: 15px;
+    margin-left: 25px;
+  }
+
+  /* Navbar.css */
+  .navbar2 {
+    padding-right: 25px;
+    top: 0px;
+  }
+}
 
 

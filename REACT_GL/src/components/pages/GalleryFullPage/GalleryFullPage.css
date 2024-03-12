@@ -3,10 +3,10 @@
     font-size: 26px;
     font-weight: 500;
     align-self: center;
-    padding: 200px 80px 200px 80px;
+    padding: 500px 80px 500px 80px;
     text-align: center;
     color: #d9d9d9; 
-    background-color: #f5f5f5;
+    background-color: #fff;
   }
 
   .location-gallery-header, .pool-gallery-header, .gym-gallery-header, .solar-panels-gallery-header{
@@ -17,7 +17,7 @@
   .gym-gallery, .pool-gallery, .location-gallery, .solar-panels-gallery{
     padding-top: 150px;
     font-family: Inter;
-    background-color: #f5f5f5;
+    background-color: #fff;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -36,13 +36,51 @@
 
   .gym-gallery p, .pool-gallery p, .location-gallery p, .solar-panels-gallery p{
     width: 70%;    margin-top: 0px;
-    margin-bottom: 50px;
+    font-size:18px;
+    margin-bottom: 75px;
     font-weight: 300;
     color: #090909;
     align-self: center;
 }
 
+@media (min-width:1600px){
 
-.location-gallery{
-    padding-bottom: 0;
+  .gym-gallery, .pool-gallery, .location-gallery, .solar-panels-gallery{
+    padding-top: 160px;
+   
+    padding-bottom: 60px;
+  }
+
+  .gym-gallery h1, .pool-gallery h1, .location-gallery h1, .solar-panels-gallery h1{
+    font-size: 60px;
+    margin-bottom: 80px;
+  }
+
+
+  .gym-gallery p, .pool-gallery p, .location-gallery p, .solar-panels-gallery p{
+    width: 70%;    margin-top: 0px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #090909;
+    align-self: center;
+}
+}
+
+
+@media (max-width:650px){
+  .gym-gallery, .pool-gallery, .location-gallery, .solar-panels-gallery{
+    padding-top: 100px;
+  }
+
+  .gym-gallery h1, .pool-gallery h1, .location-gallery h1, .solar-panels-gallery h1{
+    margin-bottom: 35px;
+    font-size: 40px;
+  }
+  .gym-gallery p, .pool-gallery p, .location-gallery p, .solar-panels-gallery p{
+    width: 80%;
+    margin-bottom: 35px;
+
+    font-size: 16px;
+  }
 }

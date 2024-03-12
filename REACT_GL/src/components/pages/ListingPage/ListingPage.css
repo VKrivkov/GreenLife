@@ -71,7 +71,7 @@
 }
 
 
-@media only screen and (min-width: 1530px) {
+@media (min-width: 1530px) {
     .one-section, .two-section, .three-section {
         display: grid;
          grid-template-columns: repeat(4, 1fr);
@@ -81,4 +81,101 @@
          border-bottom: 2px solid #d9d9d9;
      }
      
+}
+
+@media (min-width: 1800px) {
+    .one-section, .two-section, .three-section {
+        display: grid;
+         grid-template-columns: repeat(5, 1fr);
+         padding-bottom: 80px;
+     }
+     
+}
+
+
+
+@media (max-width:1240px)
+{
+    .one-section, .two-section, .three-section {
+        display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         margin-left: 345px;
+         gap: 50px;
+         padding-bottom: 75px;
+         border-bottom: 2px solid #d9d9d9;
+     }
+}
+
+@media (max-width:930px){
+    .selector-nav-container{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 75px;
+    }
+
+    .one-section, .two-section, .three-section {
+         margin-left: 250px;
+         gap: 50px;
+         padding-bottom: 50px;
+     }
+
+    
+}
+
+@media (max-width:830px){
+    .one-section, .two-section, .three-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (max-width:650px){
+
+
+    .selector-nav-container{
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+    
+    .selector-link{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .cards-array{
+        margin-top: 50px;
+    }
+
+    
+    
+
+}
+
+
+@media (max-width:530px){
+    .one-section, .two-section, .three-section {
+        margin-left: 150px;
+    }
+
+    .selector-nav-container{
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+    
+    .selector-link{
+        font-size: 16px;
+        margin-bottom: 40px;
+        width:50%;
+
+    }
+}
+
+
+@media (max-width:360px){
+    .one-section, .two-section, .three-section {
+        margin-left: 130px;
+    }
 }

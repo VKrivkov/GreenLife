@@ -11,7 +11,7 @@ export const ListingPage = () => {
 
     
 
-    const scrollToSection = (sectionId) => {
+    const scrollToSection = (sectionId) => {        
         const section = document.getElementById(sectionId);
         if (!section) return;
       

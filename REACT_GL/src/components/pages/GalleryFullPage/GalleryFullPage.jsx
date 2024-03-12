@@ -3,8 +3,10 @@ import { useParams } from 'react-router-dom'
 import GalleryComponent from '../../Gallery/GalleryComponent';
 import Location from '../Location/Location.jsx';
 
-import {solarArray, gymArray, poolArray} from './galleryfull.js'
+import {solarArray, gymArray, poolArray, locArray} from './galleryfull.js'
 import './GalleryFullPage.css'
+
+
 
 const GalleryFullPage = () => {
 
@@ -13,7 +15,7 @@ console.log (path);
 
 if (path == 'location') {
   return (
-    <div className='location-gallery'>
+    <>    <div className='location-gallery'>
         <div className='location-gallery-header'> 
           <h1>Location</h1>
           <p>Nestled in the heart of Pervolia,
@@ -22,8 +24,16 @@ if (path == 'location') {
             GreenLife is more than a residence; it's a commitment to a greener
              future and a nod to the historical richness of Pervolia.</p>
         </div>  
-        <Location/>
+
+        <GalleryComponent images = {locArray}/>
+        
+        
     </div>
+    <div className='map-container'>
+    <Location/>
+  </div>
+  </>
+
   )
 }
 
@@ -40,7 +50,6 @@ if (path == 'gym') {
             From cardio machines to free weights, resistance training equipment, 
             and dedicated areas for yoga and stretching.</p>
       </div>  
-
         <GalleryComponent images = {gymArray}/>
     </div>
   )
