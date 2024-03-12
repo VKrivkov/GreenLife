@@ -90,7 +90,7 @@
 
   
   .arrowLeft {
-    left: 50px; /* 20px from the left edge of the active slide */
+    left: 46px; /* 20px from the left edge of the active slide */
   }
 
   .arrowLeft img, .arrowRight img{
