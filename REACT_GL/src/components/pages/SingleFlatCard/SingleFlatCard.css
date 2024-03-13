@@ -36,9 +36,10 @@
   gap: 40px
 }
 
-.plan-flat-container img{
-  width: 450px;
-  height: 450px;
+.single-flat-head p{
+  color: #090909;
+  font-size:22px;
+  font-family:Playfair Display, sans-serif; 
 }
 
 .single-flat-card-container h1{
@@ -55,7 +56,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Creates five columns */
   gap: 50px;
-  align-self: center;
+  align-self:flex-start;
 }
 
 .flat-icon-item {
@@ -89,6 +90,8 @@
   font-weight: 400;
   margin-top: 0px;
   margin-bottom: 0px;
+  color: #090909;
+  
 }
 
 .room-floor-container h5{
@@ -134,11 +137,10 @@
 .plan-flat-container{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  justify-self: end; /* Aligns the card to the right border of the grid area */
+  justify-self: center; /* Aligns the card to the right border of the grid area */
   perspective: 1000px;
-  width: 100%;
-  min-width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   margin-top: 75px;
   position: relative;
   display: flex; /* Changed from block to flex for alignment purposes */
@@ -164,12 +166,12 @@
 
 /* Style for the card that will flip */
 .card-plan {
-  width: 100%;
-  height: 100%;
+  width:550px;
+  height: 550px;
   transform-style: preserve-3d;
   transition: transform 0.6s;
   cursor: pointer;
-  
+
 }
 
 
@@ -217,10 +219,10 @@
   grid-column: -3 / -1;
   margin-top: 25px;
   grid-row: 2 / 3;
-  display: flex;
-  gap: 75px;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  gap:75px;
+  grid-template-columns: repeat(2, 1fr);
+
 }
 
 
@@ -275,11 +277,244 @@ a.contact-us-button{
 
 
 
-@media (max-width: 1080px){
-
-}
 
 
 @media (min-width: 1600px){
+  .single-flat-card-container h1{
+    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-size: 120px;
+    font-weight: 500;
+    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  
+  .single-flat-head p{
+   
+    font-weight: 300;
+    font-size:24px;
+  }
+
+  
+.single-flat-card-container{
+  padding: 100px 100px 80px 100px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  background-color: #f5f5f5;
+  column-gap: 0px;
+  /* Ensure the card is placed in the first row and second column */
+}
+.contact-us-button, .contact-pdf-buttons p{
+  font-size: 20px;
+}
+
+.room-floor-container h6, .room-floor-container h5{
+  font-size: 20px;
+}
+
+.card-plan {
+  width:650px;
+  height: 650px;
+
+}
+
+.plan-flat-container{
+
+  width: 650px;
+  height: 650px;
+
+}
+}
+
+@media (min-width: 1920px){
+  .single-flat-card-container{
+    padding: 100px 150px 80px 150px;
+  }
+}
+@media (max-width: 1280px) {
+  .single-flat-icon-container {
+    grid-template-columns: repeat(2, 1fr); /* Adjust the icon grid */
+  }
+
+  .single-flat-head p{
+    font-size:20px;
+  }
+  
+  .single-flat-card-container h1{
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .card-plan {
+    width:400px;
+    height: 400px;
+  
+  }
+  
+  .plan-flat-container{
+  
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+
+  
+  }
+
+  .plan-flat-container p{
+    margin-top: 10px;
+    color: #d9d9d9;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.3s ease-in;
+  }
+  .single-flat-card-container{
+    padding: 130px 50px 50px 50px;
+    column-gap:50px
+  }
+}
+
+
+@media (max-width: 950px) {
+  .NoDataFound {
+    font-size: 22px;
+    padding: 150px 40px;
+  }
+  .single-flat-card-container{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .single-flat-icon-container {
+    grid-template-columns: repeat(4, 1fr); /* Adjust the icon grid */
+    align-self: center;
+  }
+
+.flat-footer-container{
+  margin-top: 25px;
+  grid-column:auto;
+  grid-row:auto;
+  display: flex;
+  flex-direction: column-reverse;
+  gap:75px;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.plan-flat-container{
+  grid-column:auto;
+  grid-row:auto;
+  justify-self: center; /* Aligns the card to the right border of the grid area */
+  perspective: 1000px;
+  width: 550px;
+  height: 550px;
+  margin-top: 75px;
+  position: relative;
+  display: flex; /* Changed from block to flex for alignment purposes */
+  flex-direction: column;
+  align-items: center; /* Center align the card vertically if needed */
   
 }
+
+.plan-flat-container{
+  
+  width: 500px;
+  height: 500px;
+  margin-top: 25px;
+
+}
+
+.card-plan {
+  width:500px;
+  height: 500px;
+
+}
+
+
+
+}
+
+
+@media (max-width: 650px) {
+  
+  .NoDataFound {
+    font-size: 20px;
+    padding: 120px 30px;
+  }
+  .single-flat-card-container {
+    padding: 40px 30px;
+  }
+  .single-flat-card-container,
+  .flat-text-container,
+  .single-flat-head,
+  .plan-flat-container,
+  .single-flat-icon-container,
+  .flat-icon-item,
+  .room-floor-container,
+  .flat-footer-container {
+    grid-template-columns: 1fr; /* Adjust grid to stack elements vertically */
+  }
+  .plan-flat-container,
+  .card-plan img {
+    width: 90%; /* Adjust width to fit smaller screens */
+    min-width: 0; /* Override min-width if set */
+  }
+  .single-flat-icon-container {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to fewer columns for icon grid */
+  }
+  .flat-text-container ul li,
+  .room-floor-container h6,
+  .room-floor-container h5,
+  .contact-pdf-buttons,
+  .contact-us-button {
+    font-size: 14px; /* Further reduce font size */
+  }
+}
+
+
+@media (max-width: 420px) {
+  .NoDataFound {
+    font-size: 18px;
+    padding: 100px 20px;
+  }
+  .single-flat-card-container {
+    padding: 30px 20px;
+  }
+  .single-flat-card-container h1 {
+    font-size: 50px; /* Scale down headers for very small screens */
+  }
+  .plan-flat-container,
+  .single-flat-icon-container,
+  .flat-icon-item,
+  .room-floor-container,
+  .flat-footer-container {
+    justify-content: center; /* Ensure content is centered */
+    padding: 0 10px; /* Adjust padding for tight spaces */
+  }
+  .plan-flat-container img,
+  .card-plan img {
+    width: 85%; /* Make images responsive to the screen width */
+  }
+  .single-flat-icon-container {
+    grid-template-columns: repeat(2, 1fr); /* Keep icons in two columns */
+  }
+  .flat-text-container,
+  .single-flat-head,
+  .flat-icon-item,
+  .room-floor-container h6,
+  .room-floor-container h5,
+  .contact-pdf-buttons,
+  .contact-us-button {
+    font-size: 12px; /* Minimize font size for readability */
+  }
+  .contact-us-button,
+  .contact-pdf-buttons p {
+    padding: 15px 30px; /* Adjust button sizes for smaller screens */
+  }
+}
+
