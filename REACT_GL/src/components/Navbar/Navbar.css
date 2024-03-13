@@ -253,7 +253,6 @@ display: none;
 
 .navbar.show{
   display: flex;
-  gap: 50px;
   height: 250px;
   justify-content: center;
   text-align: center;
@@ -336,9 +335,7 @@ display: none;
     display: flex;
     font-size: 24px; /* Larger font size for better tap targets */
     padding: 10px;
-    margin-top: -50px;
     border: 2px solid transparent; /* Optional: add a border or change styling as needed */
-
   }
 
 
