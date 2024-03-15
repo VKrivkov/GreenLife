@@ -6,6 +6,8 @@ import SingleFlatCard from './components/pages/SingleFlatCard/SingleFlatCard';
 import SingleFlatGallery from './components/pages/SingleFlatGallery/SingleFlatGallery';
 import Location from './components/pages/Location/Location';
 import GalleryFullPage from './components/pages/GalleryFullPage/GalleryFullPage';
+import './i18n';
+
 
 
 const ScrollToTop = () => {

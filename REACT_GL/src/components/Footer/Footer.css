@@ -59,6 +59,10 @@ a.footer-link{
     color: #f5f5f5; 
 }
 
+.navigation-footer{
+color: #f5f5f5; 
+}
+
 .navigation-footer a{
     margin-bottom: 35px;
     cursor: pointer;

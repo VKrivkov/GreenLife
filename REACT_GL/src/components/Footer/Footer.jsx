@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import "./Footer.css";
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Footer = () => {
   const location = useLocation();
@@ -49,6 +50,7 @@ const Footer = () => {
           <p>Privacy policy</p>
           <p>Terms & Conditions</p>
           <p className='Rights'>© 2024, All rights reserved</p>
+          <LanguageSwitcher/>
         </div>
       </div>
     </div>

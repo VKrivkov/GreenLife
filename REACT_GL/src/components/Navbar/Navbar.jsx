@@ -5,6 +5,7 @@ import GreenLifetext from '../../assets/GreenLifetext.svg'; // make sure the pat
 import Logo from '../../assets/Logo.png'; // make sure the path is correct
 import BurgerIcon from '../../assets/BurgerIcon.svg'; // Path to burger menu icon
 import CloseIcon from '../../assets/CloseIcon.svg'; // Path to close menu icon
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -14,6 +15,7 @@ import {Link} from "react-router-dom"
 const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { t } = useTranslation();
   
     const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
@@ -70,16 +72,16 @@ const Navbar = () => {
         <img src={GreenLifetext} alt="GreenLife Perivolia" className="navbar-text" />
       </div>
       <div className='navbar-label'>
-        <p>The best way to be healthy is to be happy</p>
+        <p>{t('navbar.Slogan')}</p>
       </div>
       <div className={`navbar-center ${isMenuOpen ? "show" : ""}`}>
-        <a onClick={() => scrollToSection('about-section')} className="nav-link">About</a>
-        <a onClick={() => scrollToSection('gallery-section')} className="nav-link">Gallery</a>
-        <a onClick={() => scrollToSection('units-section')} className="nav-link">Apartments</a>
-        <a onClick={() => scrollToSection('benefits-section')} className="nav-link">Benefits</a>
+        <a onClick={() => scrollToSection('about-section')} className="nav-link">{t('navbar.About')}</a>
+        <a onClick={() => scrollToSection('gallery-section')} className="nav-link">{t('navbar.Gallery')}</a>
+        <a onClick={() => scrollToSection('units-section')} className="nav-link">{t('navbar.Apartments')}</a>
+        <a onClick={() => scrollToSection('benefits-section')} className="nav-link">{t('navbar.Benefits')}</a>
       </div>
       <div className={`navbar-side ${isMenuOpen ? "show" : ""}`}>
-        <Link to="/contact" className="contact-us">Contact Us</Link>
+        <Link to="/contact" className="contact-us">{t('navbar.ContactUs')}</Link>
       </div>
       <div className="burger-menu" onClick={toggleMenu}>
         <img src={isMenuOpen ? CloseIcon : BurgerIcon} alt="Menu" className="menu-icon" />

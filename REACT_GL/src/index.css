@@ -14,4 +14,16 @@ html, body {
   
 
 
+  /* Reset and base styles  */
+  /* Links */
   
+  a, a:link, a:visited  {
+      text-decoration: none;
+      color: var(--text-color);
+  }
+  
+  a:hover  {
+      text-decoration: none;
+  }
+  
+ 

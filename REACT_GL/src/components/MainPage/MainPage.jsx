@@ -3,6 +3,7 @@ import './MainPage.css'; // Make sure to create a CSS file for styling.
 
 const MainPage = () => {
 
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (!section) return;
