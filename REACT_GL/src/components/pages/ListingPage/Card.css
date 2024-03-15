@@ -59,7 +59,7 @@
       width: 100%; /* Span the full width of the card */
       background-color: #66952F;
       color: white;
-      padding: 13px 30px;
+      padding: 13px 15px;
       display: flex;
       justify-content: space-between;
     }

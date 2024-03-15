@@ -173,9 +173,3 @@
     }
 }
 
-
-@media (max-width:360px){
-    .one-section, .two-section, .three-section {
-        margin-left: 130px;
-    }
-}

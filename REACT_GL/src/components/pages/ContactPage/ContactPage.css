@@ -218,14 +218,6 @@
         margin-bottom: 80px;
  
       }
-
-      .contact-section{
-        padding-top: 120px;
-        padding-bottom: 80px;
- 
-    
-      }
-    
   .contact-form2 input,
   .contact-form2 textarea,
   .contact-form2 button {
@@ -240,7 +232,7 @@
   }
 
     .contact-form2 {
-        margin-top: 80px;
+        margin-top: 180px;
         max-width: 600px;
         padding: 50px;
       }

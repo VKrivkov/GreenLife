@@ -8,7 +8,6 @@ import CloseIcon from '../../assets/CloseIcon.svg'; // Path to close menu icon
 import { useTranslation } from 'react-i18next';
 
 
-
 import {Link} from "react-router-dom"
 
 
@@ -24,6 +23,7 @@ const Navbar = () => {
   const handleLogoClick = () => {
     // This will send the user to the homepage and reload the page
     window.location.href = '/';
+    
   };
 
   const scrollToSection = (sectionId) => {

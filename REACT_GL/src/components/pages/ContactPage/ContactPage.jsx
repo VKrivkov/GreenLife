@@ -1,9 +1,12 @@
 import React, { useState }  from 'react'
 import './ContactPage.css'
+import { useTranslation } from 'react-i18next';
+
 
 function ContactPage() {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { t } = useTranslation();
 
 
   const handleInvalid = (e) => {
@@ -13,19 +16,19 @@ function ContactPage() {
     if (!e.target.validity.valid) {
       switch (fieldName) {
         case 'email':
-          message = 'Please enter a valid email address.';
+          message = t("contact.errors.validEmail");
           break;
         case 'firstName':
-          message = 'Please enter your first name.';
+          message = t("contact.errors.firstName");
           break;
         case 'lastName':
-          message = 'Please enter your last name.';
+          message = t("contact.errors.lastName");
           break;
         case 'phoneNumber':
-          message = 'Please enter a valid phone number.';
+          message = t("contact.errors.phoneNumber");
           break;
         default:
-          message = 'This field is required.';
+          message = t("contact.errors.requiredField");
       }
     }
     setFormErrors({ ...formErrors, [fieldName]: message });
@@ -106,14 +109,14 @@ function ContactPage() {
   return (
     <div className="contact-form-container">
       <div className="contact-info">
-        <h2>Get in touch</h2>
-        <h6>Discover the epitome of sustainable luxury at GreenLife, nestled in the serene beauty of Pervolia, Cyprus..</h6>
-        <p><strong>Address:</strong> 545 Mavis Island, Chicago, IL 99191</p>
-        <p><strong>Phone:</strong> +1 (555) 234-5678</p>
-        <p><strong>Email:</strong> hello@example.com</p>
+        <h2>{t('contactInfo.getInTouch')}</h2>
+        <h6>{t('contactInfo.description')}</h6>
+        <p><strong>{t('contactInfo.a')}</strong> {t('contactInfo.address')}</p>
+        <p><strong>{t('contactInfo.p')}</strong> {t('contactInfo.phone')}</p>
+        <p><strong>{t('contactInfo.e')}</strong> {t('contactInfo.email')}</p>
       </div>
       <form  className="contact-form2" onSubmit={handleSubmit}>
-        <div className="input-row">
+      <div className="input-row">
           <div>
             <input
               type="text"
@@ -122,7 +125,7 @@ function ContactPage() {
               onChange={handleChange}
               className={formErrors.firstName ? 'invalid' : ''}
               onInvalid={handleInvalid} // Add this prop to all inputs
-              placeholder="First name*"
+              placeholder={t('contact.firstNamePlaceholder')}
               required
               title="Please enter your first name."
             />
@@ -137,7 +140,7 @@ function ContactPage() {
             onChange={handleChange}
             className={formErrors.lastName ? 'invalid' : ''}
             onInvalid={handleInvalid} // Add this prop to all inputs
-            placeholder="Last name*"
+            placeholder={t('contact.lastNamePlaceholder')}
             required
             title="Please enter your last name."
           />
@@ -152,7 +155,7 @@ function ContactPage() {
           onChange={handleChange}
           className={formErrors.email ? 'invalid' : ''}
           onInvalid={handleInvalid} // Add this prop to all inputs
-          placeholder="blank@example.com*"
+          placeholder={t('contact.emailPlaceholder')}
           required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         />
@@ -167,7 +170,7 @@ function ContactPage() {
           className={formErrors.phoneNumber ? 'invalid' : ''}
           onInvalid={handleInvalid} // Add this prop to all inputs
 
-          placeholder="+1234567890*"
+          placeholder={t('contact.phoneNumberPlaceholder')}
           required
           title="Please enter your phone number."
           pattern="\+?[0-9]{7,15}"
@@ -181,21 +184,21 @@ function ContactPage() {
           name="time"
           value={formData.time}
           onChange={handleChange}
-          placeholder="When should we call?"
+          placeholder={t('contact.callTimePlaceholder')}
         />
 
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Message"
+          placeholder={t('contact.messagePlaceholder')}
 
         ></textarea>
 
-        <p>By sending this form, you agree to our privacy policy.</p>
+        <p>{t('contact.privacyPolicy')}</p>
 
-        <button type="submit" className="submit-button">SEND A REQUEST</button>
-        {isSubmitted && <div className="success-popup">Your request is sent. </div>}
+        <button type="submit" className="submit-button">{t('contact.submitButton')}</button>
+        {isSubmitted && <div className="success-popup"> {t('contact.successMessage')} </div>}
 
       </form>
     </div>

@@ -1,0 +1,98 @@
+/* LanguageSelector.css */
+.language-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #ffffff;
+    height: auto; /* Adjust as needed or remove if content dictates height */
+    position: fixed; /* Fixed position relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the element by its own dimensions */
+    border-radius: 15px;
+    z-index: 1000; /* Ensure it's above other elements */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    backdrop-filter: blur(80px); /* Blur effect for the background */
+    border: 1px solid #fff; /* White border */
+    padding: 0 50px 0 50px;
+    
+  }
+
+  .language-selector-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    z-index: 999; /* just below the language selector */
+  }
+  
+  
+
+  .language-selector h2{
+    margin-top: 50px;
+    margin-bottom: 35px;
+    font-size: 26px;
+    font-weight: 500px;
+    color: #090909;
+    text-align: center;
+  }
+
+  .language-selector-content {
+    justify-items: center;
+
+  }
+
+  .language-option{
+    justify-self: center;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    height: 45px;
+    border: 1px solid #c1c1c1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+
+  }
+
+  .language-option:hover{
+    border-color: #ffff;
+    background-color: #66952F;
+    color: #fff;
+  }
+
+
+  .language-option img{
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 15%;
+    margin-left: 5px;
+    border: 1px solid #d9d9d9;
+
+
+  }
+  
+  .close-button {
+    align-self: center; /* Aligns the close button itself to the center horizontally */
+  width: 100%; /* Take up the full width to center the text inside the button */
+  text-align: center; /* Centers the text inside the button */
+  margin-top: 15px;
+  margin-bottom: 50px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #66952F; /* Adjust the color value to match the desired shade of green */
+  cursor: pointer;
+  }
+  

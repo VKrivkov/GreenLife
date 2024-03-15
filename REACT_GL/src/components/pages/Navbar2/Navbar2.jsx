@@ -37,7 +37,7 @@ const Navbar2 = () => {
         <p>{t('navbar.Slogan')}</p>
       </div>
       <div className="nav2-links">
-        <Link to="/contact" className="contact-us2">Contact Us</Link>
+        <Link to="/contact" className="contact-us2">{t('navbar.ContactUs')}</Link>
       </div>
     </nav>
   );

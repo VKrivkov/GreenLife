@@ -108,6 +108,48 @@
         "description": "Company GreenLife extends its commitment to the well-being of its residents by offering access to an exclusive indoor pool. This facility is designed to engage in a healthy, active lifestyle regardless of the season."
       },
       "noDataFound": "No pictures available. Please go back to the main page."
+    },
+
+    "contactInfo": {
+      "getInTouch": "Get in touch",
+      "description": "Discover the epitome of sustainable luxury at GreenLife, nestled in the serene beauty of Pervolia, Cyprus.",
+      "address": "545 Mavis Island, Chicago, IL 99191",
+      "phone": "+1 (555) 234-5678",
+      "email": "hello@example.com",
+      "a": "Address: ",
+      "p": "Phone: ",
+      "e": "Email: "
+    },
+
+    "singleFlat": {
+      "totalArea": "Total area",
+      "floor": "floor",
+      "parkViews": "Park views",
+      "privateVeranda": "Private Veranda",
+      "rooftopGarden": "Rooftop Garden",
+      "seaView": "Sea View",
+      "floorHeating": "Floor Heating",
+      "energyEfficiency": "Energy Efficiency",
+      "securitySystem": "Security System",
+      "livingArea": "Living area: ",
+      "balkonySpace": ", balcony space: ", 
+      "storage": ", personal storage: ",
+      "parkingSpotIncluded": "One on-ground parking spot is included in the price of the apartment",
+      "solarPanelsInstallation": "Solar panels installation for an added cost of 5,000 USD.",
+      "price": "Price",
+      "contactUs": "Contact Us",
+      "viewPDF": "View PDF",
+      "clickToFlip": "Click to flip the card"
+    },
+    
+    "room": {
+      "singular": "Room",
+      "plural": "Rooms"
+    },
+
+    "singleFlatGallery": {
+      "viewsAndLocation": "Views and Location",
+      "description": "Explore GreenLife's gallery: elegant interiors that speak comfort, stunning exteriors blending with nature, and captivating views that promise tranquility. Experience the luxury of living here through each carefully curated image."
     }
     
   }

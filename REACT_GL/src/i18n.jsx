@@ -4,8 +4,7 @@ import translationEN from './locales/en.json';
 import translationGR from './locales/gr.json';
 import translationRU from './locales/ru.json';
 
-
-// the translations
+// The translations
 const resources = {
   en: {
     translation: translationEN,
@@ -18,13 +17,17 @@ const resources = {
   },
 };
 
+// Attempt to retrieve the saved language preference
+const savedLanguage = localStorage.getItem('language') || 'en'; // Default to English if no preference found
+
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next) // Passes i18n down to react-i18next
   .init({
     resources,
-    lng: "en", // language to use, can be changed to "gr" or "ru" as needed
+    lng: savedLanguage, // Use the saved language or default to 'en'
+    fallbackLng: 'en', // Fallback language
     interpolation: {
-      escapeValue: false, // react already safes from xss
+      escapeValue: false, // React already safeguards from XSS
     },
   });
 

@@ -4,12 +4,13 @@ import './ListingPage.css';
 import { Link } from "react-router-dom";
 import { flatarray } from '../flatarray';'../flatarray.js'
 
+import { useTranslation } from 'react-i18next';
 
 
 
 export const ListingPage = () => {
 
-    
+    const { t } = useTranslation();
 
     const scrollToSection = (sectionId) => {        
         const section = document.getElementById(sectionId);
@@ -53,9 +54,9 @@ export const ListingPage = () => {
     return (
         <div className='listing-page-container'>
             <div className='selector-nav-container'>
-                <a onClick={() => scrollToSection('one-section')} className="selector-link">One Bedroom</a>
-                <a onClick={() => scrollToSection('two-section')} className="selector-link">Two Bedrooms</a>
-                <a onClick={() => scrollToSection('three-section')} className="selector-link">Three Bedrooms</a>
+                <a onClick={() => scrollToSection('one-section')} className="selector-link">{t('units.oneBedroom')}</a>
+                <a onClick={() => scrollToSection('two-section')} className="selector-link">{t('units.twoBedrooms')}</a>
+                <a onClick={() => scrollToSection('three-section')} className="selector-link">{t('units.threeBedrooms')}</a>
             </div>
             <div className='cards-array'>
                 <div id='one-section' className='one-section'>

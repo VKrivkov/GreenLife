@@ -1,0 +1,12 @@
+.LanguageSwitcher{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: Inter;
+}
+
+.LanguageSwitcher button{
+    border: 1px solid #c1c1c1;
+    border-radius: 3px;
+    font-size: 16px;
+}
