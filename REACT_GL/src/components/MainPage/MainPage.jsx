@@ -1,10 +1,13 @@
 import React from 'react';
 import './MainPage.css'; // Make sure to create a CSS file for styling.
+import { useTranslation } from 'react-i18next';
 
 const MainPage = () => {
 
+  const { t } = useTranslation();
 
   const scrollToSection = (sectionId) => {
+
     const section = document.getElementById(sectionId);
     if (!section) return;
   
@@ -50,7 +53,7 @@ const MainPage = () => {
         <span className="green-text">GREEN</span>
         <span className="regular-text">LIFE</span>
       </div>
-      <a onClick={() => scrollToSection('contact-section')} className="request-link">REQUEST A CALL</a>
+      <a onClick={() => scrollToSection('contact-section')} className="request-link">{t('navbar.request')}</a>
         {/* The image would be set as a background image in the CSS for the hero-section */}
       <div className="scroll-indicator">
         <p className='ScrollText'>SCROLL DOWN</p>
