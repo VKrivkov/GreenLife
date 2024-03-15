@@ -3,6 +3,8 @@ import './Navbar2.css'; // Ensure you have a corresponding CSS file
 import GreenLifetext from '../../../assets/GreenLifetext.svg'; // make sure the path is correct
 import Logo from '../../../assets/Logo.png'; // make sure the path is correct
 import ArrowBack from '../../../assets/ArrowBack.svg'; // make sure the path is correct
+import { useTranslation } from 'react-i18next';
+
 
 import {Link, useNavigate} from "react-router-dom"
 
@@ -20,7 +22,8 @@ const Navbar2 = () => {
         navigate(-1);
       };
     
-      
+      const { t } = useTranslation();
+
   return (
     <nav className="navbar2">
       <div className= 'nav2-left-side'>
@@ -31,7 +34,7 @@ const Navbar2 = () => {
         </div>
       </div>
       <div className='nav2-label'>
-        <p>The best way to be healthy is to be happy</p>
+        <p>{t('navbar.Slogan')}</p>
       </div>
       <div className="nav2-links">
         <Link to="/contact" className="contact-us2">Contact Us</Link>

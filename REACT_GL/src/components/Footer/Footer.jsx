@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import "./Footer.css";
-import LanguageSwitcher from './LanguageSwitcher'
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Footer = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   React.useEffect(() => {
     const sectionId = location.hash.replace('#', '');
@@ -14,7 +16,6 @@ const Footer = () => {
   }, [location]);
 
   const handleLogoClick = () => {
-    // This will send the user to the homepage. The page will not reload, but React Router will handle the navigation.
     window.history.pushState({}, '', '/');
   };
 
@@ -29,28 +30,27 @@ const Footer = () => {
     <div className='footer-container'>
       <div className='footer-first-level'>
         <div onClick={handleLogoClick} className='company-container'>
-          <h5>GREENLIFE</h5>
-          <h6>PERVOLIA</h6>
-          <p>ZYRBAGAN RESIDENCES LTD</p>
+          <h5>{t('footer.companyName')}</h5>
+          <h6>{t('footer.location')}</h6>
+          <p>{t('footer.companyInfo')}</p>
         </div>
         <div className='contact-info-container'>
-          <h6>Contact us</h6>
-          <p>T: +352111111111</p>
-          <p>E: blank.email@greenlife.com</p>
-          <p>A: Cyprus, Pervolia, Fictional address 8, CY-123913</p>
+          <h6>{t('footer.contactUs')}</h6>
+          <p>{t('footer.telephone')}</p>
+          <p>{t('footer.email')}</p>
+          <p>{t('footer.address')}</p>
         </div>
         <div className='navigation-footer'>
-          {/* Using Link from react-router-dom with a hash to indicate the section */}
-          <Link to="/#about-section" className="footer-link">About</Link>
-          <Link to="/#gallery-section" className="footer-link">Gallery</Link>
-          <Link to="/#units-section" className="footer-link">Apartments</Link>
-          <Link to="/#benefits-section" className="footer-link">Benefits</Link>
+          <Link to="/#about-section" className="footer-link">{t('footer.about')}</Link>
+          <Link to="/#gallery-section" className="footer-link">{t('footer.gallery')}</Link>
+          <Link to="/#units-section" className="footer-link">{t('footer.apartments')}</Link>
+          <Link to="/#benefits-section" className="footer-link">{t('footer.benefits')}</Link>
         </div>
         <div className='nobody-reads-container'>
-          <p>Privacy policy</p>
-          <p>Terms & Conditions</p>
-          <p className='Rights'>© 2024, All rights reserved</p>
-          <LanguageSwitcher/>
+          <p>{t('footer.privacyPolicy')}</p>
+          <p>{t('footer.termsConditions')}</p>
+          <p className='Rights'>{t('footer.rights')}</p>
+          <LanguageSwitcher />
         </div>
       </div>
     </div>

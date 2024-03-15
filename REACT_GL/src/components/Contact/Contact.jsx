@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
-import "./Contact.css"
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import "./Contact.css";
+
 
 const Contact = () => {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const { t } = useTranslation();
 
   const handleInvalid = (e) => {
     e.preventDefault(); // Prevent the browser from showing default error bubble / hint
@@ -13,19 +16,19 @@ const Contact = () => {
     if (!e.target.validity.valid) {
       switch (fieldName) {
         case 'email':
-          message = 'Please enter a valid email address.';
+          message = t("contact.errors.validEmail");
           break;
         case 'firstName':
-          message = 'Please enter your first name.';
+          message = t("contact.errors.firstName");
           break;
         case 'lastName':
-          message = 'Please enter your last name.';
+          message = t("contact.errors.lastName");
           break;
         case 'phoneNumber':
-          message = 'Please enter a valid phone number.';
+          message = t("contact.errors.phoneNumber");
           break;
         default:
-          message = 'This field is required.';
+          message = t("contact.errors.requiredField");
       }
     }
     setFormErrors({ ...formErrors, [fieldName]: message });
@@ -102,10 +105,10 @@ const Contact = () => {
     }
   };
   
-  return (
+   return (
     <div id = 'contact-section' className='contact-section'> 
 
-      <h2 className='headline-contact'>Contact Us</h2>
+      <h2 className='headline-contact'>{t('contact.headline')}</h2>
 
       <form  className="contact-form" onSubmit={handleSubmit}>
         <div className="input-row">
@@ -117,7 +120,7 @@ const Contact = () => {
               onChange={handleChange}
               className={formErrors.firstName ? 'invalid' : ''}
               onInvalid={handleInvalid} // Add this prop to all inputs
-              placeholder="First name*"
+              placeholder={t('contact.firstNamePlaceholder')}
               required
               title="Please enter your first name."
             />
@@ -132,7 +135,7 @@ const Contact = () => {
             onChange={handleChange}
             className={formErrors.lastName ? 'invalid' : ''}
             onInvalid={handleInvalid} // Add this prop to all inputs
-            placeholder="Last name*"
+            placeholder={t('contact.lastNamePlaceholder')}
             required
             title="Please enter your last name."
           />
@@ -147,7 +150,7 @@ const Contact = () => {
           onChange={handleChange}
           className={formErrors.email ? 'invalid' : ''}
           onInvalid={handleInvalid} // Add this prop to all inputs
-          placeholder="blank@example.com*"
+          placeholder={t('contact.emailPlaceholder')}
           required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         />
@@ -162,7 +165,7 @@ const Contact = () => {
           className={formErrors.phoneNumber ? 'invalid' : ''}
           onInvalid={handleInvalid} // Add this prop to all inputs
 
-          placeholder="+1234567890*"
+          placeholder={t('contact.phoneNumberPlaceholder')}
           required
           title="Please enter your phone number."
           pattern="\+?[0-9]{7,15}"
@@ -176,21 +179,21 @@ const Contact = () => {
           name="time"
           value={formData.time}
           onChange={handleChange}
-          placeholder="When should we call?"
+          placeholder={t('contact.callTimePlaceholder')}
         />
 
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Message"
+          placeholder={t('contact.messagePlaceholder')}
 
         ></textarea>
 
-        <p>By sending this form, you agree to our privacy policy.</p>
+        <p>{t('contact.privacyPolicy')}</p>
 
-        <button type="submit" className="submit-button">SEND A REQUEST</button>
-        {isSubmitted && <div className="success-popup">Your request is sent. </div>}
+        <button type="submit" className="submit-button">{t('contact.submitButton')}</button>
+        {isSubmitted && <div className="success-popup"> {t('contact.successMessage')} </div>}
 
       </form>
     </div>   

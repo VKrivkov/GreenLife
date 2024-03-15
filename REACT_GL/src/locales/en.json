@@ -6,6 +6,111 @@
       "Apartments": "Apartments",
       "Benefits": "Benefits",
       "ContactUs": "Contact Us"
+    },
+
+    "about": {
+      "headline": "About the project",
+      "li1": "Beautiful location with a park and a playground",
+      "li2": "Proximity to the sea: ",
+      "li3": "Proximity to the supermarket: ",
+      "li4": "Proximity to the school and kindergarten: ",
+      "li5": "Utilizing solar energy with 340 sunny days for comfort and economy",
+      "li6": "Sea view apartments from the 2nd floor",
+      "li7": "Premium construction quality",
+      "meters": "meters",
+      "location": "Pervolia, Cyprus",
+      "solarPanels": "Solar Panels",
+      "privateGym": "Private Gym",
+      "advancedSecurity": "Advanced Security",
+      "indoorPool": "Indoor Pool",
+      "chargingStations": "Charging Stations"
+    },
+
+    "gallery": {
+      "headline": "Gallery",
+      "welcome": "Welcome to GreenLife",
+      "description": "Explore our carefully selected gallery to get a glimpse of the exceptional living experience at GreenLife. Each image showcases the essence of our upscale apartments, contemporary comforts, and sustainable living."
+    },
+
+    "units": {
+      "headline": "Apartments",
+      "description": "Select the perfect apartment that aligns with your preferences, needs, and budget. Our range includes 1 to 3-bedroom options.",
+      "oneBedroom": "One Bedroom",
+      "twoBedrooms": "Two Bedrooms",
+      "threeBedrooms": "Three Bedrooms",
+      "startingFrom": "Starting from",
+      "showApartments": "Show Apartments"
+    },
+
+    "benefits": {
+      "headline": "Benefits",
+      "subHeadline": "Discover the unparalleled advantages of living at GreenLife",
+      "constructionQuality": "Construction Quality",
+      "qualityDescription": "Our buildings are known for their exceptional quality. We focus on durability and design, ensuring every detail is crafted to perfection.",
+      "leveragingSolarPanels": "Leveraging Solar Panels",
+      "solarDescription": "Solar panels offer more than environmental advantages; they significantly ease the utilization of existing infrastructure, such as a pool and a gym, due to considerable reductions in electricity costs, enhancing operational efficiency.",
+      "communitySpaces": "Community Spaces",
+      "communityDescription": "Our neighborhood features charming paths and a large park, with no further construction to preserve its tranquility."
+    },
+
+    "contact": {
+      "headline": "Contact Us",
+      "firstNamePlaceholder": "First name*",
+      "lastNamePlaceholder": "Last name*",
+      "emailPlaceholder": "blank@example.com*",
+      "phoneNumberPlaceholder": "+1234567890*",
+      "callTimePlaceholder": "When should we call?",
+      "messagePlaceholder": "Message",
+      "privacyPolicy": "By sending this form, you agree to our privacy policy.",
+      "submitButton": "SEND A REQUEST",
+      "successMessage": "Your request is sent.",
+      "errors": {
+        "validEmail": "Please enter a valid email address.",
+        "firstName": "Please enter your first name.",
+        "lastName": "Please enter your last name.",
+        "phoneNumber": "Please enter a valid phone number.",
+        "requiredField": "This field is required."
+      }
+    },
+
+    "footer": {
+      "companyName": "GREENLIFE",
+      "location": "PERVOLIA",
+      "companyInfo": "ZYRBAGAN RESIDENCES LTD",
+      "contactUs": "Contact us",
+      "telephone": "T: +352111111111",
+      "email": "E: blank.email@greenlife.com",
+      "address": "A: Cyprus, Pervolia, Fictional address 8, CY-123913",
+      "about": "About",
+      "gallery": "Gallery",
+      "apartments": "Apartments",
+      "benefits": "Benefits",
+      "privacyPolicy": "Privacy policy",
+      "termsConditions": "Terms & Conditions",
+      "rights": "© 2024, All rights reserved"
+    },
+
+    "galleryFullPage": {
+      "location": {
+        "title": "Location",
+        "description": "Nestled in the heart of Pervolia, just a stone's throw from the historical city of Larnaca, GreenLife offers an exclusive enclave of 19 meticulously designed premium apartments. GreenLife is more than a residence; it's a commitment to a greener future and a nod to the historical richness of Pervolia."
+      },
+      "gym": {
+        "title": "Private Gym",
+        "description": "Company GreenLife offers its residents access to a private gym. The private gym is equipped with state-of-the-art fitness equipment, catering to a wide range of preferences and fitness levels. From cardio machines to free weights, resistance training equipment, and dedicated areas for yoga and stretching."
+      },
+      "solarPanels": {
+        "title": "Solar Panels",
+        "description": "Solar panels offer more than environmental advantages; they significantly ease the utilization of existing infrastructure, such as a pool and a gym, due to considerable reductions in electricity costs, enhancing operational efficiency."
+      },
+      "pool": {
+        "title": "Indoor Pool",
+        "description": "Company GreenLife extends its commitment to the well-being of its residents by offering access to an exclusive indoor pool. This facility is designed to engage in a healthy, active lifestyle regardless of the season."
+      },
+      "noDataFound": "No pictures available. Please go back to the main page."
     }
+    
   }
+
+
   
