@@ -27,6 +27,9 @@ const App = () => {
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
 
   useEffect(() => {
+
+    console.log(localStorage.getItem('language'))
+
     // Immediately hide the language selector if a language is already set
     if (localStorage.getItem('language')) {
       setShowLanguageSelector(false);
