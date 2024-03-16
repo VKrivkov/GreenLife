@@ -11,6 +11,7 @@ const LanguageSelector = ({ onClose }) => {
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
+    localStorage.setItem('language', language); // Save the selected language
     onClose(); // Call the onClose function passed as a prop to hide the language selector
   };
 
