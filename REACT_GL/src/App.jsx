@@ -37,18 +37,7 @@ const App = () => {
       // Show the language selector if no language is set
       setShowLanguageSelector(true);
     }
-
-    // Function to block horizontal scrolling
-    const blockHorizontalScroll = (e) => {
-      window.scrollTo(0, window.scrollY);
-    };
-
-    // Add event listener when component mounts
-    window.addEventListener('wheel', blockHorizontalScroll, { passive: false });
-
-    // Cleanup event listener when component unmounts
-    return () => window.removeEventListener('wheel', blockHorizontalScroll, { passive: false });
-  }, []); // Empty dependency array ensures this effect runs only on mount and unmount
+  }); // Empty dependency array ensures this effect runs only on mount and unmount
 
   return (
     <Router>
