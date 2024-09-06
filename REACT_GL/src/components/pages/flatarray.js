@@ -3,6 +3,8 @@ import oneroom1 from '../../assets/1room1.jpg';
 import oneroom2 from '../../assets/1room2.jpg';
 import oneroom3 from '../../assets/1room3.jpg';
 import oneroom4 from '../../assets/1room4.jpg';
+import oneroom5 from '../../assets/1room5.jpg';
+
 import tworoom1 from '../../assets/2room1.jpg';
 import tworoom2 from '../../assets/2room2.jpg';
 import tworoom3 from '../../assets/2room3.jpg';
@@ -15,6 +17,10 @@ import threeroom5 from '../../assets/3room5.jpg';
 
 //general plan images
 import plan1room1 from '../../assets/Wholeplan1room1.png';
+import plan1room2 from '../../assets/Wholeplan1room2.png';
+import plan1room3 from '../../assets/Wholeplan1room3.png';
+import plan1room4 from '../../assets/Wholeplan1room4.png';
+import plan1room5 from '../../assets/Wholeplan1room5.png';
 
 
 //flat interior pictures
@@ -35,10 +41,11 @@ import {photos} from './photos.js';
 
 
 const flatarray = [
-    ['', '1', '43,4', oneroom1, '123,456 EUR', '1', plan1room1, photos[0]],
-    ['veranda', '1', '45,4', oneroom2, '123,456 EUR', '2', plan1room1, photos[1]],
-    ['sea view', '1', '45,6', oneroom3, '123,456 EUR', '3', plan1room1, photos[2]],
-    ['rooftop', '1', '50,1', oneroom4, '123,456 EUR', '1', plan1room1, photos[3]],
+    ['', '1', '45', oneroom1, '123,456 EUR', '1', plan1room1, photos[0]],
+    ['veranda', '1', '54', oneroom2, '123,456 EUR', '1', plan1room2, photos[1]],
+    ['sea view', '1', '56', oneroom3, '123,456 EUR', '1', plan1room3, photos[2]],
+    ['rooftop', '1', '54', oneroom4, '123,456 EUR', '2', plan1room4, photos[3]],
+    ['rooftop', '1', '56', oneroom5, '123,456 EUR', '2', plan1room5, photos[3]],
     ['rooftop', '2', '61,7', tworoom1, '123,456 EUR', '2', plan1room1, photos[4]],
     ['rooftop', '2', '62,0', tworoom2, '123,456 EUR', '3', plan1room1, photos[5]],
     ['sea view', '2', '62,8', tworoom3, '123,456 EUR', '2', plan1room1, photos[6]],
