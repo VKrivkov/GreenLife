@@ -72,7 +72,7 @@ export const ListingPage = () => {
                     ))}
                 </div>
                 <div id='two-section' className='two-section'>
-                    {flatarray.slice(5, 10).map((flat, index) => (
+                    {flatarray.slice(5, 13).map((flat, index) => (
                         <Link key={`two-${index}`} to={ `/single-flat-card/${4+index}` } className="card-link">
                             <Card 
                                 title={flat[0]} 
@@ -84,7 +84,7 @@ export const ListingPage = () => {
                     ))}
                 </div>
                 <div id='three-section' className='three-section'>
-                    {flatarray.slice(8).map((flat, index) => (
+                    {flatarray.slice(13).map((flat, index) => (
                         <Link key={`three-${index}`} to={ `/single-flat-card/${8+index}` } className="card-link">
                             <Card 
                                 title={flat[0]} 

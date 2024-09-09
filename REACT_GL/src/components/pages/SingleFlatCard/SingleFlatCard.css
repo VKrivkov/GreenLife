@@ -197,7 +197,6 @@
   border: 1px #090909 solid;
   transition: border 0.2s linear;
   transition: box-shadow 0.2s linear;
-  box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
 
 }
 
