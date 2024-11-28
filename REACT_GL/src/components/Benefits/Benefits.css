@@ -116,7 +116,6 @@
     font-size: 20px;
     width: 300px;
     margin: 0px;
-    letter-spacing: 110%;
   }
 
 
@@ -124,7 +123,6 @@
   .solars-container p{
     font-size: 20px;
     margin: 0px;
-    letter-spacing: 110%;
   }
 
   .quality-container img, .community-container img {
