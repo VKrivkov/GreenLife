@@ -9,6 +9,7 @@ import GalleryFullPage from './components/pages/GalleryFullPage/GalleryFullPage'
 import LanguageSelector from './components/LanguageSelectorPopup/LanguageSelectorPopup';
 
 import './i18n';
+import { Company } from './components/Company/Company';
 
 
 
@@ -49,6 +50,8 @@ const App = () => {
           <>
             <Navbar />
             <MainPage />
+            <Company/>
+            <GalleryFullPage/>
             <About />
             <Gallery />
             <Units />

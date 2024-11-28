@@ -21,14 +21,15 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 75px;
+    padding-bottom: 0px;
   }
 
   .gym-gallery h1, .pool-gallery h1, .location-gallery h1, .solar-panels-gallery h1{
-    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-family: Brygada1918, serif; /* Replace with the font of your choice */
+    text-transform: uppercase;
     font-size: 50px;
     font-weight: 300;
-    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
     margin-top: 0px;
     margin-bottom: 50px;
   }
@@ -48,7 +49,6 @@
   .gym-gallery, .pool-gallery, .location-gallery, .solar-panels-gallery{
     padding-top: 160px;
    
-    padding-bottom: 60px;
   }
 
   .gym-gallery h1, .pool-gallery h1, .location-gallery h1, .solar-panels-gallery h1{

@@ -18,10 +18,12 @@
  
   }
   .contact-info h2{
-    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-family: Brygada1918, serif; /* Replace with the font of your choice */
+    text-transform: uppercase;
+    
     font-size: 80px;
     font-weight: 400;
-    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
     text-align: left;
     margin-top: 0px;
     margin-bottom: 75px;
@@ -72,10 +74,12 @@
  
   .headline-contact{
     text-align: center;
-    font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
+    font-family: Brygada1918, serif; /* Replace with the font of your choice */
+    text-transform: uppercase;
+    
     font-size: 50px;
     font-weight: 300;
-    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
     margin-bottom: 75px;
     margin-top: 0;
   }
@@ -114,7 +118,7 @@
 
   .contact-form2 input:focus,
 .contact-form2 textarea:focus {
-  outline-color: #66952F;
+  outline-color: #B3A57C;
 }
 
 
@@ -129,7 +133,7 @@
 
   
   .submit-button {
-    background-color: #66952F;
+    background-color: #B3A57C;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -142,15 +146,15 @@
 }
 
 .contact-form2 input [type = 'checkbox']{
-    color: #66952F;
-    accent-color : #66952F;
+    color: #B3A57C;
+    accent-color : #B3A57C;
 }
 
 
   
   .submit-button:hover {
-    box-shadow: 0 0px 30px rgb(102, 149, 47, 0.5); 
-}
+    box-shadow: 0 0px 30px rgb(179, 165, 125, 0.5); 
+  }
 
 
   /* Invalid input field */
@@ -192,7 +196,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #f5f5f5;
-  color: #66952F;
+  color: #B3A57C;
   padding: 50px 100px 50px 100px;
   border-radius: 15px;
   z-index: 1000; 

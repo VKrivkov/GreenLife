@@ -1,7 +1,19 @@
 {
+
+    "company":{
+      "headline": "Welcome to Zyrbagan Residences LTD",
+      "p1": "At Zyrbagan Residences LTD, we specialize in creating exceptional residential projects that combine luxury, sustainability, and timeless design. Based in Cyprus, our company is dedicated to delivering homes that inspire and elevate the living experience. Each of our developments reflects a commitment to quality, innovation, and the perfect balance of comfort and elegance, providing lasting value for our residents.", 
+      "p2": "Over the years, we have established a strong reputation for excellence through our premium developments and partnerships with leading design firms. One of our most valued collaborations is with Porto Buro, a renowned architectural and design studio. Known for their timeless aesthetic and modern classical style, Porto Buro’s designs seamlessly integrate elegance and functionality.",
+      "p3": "Together with Porto Buro, we have successfully delivered projects like:", 
+      "li1": "an exclusive collection of luxury homes that showcase meticulous craftsmanship and stylish design",
+      "li2": "where every detail is thoughtfully curated to provide a sophisticated, yet comfortable living experience.",
+      "p4" : "With Park Residences, we have created a community that embodies the best of our philosophy. Situated in the picturesque village of Pervolia, just 1.3 km from the Mediterranean Sea, this project features stunning apartments enriched by Porto Buro’s signature style, advanced technologies, and premium materials."
+
+    },
+
     "navbar": {
       "Slogan": "The best way to be healthy is to be happy",
-      "About": "About",
+      "About": "Location",
       "Gallery": "Gallery",
       "Apartments": "Apartments",
       "Benefits": "Benefits",
@@ -18,7 +30,9 @@
       "li5": "Utilizing solar energy with 340 sunny days for comfort and economy",
       "li6": "Sea view apartments from the 2nd floor",
       "li7": "Premium construction quality",
+      "li8": "Proximity to the airport: ",
       "meters": "meters",
+      "kilometers": "kilometers",
       "location": "Pervolia, Cyprus",
       "solarPanels": "Solar Panels",
       "privateGym": "Private Gym",
@@ -29,8 +43,8 @@
 
     "gallery": {
       "headline": "Gallery",
-      "welcome": "Welcome to GreenLife",
-      "description": "Explore our carefully selected gallery to get a glimpse of the exceptional living experience at GreenLife. Each image showcases the essence of our upscale apartments, contemporary comforts, and sustainable living."
+      "welcome": "Welcome to Park Residences",
+      "description": "The design of Park Residences is created in modern classical style, ensuring timeless elegance that will remain relevant for years to come. Each image showcases the essence of our upscale apartments, contemporary comforts, and sustainable living."
     },
 
     "units": {
@@ -45,10 +59,10 @@
 
     "benefits": {
       "headline": "Benefits",
-      "subHeadline": "Discover the unparalleled advantages of living at GreenLife",
+      "subHeadline": "Unparalleled advantages of Park Residences",
       "constructionQuality": "Construction Quality",
       "qualityDescription": "Our buildings are known for their exceptional quality. We focus on durability and design, ensuring every detail is crafted to perfection.",
-      "leveragingSolarPanels": "Leveraging Solar Panels",
+      "leveragingSolarPanels": "Solar Panels",
       "solarDescription": "Solar panels offer more than environmental advantages; they significantly ease the utilization of existing infrastructure, such as a pool and a gym, due to considerable reductions in electricity costs, enhancing operational efficiency.",
       "communitySpaces": "Community Spaces",
       "communityDescription": "Our neighborhood features charming paths and a large park, with no further construction to preserve its tranquility."
@@ -79,10 +93,10 @@
       "location": "PERVOLIA",
       "companyInfo": "ZYRBAGAN RESIDENCES LTD",
       "contactUs": "Contact us",
-      "telephone": "T: +352111111111",
-      "email": "E: blank.email@greenlife.com",
-      "address": "A: Cyprus, Pervolia, Fictional address 8, CY-123913",
-      "about": "About",
+      "telephone": "T: +35797547531",
+      "email": "E: zyrbagan231123@gmail.com",
+      "address": "A: 90 Spyrou Kyprianou, Kontopyrgos Tower, Office 202, 6052 Larnaca, Cyprus",
+      "about": "Location",
       "gallery": "Gallery",
       "apartments": "Apartments",
       "benefits": "Benefits",
@@ -94,11 +108,11 @@
     "galleryFullPage": {
       "location": {
         "title": "Location",
-        "description": "Nestled in the heart of Pervolia, just a stone's throw from the historical city of Larnaca, GreenLife offers an exclusive enclave of 19 meticulously designed premium apartments. GreenLife is more than a residence; it's a commitment to a greener future and a nod to the historical richness of Pervolia."
+        "description": "Nestled in the heart of Pervolia, just a stone's throw from the historical city of Larnaca, Park Residences offers an exclusive enclave of 19 meticulously designed premium apartments. Park Residences is more than a residence; it's a commitment to a greener future and a nod to the historical richness of Pervolia."
       },
       "gym": {
         "title": "Private Gym",
-        "description": "Company GreenLife offers its residents access to a private gym. The private gym is equipped with state-of-the-art fitness equipment, catering to a wide range of preferences and fitness levels. From cardio machines to free weights, resistance training equipment, and dedicated areas for yoga and stretching."
+        "description": "Company Park Residences offers its residents access to a private gym. The private gym is equipped with state-of-the-art fitness equipment, catering to a wide range of preferences and fitness levels. From cardio machines to free weights, resistance training equipment, and dedicated areas for yoga and stretching."
       },
       "solarPanels": {
         "title": "Solar Panels",
@@ -106,17 +120,17 @@
       },
       "pool": {
         "title": "Indoor Pool",
-        "description": "Company GreenLife extends its commitment to the well-being of its residents by offering access to an exclusive indoor pool. This facility is designed to engage in a healthy, active lifestyle regardless of the season."
+        "description": "Company Park Residences extends its commitment to the well-being of its residents by offering access to an exclusive indoor pool. This facility is designed to engage in a healthy, active lifestyle regardless of the season."
       },
       "noDataFound": "No pictures available. Please go back to the main page."
     },
 
     "contactInfo": {
       "getInTouch": "Get in touch",
-      "description": "Discover the epitome of sustainable luxury at GreenLife, nestled in the serene beauty of Pervolia, Cyprus.",
-      "address": "545 Mavis Island, Chicago, IL 99191",
-      "phone": "+1 (555) 234-5678",
-      "email": "hello@example.com",
+      "description": "Discover the epitome of sustainable luxury at Park Residences, nestled in the serene beauty of Pervolia, Cyprus.",
+      "address": "90 Spyrou Kyprianou, Kontopyrgos Tower, Office 202, 6052 Larnaca, Cyprus",
+      "phone": "+357 9 754 7531",
+      "email": "zyrbagan231123@gmail.com",
       "a": "Address: ",
       "p": "Phone: ",
       "e": "Email: "
@@ -150,7 +164,7 @@
 
     "singleFlatGallery": {
       "viewsAndLocation": "Views and Location",
-      "description": "Explore GreenLife's gallery: elegant interiors that speak comfort, stunning exteriors blending with nature, and captivating views that promise tranquility. Experience the luxury of living here through each carefully curated image."
+      "description": "Explore Park Residences's gallery: elegant interiors that speak comfort, stunning exteriors blending with nature, and captivating views that promise tranquility. Experience the luxury of living here through each carefully curated image."
     }
     
   }

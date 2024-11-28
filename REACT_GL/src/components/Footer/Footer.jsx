@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import "./Footer.css";
+import Logo from '../../assets/logo_White-2.svg'; 
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Footer = () => {
@@ -30,8 +31,7 @@ const Footer = () => {
     <div className='footer-container'>
       <div className='footer-first-level'>
         <div onClick={handleLogoClick} className='company-container'>
-          <h5>{t('footer.companyName')}</h5>
-          <h6>{t('footer.location')}</h6>
+          <img src={Logo} alt="Logo" className='footer-logo'/>
           <p>{t('footer.companyInfo')}</p>
         </div>
         <div className='contact-info-container'>

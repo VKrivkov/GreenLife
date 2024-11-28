@@ -67,7 +67,7 @@
 
   .language-option:hover{
     border-color: #ffff;
-    background-color: #66952F;
+    background-color: #B3A57C;
     color: #fff;
   }
 
@@ -92,7 +92,7 @@
   border: none;
   background: none;
   font-size: 20px;
-  color: #66952F; /* Adjust the color value to match the desired shade of green */
+  color: #B3A57C; /* Adjust the color value to match the desired shade of green */
   cursor: pointer;
   }
   

@@ -37,20 +37,14 @@
     display: flex;
     align-items: center;
     margin: 0 50px;
-
   }
   
   .navbar-logo {
-    /* Set the size of your logo if needed */
-    height: 35px; 
+    height: 60px; 
     margin-right: 10px;
-    
   }
   
-  .navbar-text {
-    height:34px;
-    /* Adjust if you have a specific size for the SVG */
-  }
+
   
   .navbar-links {
     display: flex;
@@ -76,7 +70,7 @@
     position: absolute;
     width: 80%; /* Width of the custom underline */
     height: 1.5px; /* Height of the custom underline */
-    background-color: #66952F; /* Color of the custom underline */
+    background-color: #B3A57C; /* Color of the custom underline */
     bottom: -3px; /* Positioning below the text */
     left: 50%; /* Centering the line */
     transform: translateX(-50%); /* Centering the line */
@@ -95,14 +89,14 @@
   }
   
   .contact-us:hover {
-    color:  #66952F; /* or use border-bottom if that's the design */
+    color:  #B3A57C; /* or use border-bottom if that's the design */
     transition: color 0.2s ease-in-out; /* Transition effect for color property */
 
   }
   
 
   .nav-link:hover{
-    color:  #66952F; /* or use border-bottom if that's the design */
+    color:  #B3A57C; /* or use border-bottom if that's the design */
     transition: color 0.2s ease-in-out; /* Transition effect for color property */
 
   }
@@ -170,7 +164,7 @@
  
   .navbar-logo {
     /* Set the size of your logo if needed */
-    height: 40px; 
+    height: 60px; 
     margin-right: 10px;
     
   }
@@ -246,7 +240,7 @@ display: none;
 
   .navbar-brand{
     position: absolute;
-    top:22px;
+    top: 10px;
     left: 0px
   }
 
@@ -317,7 +311,7 @@ display: none;
     position: absolute;
     width: 0%; /* Width of the custom underline */
     height: 1.5px; /* Height of the custom underline */
-    background-color: #66952F; /* Color of the custom underline */
+    background-color: #B3A57C; /* Color of the custom underline */
     bottom: -3px; /* Positioning below the text */
     left: 50%; /* Centering the line */
     transform: translateX(-50%); /* Centering the line */

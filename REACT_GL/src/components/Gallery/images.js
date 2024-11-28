@@ -6,7 +6,6 @@ import Pict4 from '../../assets/Pict4.jpg';
 import Pict5 from '../../assets/Pict5.jpg';
 import Pict6 from '../../assets/Pict6.jpg';
 import Pict7 from '../../assets/Pict7.jpg';
-import Pict8 from '../../assets/Pict8.jpg';
 
 
 const images = [
@@ -17,7 +16,6 @@ const images = [
     Pict5,
     Pict6,
     Pict7,
-    Pict8
     // Add as many images as you have for the gallery
   ];
 

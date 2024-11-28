@@ -8,6 +8,10 @@
     font-weight: 300;
 
   }
+
+  .aboutp{
+    margin: 0px;
+  }
   .Slogan{
     left: 50%;
     font-weight: 500;
@@ -16,17 +20,18 @@
     color: #090909;
   }
 
-  .image-container-about img {
-    max-width: 631px; /* Adjust as needed */
+  .image-container-about{
+    width: 600px;
+  }
+
+  .map-container{
     border-radius: 15px;
-    display: grid; /* Ensures the image is a block element to respect max-width */
   }
   
   .content-container-about {
     display: flex;
     justify-content: center;
     color: #090909;
-
   }
 
   .text-container-about{
@@ -37,7 +42,7 @@
     font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
     font-size: 50px;
     font-weight: 300;
-    color: #66952F; /* Adjust the color value to match the desired shade of green */
+    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
     text-align: center;
     margin-top: 75px;
     margin-bottom: 75px;
@@ -94,12 +99,11 @@
     flex-direction: column; /* Organizes the icon and text in a column */
     align-items: center; /* Centers the content */
     gap: 10px; /* Space between icon and text */
-    cursor: pointer;
     text-align: center;
   }
 
   .icon-item:hover{
-    color:  #66952F; /* or use border-bottom if that's the design */
+    color:  #B3A57C; /* or use border-bottom if that's the design */
     transition: color 0.2s ease-in-out; /* Transition effect for color property */
   }
   
@@ -139,7 +143,7 @@
       display: flex;
       justify-content: center;
       color: #090909;
-  
+
     }
   
     .text-container-about{
@@ -150,7 +154,7 @@
       font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
       font-size: 60px;
       font-weight: 300;
-      color: #66952F; /* Adjust the color value to match the desired shade of green */
+      color: #B3A57C; /* Adjust the color value to match the desired shade of green */
       text-align: center;
       margin-top: 80px;
       margin-bottom: 80px;
@@ -207,12 +211,11 @@
       flex-direction: column; /* Organizes the icon and text in a column */
       align-items: center; /* Centers the content */
       gap: 15px; /* Space between icon and text */
-      cursor: pointer;
       text-align: center;
     }
   
     .icon-item:hover{
-      color:  #66952F; /* or use border-bottom if that's the design */
+      color:  #B3A57C; /* or use border-bottom if that's the design */
       transition: color 0.2s ease-in-out; /* Transition effect for color property */
     }
     
@@ -220,6 +223,7 @@
       display: block;
       height: 50px;
     }
+
     
   }
 @media (max-width: 1280px){
@@ -320,6 +324,7 @@
 
 @media (max-width: 650px){
 
+
 .about-project {
   padding-left: 50px;
   padding-right: 50px;
@@ -335,15 +340,16 @@
   font-family: Playfair Display, sans-serif; /* Replace with the font of your choice */
   font-size: 40px;
   font-weight: 300;
-  color: #66952F; /* Adjust the color value to match the desired shade of green */
+  color: #B3A57C; /* Adjust the color value to match the desired shade of green */
   text-align: center;
   margin-top: 35px;
   margin-bottom: 35px;
 }
 .icons-container-about {
   grid-template-columns: repeat(2, 150px); /* Creates five columns */
-
 }
+
+
 }
 
 
@@ -369,6 +375,8 @@
     width: 100%; /* Full width of its parent */
     height:230px;
   }
+
+
 
   .about-project {
     padding-left: 25px;

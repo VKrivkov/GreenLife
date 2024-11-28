@@ -1,10 +1,15 @@
 .footer-container{
-    background-color: #3D591C;
+    background-color: #2E2A1C;
     font-family: Inter;
     font-size: 18px;
     font-weight: 300;
     padding: 75px 80px 40px 80px;
     position: relative;
+}
+
+.footer-logo{
+    width: 220px;
+    height: 120px;
 }
 
 .footer-first-level{
@@ -16,6 +21,9 @@
 .company-container{
     color: #f5f5f5;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .company-container h5{

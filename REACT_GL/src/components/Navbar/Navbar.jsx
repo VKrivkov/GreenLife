@@ -1,8 +1,9 @@
 // src/components/Navbar.jsx
 import React, { useState }  from 'react';
 import './Navbar.css';
-import GreenLifetext from '../../assets/GreenLifetext.svg'; // make sure the path is correct
-import Logo from '../../assets/Logo.png'; // make sure the path is correct
+import Logo from '../../assets/smalllogo_Rich olive.svg'; // make sure the path is correct
+import LogoT from '../../assets/logo_Rich olive-2.svg'; // make sure the path is correct
+
 import BurgerIcon from '../../assets/BurgerIcon.svg'; // Path to burger menu icon
 import CloseIcon from '../../assets/CloseIcon.svg'; // Path to close menu icon
 import { useTranslation } from 'react-i18next';
@@ -68,8 +69,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${isMenuOpen ? "show" : ""}`}>
       <div onClick={handleLogoClick} className="navbar-brand" style={{ cursor: 'pointer' }}>
-        <img src={Logo} alt="Logo" className="navbar-logo" />
-        <img src={GreenLifetext} alt="GreenLife Perivolia" className="navbar-text" />
+        <img src={LogoT} alt="Logo" className="navbar-logo" />
       </div>
       <div className='navbar-label'>
         <p>{t('navbar.Slogan')}</p>

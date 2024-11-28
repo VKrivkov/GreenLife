@@ -2,7 +2,7 @@
   position: relative; /* Add this to position child elements absolutely relative to this container */
   width: 250px; /* Adjust width as needed */
   border-radius: 15px;
-  border: 1px solid #66952F;
+  border: 1px solid #B3A57C;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Inter; /* Use your desired font-family */
@@ -57,7 +57,7 @@
       bottom: 0; /* Align it to the bottom */
       left: 0; /* Align it to the left */
       width: 100%; /* Span the full width of the card */
-      background-color: #66952F;
+      background-color: #B3A57C;
       color: white;
       padding: 13px 15px;
       display: flex;
@@ -71,7 +71,7 @@
   
 
     .card:hover{
-      box-shadow: 0 0px 30px rgb(102, 149, 47, 0.5); 
+      box-shadow: 0 0px 30px rgb(179, 165, 125, 0.5); 
 
     }
 
@@ -92,7 +92,7 @@
       bottom: 0; /* Align it to the bottom */
       left: 0; /* Align it to the left */
       width: 100%; /* Span the full width of the card */
-      background-color: #66952F;
+      background-color: #B3A57C;
       color: white;
       padding: 13px 15px;
       display: flex;
@@ -101,7 +101,7 @@
   
 
   .card-title  {
-    background-color: #66952F;
+    background-color: #B3A57C;
     color: white;
     padding: 5px 15px;
     margin-left: 10px;

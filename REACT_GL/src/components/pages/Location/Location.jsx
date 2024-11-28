@@ -3,14 +3,14 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './Location.css';
-import smallLogo from '../../../assets/Logo.png';
+import smallLogo from '../../../assets/smalllogo_Rich olive.svg';
 
 const Location = () => {
   const position = [34.832139, 33.584444]; // Your coordinates
 
   const customIcon = new Icon ({
     iconUrl: smallLogo,
-    iconSize: [30,30]
+    iconSize: [100,100]
   });
 
   return (

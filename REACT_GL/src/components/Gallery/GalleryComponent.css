@@ -68,6 +68,7 @@
     height: 100%; /* Maintain aspect ratio */
     border-radius: 15px;
     display: block; /* Display as block to fill width of .slide */
+    object-fit: cover;
   }
   
 .gallery-pagination{
