@@ -30,14 +30,14 @@
     position: absolute;
     width: 75px; /* Width of the custom underline */
     height: 1.5px; /* Height of the custom underline */
-    background-color: #B3A57C; /* Color of the custom underline */
+    background-color: #2E2A1C; /* Color of the custom underline */
     bottom: -5px; /* Positioning below the text */
     opacity: 0; /* Hide the line initially */
     transition: opacity 0.3s; /* Smooth transition for the line */
   }
 
   .selector-link:hover{
-    color:  #B3A57C; /* or use border-bottom if that's the design */
+    color:  #2E2A1C; /* or use border-bottom if that's the design */
     transition: color 0.2s ease-in-out; /* Transition effect for color property */
 
   }

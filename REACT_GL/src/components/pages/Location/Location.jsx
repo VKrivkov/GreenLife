@@ -21,7 +21,7 @@ const Location = () => {
       />
       <Marker position={position} icon={customIcon}>
         <Popup>
-          GreenLife.
+          Park Residences
         </Popup>
       </Marker>
     </MapContainer>

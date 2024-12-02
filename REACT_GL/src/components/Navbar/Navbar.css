@@ -63,7 +63,7 @@
     position: absolute;
     width: 80%; /* Width of the custom underline */
     height: 1.5px; /* Height of the custom underline */
-    background-color: #B3A57C; /* Color of the custom underline */
+    background-color: #2E2A1C; /* Color of the custom underline */
     bottom: -3px; /* Positioning below the text */
     left: 50%; /* Centering the line */
     transform: translateX(-50%); /* Centering the line */
@@ -81,14 +81,14 @@
   }
   
   .contact-us:hover {
-    color:  #B3A57C; /* or use border-bottom if that's the design */
+    color:  #2E2A1C; /* or use border-bottom if that's the design */
     transition: color 0.2s ease-in-out; /* Transition effect for color property */
 
   }
   
 
   .nav-link:hover{
-    color:  #B3A57C; /* or use border-bottom if that's the design */
+    color:  #2E2A1C; /* or use border-bottom if that's the design */
     transition: color 0.2s ease-in-out; /* Transition effect for color property */
 
   }
@@ -269,7 +269,7 @@ display: none;
     position: absolute;
     width: 0%; /* Width of the custom underline */
     height: 1.5px; /* Height of the custom underline */
-    background-color: #B3A57C; /* Color of the custom underline */
+    background-color: #2E2A1C; /* Color of the custom underline */
     bottom: -3px; /* Positioning below the text */
     left: 50%; /* Centering the line */
     transform: translateX(-50%); /* Centering the line */

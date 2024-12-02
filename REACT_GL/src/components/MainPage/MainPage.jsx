@@ -57,9 +57,9 @@ const MainPage = () => {
       {/* <div className="scroll-indicator">
         <p className='ScrollText'>SCROLL DOWN</p>
         <svg width="1" height="40" viewBox="0 0 1 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="0.5" y1="2.57023e-08" x2="0.499997" y2="70" stroke="#090909"/>
+          <line x1="0.5" y1="2.57023e-08" x2="0.499997" y2="70" stroke="#f5f5f5"/>
         </svg>
-      </div> */}
+      </div>  */}
     </div>
   );
 };

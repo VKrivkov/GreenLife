@@ -14,7 +14,7 @@
     "navbar": {
       "Slogan": "The best way to be healthy is to be happy",
       "About": "Location",
-      "Gallery": "Gallery",
+      "Gallery": "Interior",
       "Apartments": "Apartments",
       "Benefits": "Benefits",
       "ContactUs": "Contact Us",
@@ -42,7 +42,7 @@
     },
 
     "gallery": {
-      "headline": "Gallery",
+      "headline": "Interior",
       "welcome": "Welcome to Park Residences",
       "description": "The design of Park Residences is created in modern classical style, ensuring timeless elegance that will remain relevant for years to come. Each image showcases the essence of our upscale apartments, contemporary comforts, and sustainable living."
     },

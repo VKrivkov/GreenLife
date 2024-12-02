@@ -57,7 +57,7 @@ html {
   
   .green-text {
     font-weight: 500; /* Heavier font weight for 'GREEN' */
-    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
+    color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
     margin: 0 10px; /* Optional: adds spacing around 'GREEN' */
   }
   a.request-link{
@@ -89,7 +89,7 @@ html {
     
     .green-text {
       font-weight: 500; /* Heavier font weight for 'GREEN' */
-      color: #B3A57C; /* Adjust the color value to match the desired shade of green */
+      color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
       margin: 0 10px; /* Optional: adds spacing around 'GREEN' */
     }
 
@@ -140,7 +140,7 @@ html {
       font-family: Inter;
       font-size: 20px;
       font-weight: 400;
-      color: #B3A57C;
+      color: #2E2A1C;
       padding: 20px 50px;
       background: rgba(255, 255, 255, 0.7); /* Example background with slight transparency */
       box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
@@ -159,7 +159,7 @@ html {
     
     .green-text {
       font-weight: 500; /* Heavier font weight for 'GREEN' */
-      color: #B3A57C; /* Adjust the color value to match the desired shade of green */
+      color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
       margin: 0 10px; /* Optional: adds spacing around 'GREEN' */
     }
 

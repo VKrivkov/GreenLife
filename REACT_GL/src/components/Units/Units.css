@@ -58,7 +58,7 @@
 
 
   .unit-option:hover{
-    color: #B3A57C;
+    color: #2E2A1C;
     transition: color 0.3s ease-in-out;
 
   }
@@ -66,7 +66,7 @@
 
 
   .unit-option.active {
-   color: #B3A57C;
+   color: #2E2A1C;
     transition: color 0.3s ease-in-out;
   }
 
@@ -78,7 +78,7 @@
     bottom: -8px; /* Position 8px below the text */
     width: 50px; /* Fixed width of the underline */
     height: 1.5px; /* Fixed height of the underline */
-    background: #B3A57C; /* The color of the underline */
+    background: #2E2A1C; /* The color of the underline */
     transition: 0.2s ease-in-out; /* Smooth transition for the underline */
   }
   
@@ -114,7 +114,7 @@
     margin-top: 0;
     margin-bottom: 0;
 
-    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
+    color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
 
   }
   
@@ -130,7 +130,7 @@
 
     width: 847px;
     height: 514px;
-    border-radius: 15px;
+    border-radius: 2px;
     border: solid #090909;
   }
   
@@ -143,12 +143,12 @@
     bottom: 35px; /* 25px from the bottom of the image */
     position: absolute;
     right: 35px; /* 25px from the right of the image */
-    background-color: #B3A57C;
+    background-color: #2E2A1C;
     border: solid #ffffff;
     color: #F5F5F5;
     width: 225px;
     height: 70px;
-    border-radius: 15px;
+    border-radius: 3px;
     font-family: Inter;
     font-size: 18px;
     font-weight: 300;
@@ -339,7 +339,7 @@
       font-weight: 300;
       margin-top: 0;
       margin-bottom: 0;
-      color: #B3A57C; /* Adjust the color value to match the desired shade of green */
+      color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
   
     }
     .units-header {
@@ -368,7 +368,7 @@
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 0;
-    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
+    color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
     white-space: nowrap;
   }
 
@@ -411,7 +411,7 @@
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 0;
-    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
+    color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
     white-space: nowrap;
   }
 
