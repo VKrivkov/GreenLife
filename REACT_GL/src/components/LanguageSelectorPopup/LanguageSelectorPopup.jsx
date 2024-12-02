@@ -17,7 +17,7 @@ const LanguageSelector = ({ onClose }) => {
 
   return (
     <>
-    <div className="language-selector-overlay" onClick={onClose}></div>
+    <div className="language-selector-overlay" onClick={() => changeLanguage('en')}></div>
     <div className="language-selector">
       <h2>Choose the language</h2>
       <div className="language-selector-content">
@@ -34,7 +34,7 @@ const LanguageSelector = ({ onClose }) => {
           <img src={FlagRu} alt="Russian" />
           <span>Русский</span>
         </div>
-        <button className="close-button" onClick={onClose}>Close</button>
+        <button className="close-button" onClick={() => changeLanguage('en')}>Close</button>
       </div>
     </div>
     </>

@@ -71,9 +71,6 @@ const Navbar = () => {
       <div onClick={handleLogoClick} className="navbar-brand" style={{ cursor: 'pointer' }}>
         <img src={LogoT} alt="Logo" className="navbar-logo" />
       </div>
-      <div className='navbar-label'>
-        <p>{t('navbar.Slogan')}</p>
-      </div>
       <div className={`navbar-center ${isMenuOpen ? "show" : ""}`}>
         <a onClick={() => scrollToSection('about-section')} className="nav-link">{t('navbar.About')}</a>
         <a onClick={() => scrollToSection('gallery-section')} className="nav-link">{t('navbar.Gallery')}</a>

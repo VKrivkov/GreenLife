@@ -12,14 +12,9 @@ const Benefits = () => {
     <>
 
     <div id='benefits-section' className='benefits-container'>
-      {/* <div className='head-container'>
-        <h2 className='HeadlineBenefits'>{t('benefits.headline')}</h2>
-        <p>{t('benefits.subHeadline')}</p>
-      </div> */}
            <div className='gallery-header'>
         <h1 className='headline-gallery'>{t('benefits.headline')}</h1>
         <div className='text-block'>
-          <h6>{t('benefits.subHeadline')}</h6>
           <p>{t('gallery.description')}</p>
         </div>
       </div>

@@ -12,7 +12,6 @@ const Gallery = () => {
       <div className='gallery-header'>
         <h1 className='headline-gallery'>{t('gallery.headline')}</h1>
         <div className='text-block'>
-          <h6>{t('gallery.welcome')}</h6>
           <p>{t('gallery.description')}</p>
         </div>
       </div>

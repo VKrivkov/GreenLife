@@ -9,25 +9,19 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    width: auto;
-    left: 80px;
-    right: 80px;
-    margin-top: 30px;   
+    width: 100vw;
     height: 70px;
-    border-radius: 15px ;
     border-width: 1px;
     position: fixed;  /* Fix the navbar's position relative to the viewport */
-
+    box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;   /* Ensure the navbar is above other elements */
     background: rgba(255, 255, 255, 0.7); /* Example background with slight transparency */
-    box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(80px);
-    border: 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
 
   .navbar-side {
-    /* This will give 50px space from the side */
-    margin: 0 50px;
+    margin: 0 75px;
     font-family: Inter;
     font-size: 18px;
     font-weight: 500;
@@ -36,12 +30,11 @@
   .navbar-brand {
     display: flex;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 75px;
   }
   
   .navbar-logo {
     height: 60px; 
-    margin-right: 10px;
   }
   
 
@@ -82,7 +75,6 @@
     color: #090909;
     text-decoration: none;
     font-family: Inter;
-    margin-right: 20px;
     font-size: 18px;
     font-weight: 500;
 
@@ -117,12 +109,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    width: auto;
-    left: 100px;
-    right: 100px;
-    margin-top: 30px;   
+    width: 100vw;
     height: 80px;
-    border-radius: 15px ;
     border-width: 1px;
     position: fixed;  /* Fix the navbar's position relative to the viewport */
 
@@ -130,7 +118,6 @@
     background: rgba(255, 255, 255, 0.7); /* Example background with slight transparency */
     box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(80px);
-    border: 1px solid #fff;
   }
 
   .navbar-center.show {
@@ -138,12 +125,10 @@
     height: 315px; /* Set the height to fit all your links */
   }
 
-
   .contact-us {
     color: #090909;
     text-decoration: none;
     font-family: Inter;
-    margin-right: 20px;
     font-size: 20px;
     font-weight: 500;
   }
@@ -161,18 +146,21 @@
     cursor: pointer;
   }
 
- 
+  .navbar-brand{
+    margin: 0 100px;
+  }
+
   .navbar-logo {
-    /* Set the size of your logo if needed */
-    height: 60px; 
-    margin-right: 10px;
-    
+    height: 60px;     
   }
 
     
   .navbar-text {
     height:40px;
-    /* Adjust if you have a specific size for the SVG */
+  }
+
+  .navbar-side {
+    margin: 0 100px;
   }
 }
 
@@ -180,7 +168,6 @@
 
 
 
-/* Add your existing styles here */
 
 .burger-menu {
   display: none; /* Hidden by default, will be displayed in tablet view */
@@ -219,20 +206,17 @@ display: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5f5f5;
     width: auto;
     left: 0;
     right: 0;
     margin-top: 0;   
     height: 80px;
-    border-radius: 0px ;
-    border-width: 1px;
     position: fixed;  /* Fix the navbar's position relative to the viewport */
 
     z-index: 1000;   /* Ensure the navbar is above other elements */
     box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.7); /* Example background with slight transparency */
     backdrop-filter: blur(80px);
-    border: 1px solid #fff;
 
     transition: height 0.3s ease;
 
@@ -278,32 +262,6 @@ display: none;
     justify-content: center;
     text-align: center;
   } 
-/* 
-  .navbar-center {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: #f5f5f5;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: height 0.3s ease;
-    height: 0;
-    overflow: hidden;
-    z-index: 999;
-  } */
-
-  /* .navbar-center.show {
-    padding: 0px 100px 0px 100px;
-    display: grid;
-    grid-template-columns: repeat(4, 150px);
-    gap: 50px;
-    height: 250px;
-    justify-content: center;
-    text-align: center;
-  } */
 
 
   .nav-link::after {
@@ -329,6 +287,8 @@ display: none;
     display: flex;
     font-size: 24px; /* Larger font size for better tap targets */
     padding: 10px;
+    margin: 0 px;
+
     margin-top: -50px;
     border: 2px solid transparent; /* Optional: add a border or change styling as needed */
 

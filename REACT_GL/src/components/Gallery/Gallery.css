@@ -13,10 +13,9 @@
   font-size: 50px;
   font-weight: 300;
   color: #B3A57C; /* Adjust the color value to match the desired shade of green */
-  text-align: left;
+  text-align: center;
   margin-top: 75px;
   margin-bottom: 75px;
-  margin-left: 160px;
 }
 
 .text-block{
@@ -26,24 +25,12 @@
   font-size: 18px;
   font-weight: 300;
   justify-content: space-between;
-  
-}
-
-.text-block h6{
-  color: #090909;
-  font-weight: 400;
-  font-size: 18px;
-  margin-left: 160px;
-  margin-bottom: 0px;
-  margin-right: 50px; /* This will push the h1 to the right */
-    /* additional styles like font-weight, line-height, etc. */
 }
 
 .text-block p{
   color: #090909;
-  margin-left: auto; /* This will push the p to the left */
-  width: 45%;
-  margin-right: 80px;
+  width: 100%;
+  margin: 0 80px;
   text-align: left;
 }
 
@@ -56,7 +43,6 @@
     font-weight: 300;
     margin-top: 80px;
     margin-bottom: 80px;
-    margin-left: 200px;
   }
 
   .text-block{
@@ -74,20 +60,9 @@
     
   }
 
-.text-block h6{
-  color: #090909;
-  font-weight: 400;
-  font-size: 20px;
-  margin-left: 200px;
-  margin-bottom: 0px;
-    /* additional styles like font-weight, line-height, etc. */
-}
 
 .text-block p{
-  color: #090909;
-  margin-left: auto; /* This will push the p to the left */
-  width: 45%;
-  margin-right: 100px;
+  margin: 0 100px;
 }
 
 }

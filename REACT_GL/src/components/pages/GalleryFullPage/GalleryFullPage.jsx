@@ -12,10 +12,12 @@ const GalleryFullPage = () => {
 
   return (
     <div id = 'about-section'>
-      <div className='location-gallery'>
-        <div className='location-gallery-header'> 
-          <h1>{t('galleryFullPage.location.title')}</h1>
-          <p>{t('galleryFullPage.location.description')}</p>
+      <div className='gallery'>
+        <div className='gallery-header'> 
+          <h1 className='headline-gallery'>{t('galleryFullPage.location.title')}</h1>
+          <div className='text-block'>
+            <p>{t('galleryFullPage.location.description')}</p>
+          </div>
         </div>  
         <GalleryComponent images={locArray}/>
       </div>

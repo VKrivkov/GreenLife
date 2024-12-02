@@ -15,9 +15,8 @@
     
     font-size: 50px;
     font-weight: 300;
-    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
-    margin-top: 75px;
-    margin-bottom: 75px;
+    color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
+    margin: 75px 50px;
   }
   .units-header {
     width: 50%;
@@ -189,7 +188,7 @@
     text-transform: uppercase;
     font-size: 60px;
     font-weight: 300;
-    color: #B3A57C; /* Adjust the color value to match the desired shade of green */
+    color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
     margin-top: 80px;
     margin-bottom: 80px;
   }
