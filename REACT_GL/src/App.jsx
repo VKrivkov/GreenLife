@@ -11,6 +11,7 @@ import LanguageSelector from './components/LanguageSelectorPopup/LanguageSelecto
 
 import './i18n';
 import { Company } from './components/Company/Company';
+import { Company2 } from './components/Company2/Company2';
 
 
 
@@ -51,6 +52,7 @@ const App = () => {
           <>
             <Navbar />
             <MainPage />
+            <Company2/>
             <Gallery2/>
             <GalleryFullPage/>
             <About />
