@@ -1,13 +1,20 @@
 {
 
     "company":{
-      "headline": "Welcome to Zyrbagan Residences LTD",
+      "headline": "About the developer",
       "p1": "At Zyrbagan Residences LTD, we specialize in creating exceptional residential projects that combine luxury, sustainability, and timeless design. Based in Cyprus, our company is dedicated to delivering homes that inspire and elevate the living experience. Each of our developments reflects a commitment to quality, innovation, and the perfect balance of comfort and elegance, providing lasting value for our residents.", 
       "p2": "Over the years, we have established a strong reputation for excellence through our premium developments and partnerships with leading design firms. One of our most valued collaborations is with Porto Buro, a renowned architectural and design studio. Known for their timeless aesthetic and modern classical style, Porto Buro’s designs seamlessly integrate elegance and functionality.",
       "p3": "Together with Porto Buro, we have successfully delivered projects like:", 
       "li1": "an exclusive collection of luxury homes that showcase meticulous craftsmanship and stylish design",
       "li2": "where every detail is thoughtfully curated to provide a sophisticated, yet comfortable living experience.",
       "p4" : "With Park Residences, we have created a community that embodies the best of our philosophy. Situated in the picturesque village of Pervolia, just 1.3 km from the Mediterranean Sea, this project features stunning apartments enriched by Porto Buro’s signature style, advanced technologies, and premium materials."
+
+    },
+
+    "company2":{
+      "headline": "Welcome to Park Residences",
+      "p1": "At Zyrbagan Residences LTD, we specialize in creating exceptional residential projects that combine luxury, sustainability, and timeless design. Based in Cyprus, our company is dedicated to delivering homes that inspire and elevate the living experience. Each of our developments reflects a commitment to quality, innovation, and the perfect balance of comfort and elegance, providing lasting value for our residents.", 
+      "p2" : "With Park Residences, we have created a community that embodies the best of our philosophy. Situated in the picturesque village of Pervolia, just 1.3 km from the Mediterranean Sea, this project features stunning apartments enriched by Porto Buro’s signature style, advanced technologies, and premium materials."
 
     },
 
