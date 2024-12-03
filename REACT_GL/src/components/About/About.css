@@ -250,7 +250,6 @@
     height: 500px; /* Fixed height */
     overflow: hidden; /* Hide parts of the image that exceed the container */
     position: relative; /* Position context for absolute positioning of the image */
-    border-radius: 15px; /* Apply border-radius to the container */
   }
 
   .image-container-about img {

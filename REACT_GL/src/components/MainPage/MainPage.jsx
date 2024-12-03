@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './MainPage.css'; // Make sure to create a CSS file for styling.
 import { useTranslation } from 'react-i18next';
 import Logo from '../../assets/logo_White.svg'
@@ -7,6 +7,26 @@ const MainPage = () => {
 
   const { t } = useTranslation();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const backgroundImage = document.querySelector('.background-image');
+      if (backgroundImage) {
+        const scaleAmount = 1 + scrollPosition * 0.0003;
+        const parallaxOffset = scrollPosition * 0.5;
+        backgroundImage.style.transform = `translateY(${parallaxOffset}px) scale(${scaleAmount})`;
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+
+  
   const scrollToSection = (sectionId) => {
 
     const section = document.getElementById(sectionId);
@@ -49,6 +69,7 @@ const MainPage = () => {
 
   return (
     <div className="main-page">
+      <div className="background-image"></div>
       <div className="headline"> 
        <img src={Logo}/>
       </div>

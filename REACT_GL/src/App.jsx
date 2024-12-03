@@ -6,6 +6,7 @@ import SingleFlatCard from './components/pages/SingleFlatCard/SingleFlatCard';
 import SingleFlatGallery from './components/pages/SingleFlatGallery/SingleFlatGallery';
 import Location from './components/pages/Location/Location';
 import GalleryFullPage from './components/pages/GalleryFullPage/GalleryFullPage';
+import Gallery2 from './components/Gallery2/Gallery2';
 import LanguageSelector from './components/LanguageSelectorPopup/LanguageSelectorPopup';
 
 import './i18n';
@@ -50,12 +51,13 @@ const App = () => {
           <>
             <Navbar />
             <MainPage />
-            <Company/>
+            <Gallery2/>
             <GalleryFullPage/>
             <About />
             <Gallery />
             <Units />
             <Benefits />
+            <Company/>
             <Contact />
             <Footer />
           </>
@@ -87,7 +89,7 @@ const App = () => {
           <>
             <Navbar2 />
             <SingleFlatCard />
-            <SingleFlatGallery/>
+            <Gallery />
             <Location/>
             <Footer />
           </>

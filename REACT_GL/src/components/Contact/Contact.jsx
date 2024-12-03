@@ -1,9 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import "./Contact.css";
 
 
 const Contact = () => {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const backgroundImage = document.querySelector('.contact-background-image');
+      const contactSection = document.querySelector('.contact-section');
+  
+      if (backgroundImage && contactSection) {
+        // Get the position of the contact section relative to the viewport
+        const rect = contactSection.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+  
+        // Check if the contact section is in the viewport
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          // Calculate the scroll position relative to the contact section
+          const scrollPosition = windowHeight - rect.top;
+  
+          // Adjust parallax and zoom effects
+          const parallaxOffset = scrollPosition * 0.2; // Adjust the factor as needed
+          const scaleAmount = 1 + (scrollPosition * 0.0003); // Adjust the factor as needed
+  
+          backgroundImage.style.transform = `translateY(${parallaxOffset}px) scale(${scaleAmount})`;
+        } else {
+          // Reset the transform when the section is not in view
+          backgroundImage.style.transform = 'translateY(0px) scale(1)';
+        }
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    // Call handleScroll initially in case the section is in view on page load
+    handleScroll();
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+
+
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -107,6 +147,7 @@ const Contact = () => {
   
    return (
     <div id = 'contact-section' className='contact-section'> 
+      <div className="contact-background-image"></div>
 
       <h2 className='headline-contact'>{t('contact.headline')}</h2>
 

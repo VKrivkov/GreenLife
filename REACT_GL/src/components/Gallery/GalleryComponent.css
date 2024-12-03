@@ -3,13 +3,13 @@
     justify-content: center; /* Center the children (slides) horizontally */
     position: relative;
     overflow: hidden;
-    height: 555px;
+    height: 644px;
   }
   
   .slide {
     position: absolute;
     width: 1065px; /* Adjust as needed */
-    height: 511px;
+    height: 600px;
     opacity: 0; /* Make non-active slides semi-transparent */
     transition: 0.4s ease;
 
@@ -125,6 +125,15 @@
     height: 120px;
   }
 
+  .pagination-dot img, .pagination-dotActive img{
+    width: 7px;
+    height: 7px;
+
+  }
+
+  .pagination-dot, .pagination-dotActive{
+    padding: 1px 4px;
+  }
 
 }
 
