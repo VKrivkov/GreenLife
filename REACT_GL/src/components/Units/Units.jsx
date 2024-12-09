@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const Units = () => {
   const [selectedUnit, setSelectedUnit] = useState('one');
-  const [price, setPrice] = useState('364,000 EUR');
+  const [price, setPrice] = useState('2,250 EUR');
   const [planImage, setPlanImage] = useState(Plan1);
   const { t } = useTranslation();
 
