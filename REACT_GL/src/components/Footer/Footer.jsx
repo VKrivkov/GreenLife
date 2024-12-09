@@ -41,10 +41,10 @@ const Footer = () => {
           <p>{t('footer.address')}</p>
         </div>
         <div className='navigation-footer'>
-          <Link to="/#about-section" className="footer-link">{t('footer.about')}</Link>
-          <Link to="/#gallery-section" className="footer-link">{t('footer.gallery')}</Link>
-          <Link to="/#units-section" className="footer-link">{t('footer.apartments')}</Link>
-          <Link to="/#benefits-section" className="footer-link">{t('footer.benefits')}</Link>
+          <Link to="/#exterior" className="footer-link">{t('footer.about')}</Link>
+          <Link to="/#location" className="footer-link">{t('footer.gallery')}</Link>
+          <Link to="/#interior" className="footer-link">{t('footer.apartments')}</Link>
+          <Link to="/#units-section" className="footer-link">{t('footer.benefits')}</Link>
         </div>
         <div className='nobody-reads-container'>
           <p>{t('footer.privacyPolicy')}</p>

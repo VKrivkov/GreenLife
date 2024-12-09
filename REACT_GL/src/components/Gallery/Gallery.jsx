@@ -8,7 +8,7 @@ const Gallery = () => {
   const { t } = useTranslation();
 
   return (
-    <div id='gallery-section' className='gallery-container'>
+    <div id='interior' className='gallery-container'>
       <div className='gallery-header'>
         <h1 className='headline-gallery'>{t('gallery.headline')}</h1>
         <div className='text-block'>

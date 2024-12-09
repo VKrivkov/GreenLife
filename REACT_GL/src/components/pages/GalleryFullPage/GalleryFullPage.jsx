@@ -11,8 +11,8 @@ const GalleryFullPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div id = 'about-section'>
-      <div className='gallery'>
+    <div id = 'location'>
+      <div className='gallery-container'>
         <div className='gallery-header'> 
           <h1 className='headline-gallery'>{t('galleryFullPage.location.title')}</h1>
           <div className='text-block'>

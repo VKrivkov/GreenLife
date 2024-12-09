@@ -72,10 +72,10 @@ const Navbar = () => {
         <img src={LogoT} alt="Logo" className="navbar-logo" />
       </div>
       <div className={`navbar-center ${isMenuOpen ? "show" : ""}`}>
-        <a onClick={() => scrollToSection('about-section')} className="nav-link">{t('navbar.About')}</a>
-        <a onClick={() => scrollToSection('gallery-section')} className="nav-link">{t('navbar.Gallery')}</a>
-        <a onClick={() => scrollToSection('units-section')} className="nav-link">{t('navbar.Apartments')}</a>
-        <a onClick={() => scrollToSection('benefits-section')} className="nav-link">{t('navbar.Benefits')}</a>
+        <a onClick={() => scrollToSection('exterior')} className="nav-link">{t('navbar.About')}</a>
+        <a onClick={() => scrollToSection('location')} className="nav-link">{t('navbar.Gallery')}</a>
+        <a onClick={() => scrollToSection('interior')} className="nav-link">{t('navbar.Apartments')}</a>
+        <a onClick={() => scrollToSection('units-section')} className="nav-link">{t('navbar.Benefits')}</a>
       </div>
       <div className={`navbar-side ${isMenuOpen ? "show" : ""}`}>
         <Link to="/contact" className="contact-us">{t('navbar.ContactUs')}</Link>
