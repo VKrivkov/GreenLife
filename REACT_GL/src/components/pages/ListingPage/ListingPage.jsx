@@ -60,7 +60,7 @@ export const ListingPage = () => {
             </div>
             <div className='cards-array'>
                 <div id='one-section' className='one-section'>
-                    {flatarray.slice(0, 5).map((flat, index) => (
+                    {flatarray.slice(0, 6).map((flat, index) => (
                         <Link key={`one-${index}`} to={`/single-flat-card/${index}`} className="card-link">
                             <Card 
                                 title={flat[0]} 
@@ -72,8 +72,8 @@ export const ListingPage = () => {
                     ))}
                 </div>
                 <div id='two-section' className='two-section'>
-                    {flatarray.slice(5, 13).map((flat, index) => (
-                        <Link key={`two-${index}`} to={ `/single-flat-card/${5+index}` } className="card-link">
+                    {flatarray.slice(6, 14).map((flat, index) => (
+                        <Link key={`two-${index}`} to={ `/single-flat-card/${6+index}` } className="card-link">
                             <Card 
                                 title={flat[0]} 
                                 roomCount={flat[1]} 
@@ -84,8 +84,8 @@ export const ListingPage = () => {
                     ))}
                 </div>
                 <div id='three-section' className='three-section'>
-                    {flatarray.slice(13).map((flat, index) => (
-                        <Link key={`three-${index}`} to={ `/single-flat-card/${13+index}` } className="card-link">
+                    {flatarray.slice(14).map((flat, index) => (
+                        <Link key={`three-${index}`} to={ `/single-flat-card/${14+index}` } className="card-link">
                             <Card 
                                 title={flat[0]} 
                                 roomCount={flat[1]} 

@@ -24,8 +24,8 @@
       "Gallery": "Interior",
       "Apartments": "Apartments",
       "Benefits": "Benefits",
-      "ContactUs": "Contact Us",
-      "request": "REQUEST A CALL"
+      "ContactUs": "Contact us",
+      "request": "Request a call"
     },
 
     "about": {
@@ -44,7 +44,7 @@
       "solarPanels": "Solar Panels",
       "privateGym": "Private Gym",
       "advancedSecurity": "Advanced Security",
-      "indoorPool": "Indoor Pool",
+      "indoorPool": "Swimming Pool",
       "chargingStations": "Charging Stations"
     },
 
@@ -68,12 +68,13 @@
       "twoBedrooms": "Two Bedrooms",
       "threeBedrooms": "Three Bedrooms",
       "startingFrom": "Starting from",
-      "showApartments": "Show Apartments"
+      "showApartments": "Show Apartments",
+      "form2": "for a square meter"
     },
 
     "benefits": {
       "headline": "Benefits",
-      "subHeadline": "Unparalleled advantages of Park Residences",
+      "description": "The advantage of our project Park Residences is technology and quality, every detail is thought out and implemented by our designers, engineers, designers Porto Buro, the use of quality building and finishing materials, recuperation, warm floors, fireplaces, solar panels and many other technological things, make our project exclusive, economical, comfortable to live in any season. ",
       "constructionQuality": "Construction Quality",
       "qualityDescription": "Our buildings are known for their exceptional quality. We focus on durability and design, ensuring every detail is crafted to perfection.",
       "leveragingSolarPanels": "Solar Panels",
@@ -91,7 +92,7 @@
       "callTimePlaceholder": "When should we call?",
       "messagePlaceholder": "Message",
       "privacyPolicy": "By sending this form, you agree to our privacy policy.",
-      "submitButton": "SEND A REQUEST",
+      "submitButton": "Send a request",
       "successMessage": "Your request is sent.",
       "errors": {
         "validEmail": "Please enter a valid email address.",

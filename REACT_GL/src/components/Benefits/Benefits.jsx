@@ -15,7 +15,7 @@ const Benefits = () => {
            <div className='gallery-header'>
         <h1 className='headline-gallery'>{t('benefits.headline')}</h1>
         <div className='text-block'>
-          <p>{t('gallery.description')}</p>
+          <p>{t('benefits.description')}</p>
         </div>
       </div>
       <div className='content-container'>

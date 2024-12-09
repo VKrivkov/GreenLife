@@ -11,7 +11,10 @@ import TerraceIcon from '../../../assets/TerraceIcon.webp';
 import PoolIcon from '../../../assets/PoolIcon.svg';
 import RooftopIcon from '../../../assets/RooftopIcon.webp';
 import './SingleFlatCard.css';
-import text1 from '../../../assets/text1.pdf';
+import text1 from '../../../assets/1st.pdf';
+import text2 from '../../../assets/2nd.pdf';
+import text3 from '../../../assets/3rd.pdf';
+
 
 
 {/*
@@ -35,12 +38,13 @@ const SingleFlatCard = () => {
     const { t } = useTranslation();
 
   
-  const getRoomWord = (count) => {
-    return count == 1 ? t('room.singular') : t('room.plural');
-  };
+    const getRoomWord = (count) => {
+        return count == 1 ? t('room.singular') : t('room.plural');
+    };
 
   
-  
+    
+
     const [isFlipped, setIsFlipped] = useState(false);
     const { flatIndex } = useParams();
     const flat = flatarray[parseInt(flatIndex, 10)];
@@ -53,8 +57,17 @@ const SingleFlatCard = () => {
         setIsFlipped(!isFlipped);
     };
 
-    const handlePDFDownload = () => {
-        const pdfUrl = text1;
+    const handlePDFDownload = (floor) => {
+        let pdfUrl;
+        if (floor == 0){
+            pdfUrl = text1;
+        }
+        if (floor == 1){
+            pdfUrl = text2;
+        }
+        if (floor == 2){
+            pdfUrl = text3;
+        }
         const link = document.createElement('a');
         link.href = pdfUrl;
         link.download = 'ApartmentDetails.pdf';
@@ -100,7 +113,7 @@ const SingleFlatCard = () => {
                     <h5>{flat[1]} {getRoomWord(flat[1])}</h5>
                 </div>
                 <ul>
-                    <li>{t('singleFlat.livingArea')}{flat[2]}m²{t('singleFlat.balkonySpace')}{flat[2]}m²{t('singleFlat.storage')}{flat[2]}m².</li>
+                    <li>{t('singleFlat.livingArea')}{flat[2]}m²{t('singleFlat.balkonySpace')}{flat[8]}m².</li>
                     <li>{t('singleFlat.parkingSpotIncluded')}</li>
                     <li>{t('singleFlat.solarPanelsInstallation')}</li>
                 </ul>
@@ -116,11 +129,11 @@ const SingleFlatCard = () => {
 
             <div className='flat-footer-container'>
                 <div className='price-contact-container'>
-                    <p>{t('singleFlat.price')}:</p>
-                    <h2>{flat[4]}</h2>
+                    {/* <p>{t('singleFlat.price')}:</p>
+                    <h2>{flat[4]}</h2> */}
                     <div className='contact-pdf-buttons'>
                         <Link to="/contact" className="contact-us-button">{t('singleFlat.contactUs')}</Link>
-                        <p onClick={handlePDFDownload} style={{ cursor: 'pointer' }}>{t('singleFlat.viewPDF')}</p>
+                        <p onClick={() => handlePDFDownload(flat[5])} style={{ cursor: 'pointer' }}>{t('singleFlat.viewPDF')}</p>
                     </div>
                 </div>
 

@@ -139,12 +139,13 @@
   }
   
   .available-units {
+    cursor: pointer;
     justify-self: center;
     margin-top: 75px;
     background-color: #2E2A1C;
     border: solid #2E2A1C;
     color: #F5F5F5;
-    width: 300px;
+    width: 400px;
     height: 70px;
     border-radius: 3px;
     font-family: Inter;

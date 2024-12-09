@@ -16,15 +16,15 @@ const Units = () => {
     setSelectedUnit(unitType);
     switch (unitType) {
       case 'one':
-        setPrice('364,000 EUR');
+        setPrice('2,250 EUR');
         setPlanImage(Plan1);
         break;
       case 'two':
-        setPrice('464,000 EUR');
+        setPrice('2,100 EUR');
         setPlanImage(Plan2);
         break;
       case 'three':
-        setPrice('564,000 EUR');
+        setPrice('1,550 EUR');
         setPlanImage(Plan3);
         break;
       default:
@@ -49,6 +49,8 @@ const Units = () => {
           <div className='price'>
             <p>{t('units.startingFrom')}</p>
             <p className='price-value'>{price}</p>
+            <p>{t('units.form2')}</p>
+
           </div>
         </div>
         <div className='plan-container'>

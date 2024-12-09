@@ -31,7 +31,7 @@ const About = () => {
         <div className='text-container-about'> 
           <ul>
             <li><Trans i18nKey="about.li1" /></li>
-            <li><Trans i18nKey="about.li2" /> <b>1900</b> {t('about.meters')} </li>
+            <li><Trans i18nKey="about.li2" /> <b>1300</b> {t('about.meters')} </li>
             <li><Trans i18nKey="about.li3" />< b>300</b> {t('about.meters')} </li>
             <li><Trans i18nKey="about.li4" /> <b>400</b> {t('about.meters')}  </li>
             <li><Trans i18nKey="about.li8" /> <b>9</b> {t('about.kilometers')}  </li>
