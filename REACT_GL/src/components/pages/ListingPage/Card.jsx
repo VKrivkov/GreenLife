@@ -18,8 +18,7 @@ const Card = ({ title, roomCount, area, planImage, onClick}) => {
       <div className="card-content">
         <img src={planImage} alt='Plan Image'></img>
       </div>
-      {/* Render the title div only if title is not an empty string */}
-      {title !== "" && <div className="card-title" title={title}>{title}</div>}
+      {/* {title !== "" && <div className="card-title" title={title}>{title}</div>} */}
       <div className="card-footer">
         {/* Use the getRoomWord function to display the correct word for rooms */}
         <span>{roomCount} {getRoomWord(roomCount)}</span>

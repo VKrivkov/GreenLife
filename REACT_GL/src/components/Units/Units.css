@@ -27,9 +27,9 @@
   }
   
   .content {
-    display: inline-flex;
+    display: grid;
     justify-content: flex-end;
-    columns: 2;
+    grid-template-columns: repeat(2, 1fr);;
     margin-left: 80px;
     margin-right: 80px;
     padding-right: 5px;
@@ -136,30 +136,27 @@
   
   .plan-container button{
     cursor: pointer;
-
   }
   
   .available-units {
-    bottom: 35px; /* 25px from the bottom of the image */
-    position: absolute;
-    right: 35px; /* 25px from the right of the image */
+    justify-self: center;
+    margin-top: 75px;
     background-color: #2E2A1C;
-    border: solid #ffffff;
+    border: solid #2E2A1C;
     color: #F5F5F5;
-    width: 225px;
+    width: 300px;
     height: 70px;
     border-radius: 3px;
     font-family: Inter;
     font-size: 18px;
     font-weight: 300;
-    box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
     z-index: 2;
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow and lift effect */
+    grid-column: 1/3;
+    transition: border-color 0.3s ease-in-out; /* Smooth transition for the glow and lift effect */
   }
   
 .available-units:hover{
-  box-shadow: 0 0px 30px rgb(179, 165, 125, 0.7); 
-  ; /* Green glow spread */
+  border-color: #D9E1E2;
 }
 
 
@@ -197,9 +194,9 @@
 @media (max-width: 1280px){
     
   .content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 
@@ -279,12 +276,10 @@
   }
   .available-units {
     bottom: -100px; /* 25px from the bottom of the image */
-    transform: translateX(-55%);
     width: 250px;
     height: 70px;
     font-size: 16px;
     font-weight: 300;
-    text-transform: uppercase;
   }
 
 }
@@ -299,7 +294,7 @@
 
   .plan-container {
     margin-top: 35px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
   
   .plan-container img {
@@ -351,6 +346,9 @@
   .unit-selector {
     margin-top:35px;
 }
+  .available-units {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 500px){
@@ -385,7 +383,6 @@
     height: 70px;
     font-size: 16px;
     font-weight: 300;
-    text-transform: uppercase;
   }
 
 

@@ -53,8 +53,9 @@ const Units = () => {
         </div>
         <div className='plan-container'>
         <img src={planImage} alt={`${selectedUnit} unit plan`} />
-          <button onClick={handleButtonClick} className='available-units'>{t('units.showApartments')}</button>
         </div>
+        <button onClick={handleButtonClick} className='available-units'>{t('units.showApartments')}</button>
+
       </div>
     </div>
   );
