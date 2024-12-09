@@ -1,27 +1,26 @@
 .card {
   position: relative; /* Add this to position child elements absolutely relative to this container */
   width: 250px; /* Adjust width as needed */
-  border-radius: 15px;
-  border: 1px solid #2E2A1C;
+  border-radius: 3px;
+  border: 1px solid #D9E1E2;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Inter; /* Use your desired font-family */
   font-weight: 400;
   font-size: 20px;
-  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow and lift effect */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition for the glow and lift effect */
   cursor: pointer;
 }
   
 
   .card-title  {
-    background-color: #66952F;
+    background-color: #2E2A1C;
     color: white;
     padding: 5px 20px;
     margin-left: 10px;
     position: absolute; /* Position the footer absolutely within the card */
     bottom: 40px; /* Align it to the bottom */
     margin-bottom: 20px;
-    border-radius: 4px;
+    border-radius: 2px;
     font-weight: 500;
   }
 
@@ -71,8 +70,7 @@
   
 
     .card:hover{
-      box-shadow: 0 0px 30px rgb(179, 165, 125, 0.5); 
-
+      border-color: #2E2A1C;
     }
 
 
@@ -108,7 +106,6 @@
     position: absolute; /* Position the footer absolutely within the card */
     bottom: 40px; /* Align it to the bottom */
     margin-bottom: 15px;
-    border-radius: 4px;
     font-weight: 500;
   }
 

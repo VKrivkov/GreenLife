@@ -1,35 +1,33 @@
-/* Navbar.css */
-.navbar2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f5f5f5;
-    box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(80px);
-    border: 1px solid #fff;
-    height: 80px;
-    z-index: 100;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 300;
-    width: 100vw;
-    position: fixed;  /* Fix the navbar's position relative to the viewport */
-    padding-right: 80px;
-    top: 0px;
-  }
+.navbar2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 70px;
+  border-width: 1px;
+  position: fixed;  /* Fix the navbar's position relative to the viewport */
+  box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;   /* Ensure the navbar is above other elements */
+  background: rgba(255, 255, 255, 0.7); /* Example background with slight transparency */
+  backdrop-filter: blur(80px);
+  border-bottom: 1px solid #fff;
+  padding: 0 75px;
+}
   
   .nav2-left-side{
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
-  .navbar2-brand {
+  .navbar-brand2{
+    display: flex;
     align-items: center;
   }
 
   img.navbar-ArrowBack {
     margin-right: 40px;
-    margin-left: 80px;
     width: 30px;
     height:40px;
     cursor: pointer;
@@ -61,6 +59,9 @@
     .nav2-label{
       font-size: 16px;
     }
+    .navbar2{
+      padding: 0 80px;
+    }
   }
 
 @media (max-width:1100px){
@@ -70,17 +71,12 @@
 }
   @media (max-width:930px){
    
-
+    .navbar2{
+      padding: 0 50px;
+    }
     img.navbar-ArrowBack {
       margin-right: 25px;
-      margin-left: 50px;
     }
-
-    /* Navbar.css */
-  .navbar2 {
-  padding-right: 50px;
-  top: 0px;
-  }
 
 }
 
@@ -96,13 +92,11 @@
 @media (max-width:535px) {
   img.navbar-ArrowBack {
     margin-right: 25px;
-    margin-left: 35px;
   }
 
   /* Navbar.css */
-  .navbar2 {
-    padding-right: 35px;
-    top: 0px;
+  .navbar2{
+    padding: 0 35px;
   }
 
 

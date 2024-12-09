@@ -7,9 +7,9 @@ import FloorIcon from '../../../assets/FloorIcon.svg';
 import ParkIcon from '../../../assets/ParkIcon.svg';
 import LeafIcon from '../../../assets/LeafIcon.svg';
 import SecurityIcon from '../../../assets/SecurityIcon.svg';
-import TerraceIcon from '../../../assets/TerraceIcon.png';
+import TerraceIcon from '../../../assets/TerraceIcon.webp';
 import PoolIcon from '../../../assets/PoolIcon.svg';
-import RooftopIcon from '../../../assets/RooftopIcon.png';
+import RooftopIcon from '../../../assets/RooftopIcon.webp';
 import './SingleFlatCard.css';
 import text1 from '../../../assets/text1.pdf';
 

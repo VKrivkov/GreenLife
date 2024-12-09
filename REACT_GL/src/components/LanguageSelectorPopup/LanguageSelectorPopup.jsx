@@ -2,9 +2,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './LanguageSelectorPopup.css'; // Make sure to create a corresponding CSS file
-import FlagEn from '../../assets/FlagEn.png'
-import FlagGr from '../../assets/FlagGr.png'
-import FlagRu from '../../assets/FlagRu.png'
+import FlagEn from '../../assets/FlagEn.webp'
+import FlagGr from '../../assets/FlagGr.webp'
+import FlagRu from '../../assets/FlagRu.webp'
 
 const LanguageSelector = ({ onClose }) => {
   const { i18n } = useTranslation();

@@ -8,7 +8,7 @@ import Location from './components/pages/Location/Location';
 import GalleryFullPage from './components/pages/GalleryFullPage/GalleryFullPage';
 import Gallery2 from './components/Gallery2/Gallery2';
 import LanguageSelector from './components/LanguageSelectorPopup/LanguageSelectorPopup';
-
+import './App.css'
 import './i18n';
 import { Company } from './components/Company/Company';
 import { Company2 } from './components/Company2/Company2';
@@ -92,7 +92,7 @@ const App = () => {
             <Navbar2 />
             <SingleFlatCard />
             <Gallery />
-            <Location/>
+            <div className='empty'></div>
             <Footer />
           </>
         } />

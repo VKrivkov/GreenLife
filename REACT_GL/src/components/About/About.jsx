@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.css"
-import HouseAbout from '../../assets/HouseAbout.jpg'; // Adjust path as needed
+import HouseAbout from '../../assets/HouseAbout.webp'; // Adjust path as needed
 import LocationIcon from '../../assets/LocationIcon.svg'; // Adjust path as needed
 import GymIcon from '../../assets/GymIcon.svg'; // Adjust path as needed
 import PoolIcon from '../../assets/PoolIcon.svg'; // Adjust path as needed

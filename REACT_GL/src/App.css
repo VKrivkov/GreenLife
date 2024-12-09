@@ -1,2 +1,17 @@
-/* Add this to your index.css or App.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+.empty{
+    background-color: #fff;
+    width: 100vw;
+    margin-top: 75px;
+}
+
+@media (min-width: 1600px) {
+    .empty{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 650px) {
+    .empty{
+        margin-top:  50px;
+    }
+}

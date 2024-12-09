@@ -1,42 +1,8 @@
-import gallerysolars1 from '../../../assets/gallery-page/gallery-solars/gallery-solars1.jpg';
-import gallerysolars2 from '../../../assets/gallery-page/gallery-solars/gallery-solars2.jpg';
-import gallerysolars3 from '../../../assets/gallery-page/gallery-solars/gallery-solars3.jpg';
+import galleryloc1 from '../../../assets/gallery-page/gallery-location/gallery-location1.webp';
+import galleryloc2 from '../../../assets/gallery-page/gallery-location/gallery-location2.webp';
+import galleryloc3 from '../../../assets/gallery-page/gallery-location/gallery-location3.webp';
+import galleryloc4 from '../../../assets/gallery-page/gallery-location/gallery-location4.webp';
 
-import gallerygym1 from '../../../assets/gallery-page/gallery-gym/gallery-gym1.jpg';
-import gallerygym2 from '../../../assets/gallery-page/gallery-gym/gallery-gym2.jpg';
-import gallerygym3 from '../../../assets/gallery-page/gallery-gym/gallery-gym3.jpg';
-
-import gallerypool1 from '../../../assets/gallery-page/gallery-pool/gallery-pool1.jpg';
-import gallerypool2 from '../../../assets/gallery-page/gallery-pool/gallery-pool2.jpg';
-import gallerypool3 from '../../../assets/gallery-page/gallery-pool/gallery-pool3.jpg';
-
-import galleryloc1 from '../../../assets/gallery-page/gallery-location/gallery-location1.jpg';
-import galleryloc2 from '../../../assets/gallery-page/gallery-location/gallery-location2.jpg';
-import galleryloc3 from '../../../assets/gallery-page/gallery-location/gallery-location3.jpg';
-import galleryloc4 from '../../../assets/gallery-page/gallery-location/gallery-location4.jpg';
-
-
-
-const solarArray = [
-    gallerysolars1,
-    gallerysolars3,
-    gallerysolars2,
-]
-
-
-
-const gymArray = [
-    gallerygym3,
-    gallerygym1,
-    gallerygym2
-]
-
-
-const poolArray = [
-    gallerypool1,
-    gallerypool2,
-    gallerypool3
-]
 
 
 const locArray = [
@@ -47,4 +13,4 @@ const locArray = [
 
 ]
 
-export {solarArray, gymArray, poolArray, locArray}
+export {locArray}

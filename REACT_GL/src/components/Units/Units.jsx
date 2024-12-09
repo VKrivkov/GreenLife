@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Units.css';
-import Plan1 from '../../assets/Plan1.jpg';
-import Plan2 from '../../assets/Plan2.jpg';
-import Plan3 from '../../assets/Plan3.jpg';
+import Plan1 from '../../assets/Plan1.webp';
+import Plan2 from '../../assets/Plan2.webp';
+import Plan3 from '../../assets/Plan3.webp';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 

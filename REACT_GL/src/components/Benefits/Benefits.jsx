@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Benefits.css';
-import Quality from '../../assets/Quality.jpg';
-import Community from '../../assets/Community.jpg';
-import Solars from '../../assets/Solars.jpg';
+import Quality from '../../assets/Quality.webp';
+import Community from '../../assets/Community.webp';
+import Solars from '../../assets/Solars.webp';
 
 const Benefits = () => {
   const { t } = useTranslation();
