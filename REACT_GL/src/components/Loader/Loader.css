@@ -1,0 +1,34 @@
+/* src/components/Loader.css */
+
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2E2A1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of all other elements */
+    opacity: 1; /* Initial opacity */
+    transition: opacity 0.5s ease; /* Smooth fade-out */
+  }
+  
+  .loader-overlay.fade-out {
+    opacity: 0; /* Fade to transparent */
+  }
+  
+  .loader-logo {
+    width: 150px; /* Adjust the size as needed */
+    opacity: 0.5;
+    animation: fadeEffect 2s infinite;
+  }
+  
+  /* Keyframes for fading in and out */
+  @keyframes fadeEffect {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+  }
+  

@@ -1,4 +1,5 @@
-import React, {  useState,useEffect }  from 'react';
+// src/App.jsx
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { MainPage, Navbar, About, Gallery, Units, Benefits, Contact, Footer, ContactPage, Navbar2 } from './components';
 import { ListingPage } from './components/pages/ListingPage/ListingPage';
@@ -8,12 +9,11 @@ import Location from './components/pages/Location/Location';
 import GalleryFullPage from './components/pages/GalleryFullPage/GalleryFullPage';
 import Gallery2 from './components/Gallery2/Gallery2';
 import LanguageSelector from './components/LanguageSelectorPopup/LanguageSelectorPopup';
-import './App.css'
+import './App.css';
 import './i18n';
 import { Company } from './components/Company/Company';
 import { Company2 } from './components/Company2/Company2';
-
-
+import Loader from './components/Loader/Loader'; // Import the Loader component
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -26,12 +26,12 @@ const ScrollToTop = () => {
 };
 
 const App = () => {
-
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
+  const [loading, setLoading] = useState(true); // Initial loading state
+  const [showLoader, setShowLoader] = useState(true); // Whether to show the Loader
 
   useEffect(() => {
-
-    console.log(localStorage.getItem('language'))
+    console.log(localStorage.getItem('language'));
 
     // Immediately hide the language selector if a language is already set
     if (localStorage.getItem('language')) {
@@ -40,75 +40,114 @@ const App = () => {
       // Show the language selector if no language is set
       setShowLanguageSelector(true);
     }
-  }); // Empty dependency array ensures this effect runs only on mount and unmount
+
+    // Simulate loading time (e.g., fetching data)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Loader will display for 3 seconds
+
+    // Cleanup the timer on unmount
+    return () => clearTimeout(timer);
+  }, []); // Empty dependency array ensures this effect runs only once on mount
+
+  const handleFadeOutComplete = () => {
+    setShowLoader(false);
+  };
+
+  useEffect(() => {
+    if (!loading) {
+      // No additional logic needed here since fade-out is handled in Loader.jsx
+    }
+  }, [loading]);
 
   return (
     <Router>
-      {showLanguageSelector && <LanguageSelector onClose={() => setShowLanguageSelector(false)} />}
-      <ScrollToTop /> {/* This component will take care of scrolling to the top */}
+      {/* Render the Loader overlay if showLoader is true */}
+      {showLoader && (
+        <Loader loading={loading} onFadeOutComplete={handleFadeOutComplete} />
+      )}
+
+      {/* Render the LanguageSelector and main content underneath */}
+      {!showLoader && showLanguageSelector && (
+        <LanguageSelector onClose={() => setShowLanguageSelector(false)} />
+      )}
+      {!showLoader && <ScrollToTop />} {/* Ensure ScrollToTop doesn't run while loading */}
+
+      {/* Main Content */}
       <Routes>
         {/* Home page route */}
-        <Route path="/" element={
-          <>
-            <Navbar />
-            <MainPage />
-            <Company2/>
-            <Gallery2/>
-            <GalleryFullPage/>
-            <About />
-            <Gallery />
-            <Units />
-            <Benefits />
-            <Company/>
-            <Contact />
-            <Footer />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <MainPage />
+              <Company2 />
+              <Gallery2 />
+              <GalleryFullPage />
+              <About />
+              <Gallery />
+              <Units />
+              <Benefits />
+              <Company />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
 
         {/* Contact page route */}
-        <Route path="/contact" element={
-          <>
-            <Navbar2 />
-            <ContactPage />
-            <Footer />
-          </>
-        } />
-
-
-        {/* Listing page route */}
-        <Route path="/listing" element={
-          <>
-            <Navbar2 />
-            <ListingPage />
-            <Footer />
-          </>
-
-        } />
-
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Navbar2 />
+              <ContactPage />
+              <Footer />
+            </>
+          }
+        />
 
         {/* Listing page route */}
-        <Route path="/single-flat-card/:flatIndex" element={
-          <>
-            <Navbar2 />
-            <SingleFlatCard />
-            <Gallery />
-            <div className='empty'></div>
-            <Footer />
-          </>
-        } />
-        
+        <Route
+          path="/listing"
+          element={
+            <>
+              <Navbar2 />
+              <ListingPage />
+              <Footer />
+            </>
+          }
+        />
 
-        {/*Gallery page route*/}
-        <Route path="/gallery/:path" element={
-          <>
-            <Navbar2 />
-            <GalleryFullPage />
-            <Footer />
-          </>
-       } />
+        {/* Single Flat Card route */}
+        <Route
+          path="/single-flat-card/:flatIndex"
+          element={
+            <>
+              <Navbar2 />
+              <SingleFlatCard />
+              <Gallery />
+              <div className="empty"></div>
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Gallery full page route */}
+        <Route
+          path="/gallery/:path"
+          element={
+            <>
+              <Navbar2 />
+              <GalleryFullPage />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
