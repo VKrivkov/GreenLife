@@ -25,7 +25,12 @@ import './i18n';
 import { Company } from './components/Company/Company';
 import { Company2 } from './components/Company2/Company2';
 import Loader from './components/Loader/Loader'; // Correct import
+import BGMain2 from './assets/BGMain2.webp'; // Import the background image
+import useLoader from './hooks/useLoader'; // Import the custom hook
 
+/**
+ * Component to handle scrolling to the top on route changes.
+ */
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -36,29 +41,21 @@ const ScrollToTop = () => {
   return null;
 };
 
-const App = () => {
+/**
+ * Main content component wrapped by Router to access routing information.
+ */
+const AppContent = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  // Use the custom loader hook
+  const loading = useLoader(BGMain2, 24 * 60 * 60 * 1000); // Reload after 1 day
+  const [showLoader, setShowLoader] = useState(loading);
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
-  const [showLoader, setShowLoader] = useState(false); // Controls Loader visibility
-  const [loading, setLoading] = useState(false); // Controls Loader's internal loading state
 
   useEffect(() => {
-    // Check if the Loader has been shown before
-    const loaderShown = localStorage.getItem('loaderShown');
-
-    if (!loaderShown) {
-      setShowLoader(true); // Show the Loader
-      setLoading(true); // Start Loader animation
-
-      // Hide the Loader after 3 seconds
-      const timer = setTimeout(() => {
-        setLoading(false); // Trigger fade-out
-        localStorage.setItem('loaderShown', 'true'); // Prevent future Loader displays
-      }, 3000); // Duration in milliseconds
-
-      // Cleanup the timer on component unmount
-      return () => clearTimeout(timer);
-    }
-  }, []);
+    setShowLoader(loading);
+  }, [loading]);
 
   const handleFadeOutComplete = () => {
     setShowLoader(false); // Remove Loader from the DOM after fade-out
@@ -86,7 +83,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <>
       {/* Loader Overlay */}
       {showLoader && (
         <Loader loading={loading} onFadeOutComplete={handleFadeOutComplete} />
@@ -173,8 +170,17 @@ const App = () => {
           }
         />
       </Routes>
-    </Router>
+    </>
   );
 };
+
+/**
+ * Root App component wrapped with Router.
+ */
+const App = () => (
+  <Router>
+    <AppContent />
+  </Router>
+);
 
 export default App;

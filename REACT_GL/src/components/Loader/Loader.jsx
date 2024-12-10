@@ -3,6 +3,11 @@ import React, { useEffect, useRef } from 'react';
 import './Loader.css';
 import Logo from '../../assets/logo_White.svg'; // Adjust the path as necessary
 
+/**
+ * Loader component to display a loading overlay.
+ * @param {boolean} loading - Controls the loader's internal loading state.
+ * @param {function} onFadeOutComplete - Callback when fade-out transition is complete.
+ */
 const Loader = ({ loading, onFadeOutComplete }) => {
   const overlayRef = useRef(null);
 
@@ -39,7 +44,12 @@ const Loader = ({ loading, onFadeOutComplete }) => {
   }, [loading, onFadeOutComplete]);
 
   return (
-    <div className="loader-overlay" ref={overlayRef} aria-busy={!loading} aria-label="Loading">
+    <div
+      className="loader-overlay"
+      ref={overlayRef}
+      aria-busy={loading}
+      aria-label="Loading"
+    >
       <img src={Logo} alt="Company Logo" className="loader-logo" />
     </div>
   );
