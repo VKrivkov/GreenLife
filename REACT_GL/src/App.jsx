@@ -38,8 +38,7 @@ const ScrollToTop = () => {
 
 const App = () => {
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
-  const [loading, setLoading] = useState(true); // Loader state
-  const [showLoader, setShowLoader] = useState(true); // Control Loader visibility
+  const [loading, setLoading] = useState(true); // Single state to control Loader visibility
 
   useEffect(() => {
     console.log(localStorage.getItem('language'));
@@ -54,19 +53,15 @@ const App = () => {
 
     // Simulate loading time (e.g., fetching data)
     const timer = setTimeout(() => {
-      setLoading(false);
-    }, 4000); // Loader displays for 3 seconds
+      setLoading(false); // Hide Loader after 4 seconds
+    }, 4000); // Loader displays for 4 seconds
 
     // Cleanup the timer on unmount
     return () => clearTimeout(timer);
   }, []); // Runs only once on mount
 
-  const handleFadeOutComplete = () => {
-    setShowLoader(false); // Unmount Loader after fade-out
-  };
-
   useEffect(() => {
-    if (showLoader) {
+    if (loading) {
       document.body.style.overflow = 'hidden'; // Disable scrolling while loader is active
     } else {
       document.body.style.overflow = 'auto'; // Re-enable scrolling
@@ -76,22 +71,20 @@ const App = () => {
     return () => {
       document.body.style.overflow = 'auto';
     };
-  }, [showLoader]);
+  }, [loading]);
 
   return (
     <Router>
       {/* Loader Overlay */}
-      {showLoader && (
-        <Loader loading={loading} onFadeOutComplete={handleFadeOutComplete} />
-      )}
+      {loading && <Loader />}
 
       {/* Language Selector */}
-      {!showLoader && showLanguageSelector && (
+      {!loading && showLanguageSelector && (
         <LanguageSelector onClose={() => setShowLanguageSelector(false)} />
       )}
 
       {/* Scroll To Top */}
-      {!showLoader && <ScrollToTop />}
+      {!loading && <ScrollToTop />}
 
       {/* Main Content */}
       <Routes>
