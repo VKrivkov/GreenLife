@@ -24,7 +24,7 @@ import './App.css';
 import './i18n';
 import { Company } from './components/Company/Company';
 import { Company2 } from './components/Company2/Company2';
-import Loader from './components/Loader/Loader'; // Import the Loader component
+import Loader from './components/Loader/Loader'; // Correct import
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -38,53 +38,67 @@ const ScrollToTop = () => {
 
 const App = () => {
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
-  const [loading, setLoading] = useState(true); // Single state to control Loader visibility
+  const [showLoader, setShowLoader] = useState(false); // Controls Loader visibility
+  const [loading, setLoading] = useState(false); // Controls Loader's internal loading state
 
   useEffect(() => {
-    console.log(localStorage.getItem('language'));
+    // Check if the Loader has been shown before
+    const loaderShown = localStorage.getItem('loaderShown');
 
-    // Immediately hide the language selector if a language is already set
-    if (localStorage.getItem('language')) {
-      setShowLanguageSelector(false);
-    } else {
-      // Show the language selector if no language is set
-      setShowLanguageSelector(true);
+    if (!loaderShown) {
+      setShowLoader(true); // Show the Loader
+      setLoading(true); // Start Loader animation
+
+      // Hide the Loader after 3 seconds
+      const timer = setTimeout(() => {
+        setLoading(false); // Trigger fade-out
+        localStorage.setItem('loaderShown', 'true'); // Prevent future Loader displays
+      }, 3000); // Duration in milliseconds
+
+      // Cleanup the timer on component unmount
+      return () => clearTimeout(timer);
     }
+  }, []);
 
-    // Simulate loading time (e.g., fetching data)
-    const timer = setTimeout(() => {
-      setLoading(false); // Hide Loader after 4 seconds
-    }, 4000); // Loader displays for 4 seconds
-
-    // Cleanup the timer on unmount
-    return () => clearTimeout(timer);
-  }, []); // Runs only once on mount
+  const handleFadeOutComplete = () => {
+    setShowLoader(false); // Remove Loader from the DOM after fade-out
+  };
 
   useEffect(() => {
-    if (loading) {
-      document.body.style.overflow = 'hidden'; // Disable scrolling while loader is active
+    if (showLoader) {
+      document.body.style.overflow = 'hidden'; // Disable scrolling while Loader is active
     } else {
       document.body.style.overflow = 'auto'; // Re-enable scrolling
     }
 
-    // Cleanup on unmount
+    // Cleanup on component unmount
     return () => {
       document.body.style.overflow = 'auto';
     };
-  }, [loading]);
+  }, [showLoader]);
+
+  useEffect(() => {
+    // Handle Language Selector
+    const language = localStorage.getItem('language');
+    if (!language) {
+      setShowLanguageSelector(true);
+    }
+  }, []);
 
   return (
     <Router>
       {/* Loader Overlay */}
-      {loading && <Loader />}
+      {showLoader && (
+        <Loader loading={loading} onFadeOutComplete={handleFadeOutComplete} />
+      )}
 
       {/* Language Selector */}
-      {!loading && showLanguageSelector && (
+      {!showLoader && showLanguageSelector && (
         <LanguageSelector onClose={() => setShowLanguageSelector(false)} />
       )}
 
       {/* Scroll To Top */}
-      {!loading && <ScrollToTop />}
+      <ScrollToTop />
 
       {/* Main Content */}
       <Routes>
