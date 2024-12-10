@@ -115,7 +115,7 @@
   }
 }
 
-@media (max-width:390px) {
+@media (max-width: 450px) {
   
   .navbar-brand2{
     display: none;
