@@ -68,22 +68,22 @@ const flatarray = [
     ['', '1', '56', oneroom3, '123,456 EUR', '1', plan1room3, photos[2], '8'],
     ['', '1', '54', oneroom4, '123,456 EUR', '2', plan1room4, photos[3], '7'],
     ['', '1', '56', oneroom5, '123,456 EUR', '2', plan1room5, photos[3], '8'],
-    ['veranda', '1', '56', oneroom6, '123,456 EUR', '2', plan1room6, photos[3], '8'],
+    ['veranda', '1', '56', oneroom6, '123,456 EUR', '2', plan1room6, photos[3], '22'],
 
     ['', '2', '75', tworoom1, '123,456 EUR', '1', plan2room1, photos[4], '8'],
     ['', '2', '73', tworoom2, '123,456 EUR', '1', plan2room2, photos[5], '17'],
     ['', '2', '74', tworoom3, '123,456 EUR', '1', plan2room3, photos[6], '16'],
     ['veranda', '2', '80', tworoom4, '123,456 EUR', '1', plan2room4, photos[7], '35'],
-    ['', '2', '75', tworoom5, '123,456 EUR', '2', plan2room5, photos[7]],
-    ['', '2', '73', tworoom6, '123,456 EUR', '2', plan2room6, photos[7]],
-    ['', '2', '74', tworoom7, '123,456 EUR', '2', plan2room7, photos[7]],
-    ['sea view', '2', '80', tworoom8, '123,456 EUR', '2', plan2room8, photos[7]],
+    ['', '2', '75', tworoom5, '123,456 EUR', '2', plan2room5, photos[7], '8'],
+    ['', '2', '73', tworoom6, '123,456 EUR', '2', plan2room6, photos[7], '17'],
+    ['', '2', '74', tworoom7, '123,456 EUR', '2', plan2room7, photos[7], '16'],
+    ['sea view', '2', '80', tworoom8, '123,456 EUR', '2', plan2room8, photos[7], '21'],
 
-    ['', '3', '103', threeroom1, '123,456 EUR', '0', plan3room1, photos[8]],
-    ['', '3', '98', threeroom2, '123,456 EUR', '0', plan3room2, photos[9]],
-    ['veranda', '3', '108', threeroom3, '123,456 EUR', '1', plan3room3, photos[10]],
-    ['rooftop', '3', '108', threeroom4, '123,456 EUR', '2', plan3room4, photos[11]],
-    ['sea view', '3', '101', threeroom5, '123,456 EUR', '2', plan3room5, photos[12]]
+    ['', '3', '103', threeroom1, '123,456 EUR', '0', plan3room1, photos[8], '0'],
+    ['', '3', '98', threeroom2, '123,456 EUR', '0', plan3room2, photos[9], '0'],
+    ['veranda', '3', '108', threeroom3, '123,456 EUR', '1', plan3room3, photos[10], '69'],
+    ['rooftop', '3', '108', threeroom4, '123,456 EUR', '2', plan3room4, photos[11], '43'],
+    ['sea view', '3', '101', threeroom5, '123,456 EUR', '2', plan3room5, photos[12], '59']
 
 ];
 
