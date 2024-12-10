@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar2.css'; // Ensure you have a corresponding CSS file
 import LogoT from '../../../assets/logo_Rich olive-2.svg'; // make sure the path is correct
+
 import ArrowBack from '../../../assets/ArrowBack.svg'; // make sure the path is correct
 import { useTranslation } from 'react-i18next';
 

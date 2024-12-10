@@ -66,9 +66,9 @@ const flatarray = [
     ['veranda', '1', '45', oneroom1, '123,456 EUR', '1', plan1room1, photos[0], '45'],
     ['', '1', '54', oneroom2, '123,456 EUR', '1', plan1room2, photos[1], '7'],
     ['', '1', '56', oneroom3, '123,456 EUR', '1', plan1room3, photos[2], '8'],
+    ['veranda', '1', '56', oneroom6, '123,456 EUR', '1', plan1room6, photos[3], '22'],
     ['', '1', '54', oneroom4, '123,456 EUR', '2', plan1room4, photos[3], '7'],
     ['', '1', '56', oneroom5, '123,456 EUR', '2', plan1room5, photos[3], '8'],
-    ['veranda', '1', '56', oneroom6, '123,456 EUR', '2', plan1room6, photos[3], '22'],
 
     ['', '2', '75', tworoom1, '123,456 EUR', '1', plan2room1, photos[4], '8'],
     ['', '2', '73', tworoom2, '123,456 EUR', '1', plan2room2, photos[5], '17'],

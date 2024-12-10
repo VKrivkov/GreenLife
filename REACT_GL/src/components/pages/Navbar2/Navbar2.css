@@ -106,13 +106,19 @@
 @media (max-width:530px) {
   img.navbar-ArrowBack {
     margin-right: 15px;
-    margin-left: 25px;
   }
 
   /* Navbar.css */
   .navbar2 {
     padding-right: 25px;
     top: 0px;
+  }
+}
+
+@media (max-width:390px) {
+  
+  .navbar-brand2{
+    display: none;
   }
 }
 

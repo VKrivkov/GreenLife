@@ -47,10 +47,8 @@ const Units = () => {
           <p className={`unit-option ${selectedUnit === 'two' ? 'active' : ''}`} onClick={() => handleSelection('two')}>{t('units.twoBedrooms')}</p>
           <p className={`unit-option ${selectedUnit === 'three' ? 'active' : ''}`} onClick={() => handleSelection('three')}>{t('units.threeBedrooms')}</p>
           <div className='price'>
-            <p>{t('units.startingFrom')}</p>
+            <p>{t('units.startingFrom')} {t('units.form2')}</p>
             <p className='price-value'>{price}</p>
-            <p>{t('units.form2')}</p>
-
           </div>
         </div>
         <div className='plan-container'>

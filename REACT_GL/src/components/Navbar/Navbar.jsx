@@ -30,6 +30,8 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (!section) return;
+    if (isMenuOpen) toggleMenu(); // Close the menu if it's open
+
   
     // Calculate the position of the section
     const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
