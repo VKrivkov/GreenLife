@@ -1,7 +1,18 @@
 // src/App.jsx
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { MainPage, Navbar, About, Gallery, Units, Benefits, Contact, Footer, ContactPage, Navbar2 } from './components';
+import {
+  MainPage,
+  Navbar,
+  About,
+  Gallery,
+  Units,
+  Benefits,
+  Contact,
+  Footer,
+  ContactPage,
+  Navbar2
+} from './components';
 import { ListingPage } from './components/pages/ListingPage/ListingPage';
 import SingleFlatCard from './components/pages/SingleFlatCard/SingleFlatCard';
 import SingleFlatGallery from './components/pages/SingleFlatGallery/SingleFlatGallery';
@@ -27,8 +38,8 @@ const ScrollToTop = () => {
 
 const App = () => {
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
-  const [loading, setLoading] = useState(true); // Initial loading state
-  const [showLoader, setShowLoader] = useState(true); // Whether to show the Loader
+  const [loading, setLoading] = useState(true); // Loader state
+  const [showLoader, setShowLoader] = useState(true); // Control Loader visibility
 
   useEffect(() => {
     console.log(localStorage.getItem('language'));
@@ -44,34 +55,43 @@ const App = () => {
     // Simulate loading time (e.g., fetching data)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Loader will display for 3 seconds
+    }, 4000); // Loader displays for 3 seconds
 
     // Cleanup the timer on unmount
     return () => clearTimeout(timer);
-  }, []); // Empty dependency array ensures this effect runs only once on mount
+  }, []); // Runs only once on mount
 
   const handleFadeOutComplete = () => {
-    setShowLoader(false);
+    setShowLoader(false); // Unmount Loader after fade-out
   };
 
   useEffect(() => {
-    if (!loading) {
-      // No additional logic needed here since fade-out is handled in Loader.jsx
+    if (showLoader) {
+      document.body.style.overflow = 'hidden'; // Disable scrolling while loader is active
+    } else {
+      document.body.style.overflow = 'auto'; // Re-enable scrolling
     }
-  }, [loading]);
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [showLoader]);
 
   return (
     <Router>
-      {/* Render the Loader overlay if showLoader is true */}
+      {/* Loader Overlay */}
       {showLoader && (
         <Loader loading={loading} onFadeOutComplete={handleFadeOutComplete} />
       )}
 
-      {/* Render the LanguageSelector and main content underneath */}
+      {/* Language Selector */}
       {!showLoader && showLanguageSelector && (
         <LanguageSelector onClose={() => setShowLanguageSelector(false)} />
       )}
-      {!showLoader && <ScrollToTop />} {/* Ensure ScrollToTop doesn't run while loading */}
+
+      {/* Scroll To Top */}
+      {!showLoader && <ScrollToTop />}
 
       {/* Main Content */}
       <Routes>

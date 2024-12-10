@@ -1,10 +1,1 @@
-<svg width="54" height="60" viewBox="0 0 54 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M47.925 38.25C49.4161 38.25 50.625 36.9068 50.625 35.25V12.75C50.625 11.0932 49.4161 9.75 47.925 9.75H6.075C4.58392 9.75 3.375 11.0932 3.375 12.75V35.25C3.375 36.9068 4.58392 38.25 6.075 38.25H47.925Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M18.9004 14.25V33.75" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M35.0996 14.25V33.75" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M7.4248 24H46.5748" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M36.4498 46.5H13.4998C12.0087 46.5 10.7998 45.1568 10.7998 43.5V38.25" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M38.4752 42.75H39.1502C40.2687 42.75 41.1752 43.7573 41.1752 45V48C41.1752 49.2427 40.2687 50.25 39.1502 50.25H38.4752C37.3567 50.25 36.4502 49.2427 36.4502 48V45C36.4502 43.7573 37.3567 42.75 38.4752 42.75Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M43.2 44.25H41.0596" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M43.2 48.75H41.0596" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg fill="none" height="60" viewBox="0 0 54 60" width="54" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"><path d="m47.925 38.25c1.4911 0 2.7-1.3432 2.7-3v-22.5c0-1.6568-1.2089-3-2.7-3h-41.85c-1.49108 0-2.7 1.3432-2.7 3v22.5c0 1.6568 1.20892 3 2.7 3z"/><path d="m18.9004 14.25v19.5"/><path d="m35.0996 14.25v19.5"/><path d="m7.4248 24h39.15"/><g stroke-linejoin="round"><path d="m36.4498 46.5h-22.95c-1.4911 0-2.7-1.3432-2.7-3v-5.25"/><path d="m38.4752 42.75h.675c1.1185 0 2.025 1.0073 2.025 2.25v3c0 1.2427-.9065 2.25-2.025 2.25h-.675c-1.1185 0-2.025-1.0073-2.025-2.25v-3c0-1.2427.9065-2.25 2.025-2.25z"/><path d="m43.2 44.25h-2.1404"/><path d="m43.2 48.75h-2.1404"/></g></g></svg>
