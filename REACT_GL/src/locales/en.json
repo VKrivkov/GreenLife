@@ -1,94 +1,94 @@
 {
   "company": {
-    "headline": "About the Developer",
+    "headline": "About the developer",
     "p1": "At Zyrbagan Residences LTD, we specialize in creating exceptional residential projects that blend luxury, comfort, and modern design. Based in Cyprus, we strive to provide homes that inspire and enhance the quality of life. Each of our projects reflects a commitment to quality, innovation, and the perfect balance of comfort and elegance, ensuring long-term value for our residents.",
-    "p2": "Over the years, we have established ourselves as a company dedicated to excellence through our premium developments and partnerships with leading design firms. One of our most valued collaborations is with Porto Buro, a renowned architectural and design studio. Known for their aesthetic style and contemporary design, Porto Buro architects seamlessly integrate elegance and functionality.",
-    "p3": "Together with Porto Buro, we have successfully implemented projects such as:",
-    "li1": "an exclusive collection of luxurious homes showcasing meticulous craftsmanship and stylish design",
-    "li2": "where every detail is thoughtfully designed to ensure sophisticated yet comfortable living.",
+    "p2": "Over the years, we have established ourselves as a company dedicated to excellence through our premium developments and partnerships with leading design firms. One of our most valued collaborations is with Porto Buro, a renowned architectural and design studio. Known for their aesthetic style and modern design, Porto Buro architects harmoniously combine elegance and functionality.",
+    "p3": "Together with Porto Buro, we have successfully executed projects such as:",
+    "li1": "an exclusive collection of luxury homes showcasing meticulous craftsmanship and stylish design",
+    "li2": "where every detail is thoughtfully designed to ensure an exquisite yet comfortable living experience.",
     "p4": "With Park Residences, we have created a community that embodies the best of our philosophy. Located in the picturesque village of Pervolia, just 1.3 km from the Mediterranean Sea, this project includes stunning apartments enriched with Porto Buro's signature style, advanced technologies, and premium materials."
   },
   
   "company2": {
     "headline": "Welcome to Park Residences",
-    "p1": "Our company, Zyrbagan Residences LTD in Cyprus, embodies the dream home project Park Residences, featuring a pool, gym, playground, and park located in the beautiful aristocratic Pervolia, just 1.3 km from the Mediterranean Sea with stunning views, beaches, and pedestrian zones stretching over 4 km.",
-    "p2": "Pervolia, surrounded by the sea, green fields, and mountains, creates a unique atmosphere that attracts with its beauty, tranquility, and serenity. It is rich in numerous historical and cultural attractions. Sports enthusiasts will appreciate the Herodotou Tennis Academy just 4 minutes from Park Residences, equipped with courts for tennis and padel. A 10-minute drive takes you to the Larnaca Olympic Shooting Range, a zoo, salt lakes with flamingos, and numerous hiking trails. Private schools Pascal and American Academy are 15 minutes away. The proximity to Larnaca Airport, just 9 km away, makes any trip easy to any part of the world, and the availability of schools, kindergartens, supermarkets, hospitals, and restaurants within walking distance from Park Residences ensures a comfortable life."
+    "p1": "Our company in Cyprus, Zyrbagan Residences LTD, brings to life the dream home project Park Residences with a pool, gym, playground, and square located in the beautiful, aristocratic Pervolia, just 1.3 km from the Mediterranean Sea with stunning views, beaches, and pedestrian zones stretching for 4 km.",
+    "p2": "Pervolia, surrounded by the sea, green fields, and mountains, creates a unique atmosphere that attracts with its beauty, tranquility, and peace. It is rich in numerous historical and cultural attractions. Sports enthusiasts will find the Herodotou Tennis Academy with courts for padel tennis just 4 minutes from Park Residences. A 10-minute drive takes you to the Larnaca Olympic Shooting Range, a zoo, salt lakes with flamingos, and numerous hiking trails. Private schools Pascal and American Academy are 15 minutes away. The proximity of Larnaca Airport at 9 km makes any of your travels easy to any part of the world, and the presence of schools, kindergartens, supermarkets, hospitals, and restaurants within walking distance from Park Residences makes your life comfortable."
   },
 
   "navbar": {
     "Slogan": "The best way to stay healthy is to be happy",
-    "About": "Exterior",
+    "About": "Architecture",
     "Gallery": "Location",
     "Apartments": "Interior",
     "Benefits": "Apartments",
-    "ContactUs": "Contact Us",
-    "request": "Get in Touch"
+    "ContactUs": "Contacts",
+    "request": "Contact us"
   },
 
   "about": {
-    "headline": "About the Project",
+    "headline": "About the project",
     "li1": "Beautiful location with a park and playground",
     "li2": "Distance to the sea: ",
     "li3": "Distance to the supermarket: ",
     "li4": "Distance to the school and kindergarten: ",
     "li5": "Use of solar energy with 340 sunny days for comfort and savings",
-    "li6": "Sea-view apartments starting from the 2nd floor",
+    "li6": "Sea view apartments from the 2nd floor",
     "li7": "Premium construction quality",
     "li8": "Proximity to the airport:",
     "meters": "meters",
     "kilometers": "kilometers",
     "location": "Pervolia, Cyprus",
-    "solarPanels": "Solar Panels",
-    "privateGym": "Private Gym",
-    "advancedSecurity": "Advanced Security",
-    "indoorPool": "Indoor Pool",
-    "chargingStations": "Charging Stations"
+    "solarPanels": "Solar panels",
+    "privateGym": "Private gym",
+    "advancedSecurity": "Advanced security",
+    "indoorPool": "Pool",
+    "chargingStations": "Charging stations"
   },
 
   "gallery": {
     "headline": "Interior",
     "welcome": "Welcome to Park Residences",
-    "description": "The interior of Park Residences features a bright color palette, minimalism, and sophisticated details that create an atmosphere of elegance and comfort. Every space is thoughtfully designed, ensuring coziness, functionality, and harmony."
+    "description": "The interior of Park Residences features a bright color palette, minimalism, and refined details that create an atmosphere of sophistication and comfort. Every space is thoughtfully designed to ensure coziness, functionality, and harmony."
   },
 
   "gallery2": {
-    "headline": "Exterior",
+    "headline": "Architecture",
     "welcome": "Welcome to Park Residences",
-    "description": "The design of Park Residences is created in a modern classic style, providing elegance that will remain timeless for years to come. Each image showcases the essence of our luxurious apartments, modern amenities, and comfortable living."
+    "description": "The design of Park Residences is crafted in a modern classic style, ensuring elegance that remains timeless. Each image showcases the essence of our luxurious apartments, modern amenities, and comfortable living."
   },
 
   "units": {
     "headline": "Apartments",
-    "description": "Our building includes 19 comfortable apartments with stunning views. Choose the perfect apartment that suits your preferences and needs.",
-    "oneBedroom": "One Bedroom",
-    "twoBedrooms": "Two Bedrooms",
-    "threeBedrooms": "Three Bedrooms",
+    "description": "Our home includes 19 comfortable apartments with stunning views. Choose the perfect apartment that suits your preferences and needs.",
+    "oneBedroom": "One bedroom",
+    "twoBedrooms": "Two bedrooms",
+    "threeBedrooms": "Three bedrooms",
     "startingFrom": "Starting from",
-    "showApartments": "Show Apartments",
-    "form2": "(per sqm):"
+    "showApartments": "Show apartments",
+    "form2": "(per sq.m.):"
   },
 
   "benefits": {
     "headline": "Benefits",
-    "description": "The advantage of our Park Residences project is its technology and quality. Every detail is thoughtfully designed and implemented by our designers, engineers, and Porto Buro designers. The use of high-quality construction and finishing materials, recuperation, underfloor heating, fireplaces, solar panels, and many other technological features make our project exclusive, economical, and comfortable for living all year round.",
-    "constructionQuality": "Construction Quality",
+    "description": "The advantage of our Park Residences project is its technology and quality; every detail is thoughtfully designed and implemented by our engineers, Porto Buro designers, the use of high-quality construction and finishing materials, recuperation, underfloor heating, fireplaces, solar panels, and many other technological features make our project exclusive, economical, and comfortable for living in any season.",
+    "constructionQuality": "Construction quality",
     "qualityDescription": "Our buildings are known for their exceptional quality. We focus on durability and design, ensuring perfection in every detail.",
-    "leveragingSolarPanels": "Solar Panels",
-    "solarDescription": "Solar panels offer not only environmental benefits but also significantly ease the use of existing infrastructure such as the pool and gym by substantially reducing electricity costs, enhancing operational efficiency.",
-    "communitySpaces": "Community Spaces",
-    "communityDescription": "Our neighborhood includes charming paths and a large park, with no further construction to preserve its tranquility."
+    "leveragingSolarPanels": "Solar panels",
+    "solarDescription": "Solar panels offer not only environmental benefits; they significantly ease the use of existing infrastructure such as the pool and gym by greatly reducing electricity costs, enhancing operational efficiency.",
+    "communitySpaces": "Community spaces",
+    "communityDescription": "Our neighborhood includes charming paths and a large park, with no further construction to maintain its tranquility."
   },
 
   "contact": {
-    "headline": "Contact Us",
+    "headline": "Contact us",
     "firstNamePlaceholder": "First Name*",
     "lastNamePlaceholder": "Last Name*",
     "emailPlaceholder": "blank@example.com*",
     "phoneNumberPlaceholder": "+1234567890*",
     "callTimePlaceholder": "When can we call you?",
     "messagePlaceholder": "Message",
-    "privacyPolicy": "By submitting this form, you agree to our Privacy Policy.",
-    "submitButton": "Submit Request",
+    "privacyPolicy": "By submitting this form, you agree to our privacy policy.",
+    "submitButton": "Submit request",
     "successMessage": "Your request has been submitted.",
     "errors": {
       "validEmail": "Please enter a valid email address.",
@@ -100,14 +100,14 @@
   },
 
   "footer": {
-    "companyName": "GREENLIFE",
-    "location": "PERVOLIA",
+    "companyName": "Park Residences",
+    "location": "Pervolia",
     "companyInfo": "ZYRBAGAN RESIDENCES LTD",
-    "contactUs": "Contact Us",
+    "contactUs": "Contact us",
     "telephone": "T: +35797547531",
     "email": "E: zyrbagan231123@gmail.com",
     "address": "A: Spyrou Kyprianou 90, Kontopyrgos Tower, Office 202, 6052 Larnaca, Cyprus",
-    "about": "Exterior",
+    "about": "Architecture",
     "gallery": "Location",
     "apartments": "Interior",
     "benefits": "Apartments",
@@ -119,26 +119,26 @@
   "galleryFullPage": {
     "location": {
       "title": "Location",
-      "description": "Located in the heart of Pervolia, just steps away from the historic city of Larnaca, Park Residences offers an exclusive enclave of 19 meticulously designed premium apartments. Park Residences is not just a place to live; it's a commitment to a green future and a tribute to the historical richness of Pervolia."
+      "description": "Located in the heart of Pervolia, 10 km from the historic center of Larnaca, Park Residences offers an exclusive enclave of 19 meticulously designed premium apartments. Park Residences is not just a home; it is a commitment to a green future and a tribute to the historical richness of Pervolia."
     },
     "gym": {
-      "title": "Private Gym",
-      "description": "GreenLife provides its residents with access to a private gym. The private gym is equipped with modern fitness equipment, catering to a wide range of preferences and fitness levels. From cardio machines to free weights, resistance training equipment, and dedicated areas for yoga and stretching."
+      "title": "Private gym",
+      "description": "Park Residences offers its residents access to a private gym. The private gym is equipped with modern fitness equipment, catering to a wide range of preferences and fitness levels. From cardio machines to free weights, resistance training equipment, and dedicated areas for yoga and stretching."
     },
     "solarPanels": {
-      "title": "Solar Panels",
-      "description": "Solar panels offer not only environmental benefits but also significantly ease the use of existing infrastructure such as the pool and gym by substantially reducing electricity costs, enhancing operational efficiency."
+      "title": "Solar panels",
+      "description": "Solar panels offer not only environmental benefits; they significantly ease the use of existing infrastructure such as the pool and gym by greatly reducing electricity costs, enhancing operational efficiency."
     },
     "pool": {
-      "title": "Indoor Pool",
+      "title": "Indoor pool",
       "description": "Park Residences extends its commitment to the well-being of its residents by offering access to an exclusive indoor pool. This facility is designed to support a healthy, active lifestyle year-round."
     },
-    "noDataFound": "Images not available. Please return to the main page."
+    "noDataFound": "Images are unavailable. Please return to the main page."
   },
 
   "contactInfo": {
-    "getInTouch": "Get in Touch",
-    "description": "Discover the embodiment of sustainable luxury at Park Residences, located in the serene beauty of Pervolia, Cyprus.",
+    "getInTouch": "Get in touch",
+    "description": "Discover the embodiment of comfort and luxury at Park Residences, located in the serene beauty of Pervolia, Cyprus.",
     "address": "Spyrou Kyprianou 90, Kontopyrgos Tower, Office 202, 6052 Larnaca, Cyprus",
     "phone": "+357 9 754 7531",
     "email": "zyrbagan231123@gmail.com",
@@ -148,24 +148,24 @@
   },
 
   "singleFlat": {
-    "totalArea": "Total Area",
-    "floor": "Floor",
-    "parkViews": "Park Views",
-    "privateVeranda": "Private Veranda",
-    "rooftopGarden": "Rooftop Garden",
-    "seaView": "Sea View",
-    "floorHeating": "Underfloor Heating",
-    "energyEfficiency": "Energy Efficiency",
-    "securitySystem": "Security System",
-    "livingArea": "Living Area: ",
-    "balkonySpace": ", Balcony Space: ",
-    "storage": ", Personal Storage: ",
-    "parkingSpotIncluded": "One parking spot included with the apartment",
-    "solarPanelsInstallation": "Solar Panels Installation Available",
+    "totalArea": "Total area",
+    "floor": "floor",
+    "parkViews": "Park views",
+    "privateVeranda": "Private veranda",
+    "rooftopGarden": "Rooftop garden",
+    "seaView": "Sea view",
+    "floorHeating": "Underfloor heating",
+    "energyEfficiency": "Energy efficiency",
+    "securitySystem": "Security system",
+    "livingArea": "Living area: ",
+    "balkonySpace": ", balcony space: ",
+    "storage": ", personal storage: ",
+    "parkingSpotIncluded": "One parking spot included with the apartment price",
+    "solarPanelsInstallation": "Solar panels installation available",
     "price": "Price",
-    "contactUs": "Contact Us",
+    "contactUs": "Contact us",
     "viewPDF": "View PDF",
-    "clickToFlip": "Click to Flip"
+    "clickToFlip": "Click to flip"
   },
 
   "room": {
@@ -174,7 +174,7 @@
   },
 
   "singleFlatGallery": {
-    "viewsAndLocation": "Views and Location",
-    "description": "Explore the Park Residences gallery: elegant interiors that speak of comfort, stunning exteriors that blend with nature, and breathtaking views promising tranquility. Experience the luxury of living here through each carefully curated image."
+    "viewsAndLocation": "Views and location",
+    "description": "Explore the Park Residences gallery: elegant interiors that speak of comfort, stunning exteriors blending with nature, and breathtaking views promising tranquility. Experience the luxury of living here through every carefully selected image."
   }
 }
