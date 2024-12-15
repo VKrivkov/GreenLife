@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Units = () => {
-  const [selectedUnit, setSelectedUnit] = useState('one');
-  const [price, setPrice] = useState('2,250 EUR');
+  const [selectedUnit, setSelectedUnit] = useState('three');
+  const [price, setPrice] = useState('1,550 EUR');
   const [planImage, setPlanImage] = useState(Plan1);
   const { t } = useTranslation();
 
