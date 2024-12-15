@@ -113,7 +113,7 @@ const SingleFlatCard = () => {
                     <h5>{flat[1]} {getRoomWord(flat[1])}</h5>
                 </div>
                 <ul>
-                    <li>{t('singleFlat.livingArea')}{flat[2]}m²{t('singleFlat.balkonySpace')}{flat[8]}m².</li>
+                    <li>{t('singleFlat.livingArea')}{flat[9]}m²{t('singleFlat.balkonySpace')}{flat[8]}m².</li>
                     <li>{t('singleFlat.parkingSpotIncluded')}</li>
                     <li>{t('singleFlat.solarPanelsInstallation')}</li>
                 </ul>

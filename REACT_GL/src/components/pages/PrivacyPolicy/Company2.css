@@ -1,0 +1,16 @@
+.last{
+    margin-bottom: 0px !important;
+}
+
+.last1{
+    margin-bottom: 75px;
+}
+
+.first{
+    margin-bottom: 50px !important;
+}
+
+
+.first, .last{
+    text-align: left !important;
+}

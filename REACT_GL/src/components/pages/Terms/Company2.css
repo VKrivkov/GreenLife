@@ -1,0 +1,30 @@
+.last{
+    margin-bottom: 0px !important;
+}
+
+.first{
+    margin-bottom: 50px !important;
+}
+.last1{
+    margin-bottom: 75px;
+}
+
+
+.first, .last{
+    text-align: left !important;
+}
+
+.sub-headline {
+    font-family: Brygada1918, serif; 
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    color: #2E2A1C; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+  }
+  

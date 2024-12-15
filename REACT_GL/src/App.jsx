@@ -27,6 +27,8 @@ import { Company2 } from './components/Company2/Company2';
 import Loader from './components/Loader/Loader'; // Correct import
 import BGMain2 from './assets/BGMain2.webp'; // Import the background image
 import useLoader from './hooks/useLoader'; // Import the custom hook
+import Terms from './components/pages/Terms/Terms'
+import PrivacyPolicy from './components/pages/PrivacyPolicy/PrivacyPolicy'
 
 /**
  * Component to handle scrolling to the top on route changes.
@@ -169,6 +171,32 @@ const AppContent = () => {
             </>
           }
         />
+
+         {/* Privacy Policy route */}
+         <Route
+          path="/privacy"
+          element={
+            <>
+              <Navbar2 />
+              <PrivacyPolicy />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Terms and Conditions route */}
+        <Route
+          path="/terms"
+          element={
+            <>
+              <Navbar2 />
+              <Terms />
+              <Footer />
+            </>
+          }
+        />
+
+        
       </Routes>
     </>
   );

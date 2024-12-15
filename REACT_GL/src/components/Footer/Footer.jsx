@@ -47,8 +47,8 @@ const Footer = () => {
           <Link to="/#units-section" className="footer-link">{t('footer.benefits')}</Link>
         </div>
         <div className='nobody-reads-container'>
-          <p>{t('footer.privacyPolicy')}</p>
-          <p>{t('footer.termsConditions')}</p>
+          <p><Link to="/privacy">{t('footer.privacyPolicy')}</Link></p>
+          <p><Link to="/terms">{t('footer.termsConditions')}</Link></p>
           <p className='Rights'>{t('footer.rights')}</p>
           <LanguageSwitcher />
         </div>
