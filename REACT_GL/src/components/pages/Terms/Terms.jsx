@@ -8,7 +8,7 @@ const Terms = () => {
   return (
     <div className='location-gallery'>
       <div className='location-gallery-header'>
-        <h1 className='headline-units'>{t('terms.headline')}</h1>
+        <h2 className='sub-headline'>{t('terms.headline')}</h2>
         <p className='first'>{t('terms.intro')}</p>
 
         <h2 className='sub-headline'>{t('terms.subtitle1')}</h2>

@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
   return (
     <div className='location-gallery'>
       <div className='location-gallery-header'>
-        <h1 className='headline-units'>{t('privacy.headline')}</h1>
+        <h2 className='sub-headline'>{t('privacy.headline')}</h2>
         <p className='first'>{t('privacy.intro')}</p>
 
         <h2 className='sub-headline'>{t('privacy.subtitle1')}</h2>
