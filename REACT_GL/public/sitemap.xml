@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://parkresidences.net/</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://parkresidences.net/contact</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Listing Page -->
+  <url>
+    <loc>https://parkresidences.net/listing</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Single Flat Card -->
+<url>
+    <loc>https://parkresidences.net/single-flat-card/0</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://parkresidences.net/single-flat-card/1</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://parkresidences.net/single-flat-card/2</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+    <url>
+    <loc>https://parkresidences.net/single-flat-card/3</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+    <url>
+    <loc>https://parkresidences.net/single-flat-card/4</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+    <url>
+    <loc>https://parkresidences.net/single-flat-card/5</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+    <url>
+    <loc>https://parkresidences.net/single-flat-card/6</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+    <url>
+    <loc>https://parkresidences.net/single-flat-card/7</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+    <url>
+    <loc>https://parkresidences.net/single-flat-card/8</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+    <url>
+    <loc>https://parkresidences.net/single-flat-card/9</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+
+      <url>
+    <loc>https://parkresidences.net/single-flat-card/10</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+      <url>
+    <loc>https://parkresidences.net/single-flat-card/11</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+      <url>
+    <loc>https://parkresidences.net/single-flat-card/12</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+      <url>
+    <loc>https://parkresidences.net/single-flat-card/13</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+      <url>
+    <loc>https://parkresidences.net/single-flat-card/14</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+      <url>
+    <loc>https://parkresidences.net/single-flat-card/15</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+      <url>
+    <loc>https://parkresidences.net/single-flat-card/16</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+      <url>
+    <loc>https://parkresidences.net/single-flat-card/18</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+
+  <!-- Add more dynamic routes as necessary -->
+
+
+</urlset>
