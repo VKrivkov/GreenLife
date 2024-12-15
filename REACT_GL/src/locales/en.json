@@ -214,7 +214,9 @@
     "price": "Price",
     "contactUs": "Contact us",
     "viewPDF": "View PDF",
-    "clickToFlip": "Click to flip"
+    "clickToFlip": "Click to flip",
+    "floors": "Warm floors are included in the total price"
+
   },
 
   "room": {

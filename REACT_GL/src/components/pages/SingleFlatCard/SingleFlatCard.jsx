@@ -37,6 +37,10 @@ import text3 from '../../../assets/3rd.pdf';
 const SingleFlatCard = () => {
     const { t } = useTranslation();
 
+
+    const solarsHandle = (count) => {
+        return count == 1 ? t('singleFlat.floors') : t('singleFlat.solarPanelsInstallation');
+    }
   
     const getRoomWord = (count) => {
         return count == 1 ? t('room.singular') : t('room.plural');
@@ -115,7 +119,7 @@ const SingleFlatCard = () => {
                 <ul>
                     <li>{t('singleFlat.livingArea')}{flat[9]}m²{t('singleFlat.balkonySpace')}{flat[8]}m².</li>
                     <li>{t('singleFlat.parkingSpotIncluded')}</li>
-                    <li>{t('singleFlat.solarPanelsInstallation')}</li>
+                    <li>{solarsHandle(flat[1])}</li>
                 </ul>
             </div>
 
