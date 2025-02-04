@@ -62,15 +62,7 @@ body {
   height: 40%;
 }
 
-.regular-text {
-  font-weight: 400; /* Standard font weight */
-}
 
-.green-text {
-  font-weight: 500; /* Heavier font weight for 'GREEN' */
-  color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
-  margin: 0 10px; /* Optional: adds spacing around 'GREEN' */
-}
 
 a.request-link {
   display: none;
@@ -92,15 +84,6 @@ a.request-link {
 }
 
 @media (min-width: 1600px) {
-  .regular-text {
-    font-weight: 400; /* Standard font weight */
-  }
-
-  .green-text {
-    font-weight: 500; /* Heavier font weight for 'GREEN' */
-    color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
-    margin: 0 10px; /* Optional: adds spacing around 'GREEN' */
-  }
 
   .scroll-indicator {
     position: absolute;
@@ -152,15 +135,6 @@ a.request-link {
     white-space: nowrap; /* Prevents text from wrapping */
   }
 
-  .regular-text {
-    font-weight: 400; /* Standard font weight */
-  }
-
-  .green-text {
-    font-weight: 500; /* Heavier font weight for 'GREEN' */
-    color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
-    margin: 0 10px; /* Optional: adds spacing around 'GREEN' */
-  }
 }
 
 @media (max-width: 600px) {

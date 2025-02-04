@@ -24,14 +24,14 @@
   /* Place previous slide to the left */
   .slide.prev {
     transform: translateX(calc(-100% - 20px)); /* Slide width + margin */
-    opacity: 0.5; /* Make the active slide fully opaque */
+    opacity: 0.4; /* Make the active slide fully opaque */
 
   }
   
   /* Place next slide to the right */
   .slide.next {
     transform: translateX(calc(100% + 20px)); /* Slide width + margin */
-    opacity: 0.5; /* Make the active slide fully opaque */
+    opacity: 0.4; /* Make the active slide fully opaque */
 
   }
   
@@ -39,11 +39,14 @@
     background: none;
     border: none;
     position: absolute;
-    top: 50%;
+    top: 46.5%;
     transform: translateY(-52.5%);
     z-index: 3;
     cursor: pointer;
+    box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.10);
+    padding: 0px;
 
+    height: 50px;
   }
   
   .arrowLeft {
@@ -51,14 +54,13 @@
   }
 
   .arrowLeft img, .arrowRight img{
-    width: 140px;
-    height: 140px;
+    width: 50px;
+    height: 50px;
   }
   
   .arrowRight {
-    right: 60px; /* 20px from the right edge of the active slide */
+    right: 80px; /* 20px from the right edge of the active slide */
   }
-
 
 
 
@@ -80,31 +82,38 @@
   background:none;
 }
 
+@media (min-width: 1600px){
+  .arrowLeft {
+    left: 100px; 
+  }
+
+  
+  .arrowRight {
+    right: 100px; 
+  }
+}
 
 @media (max-width: 1100px){
 
   .slide {
-    width: 800px; /* Adjust as needed */
+    width: 800px; 
     height: 400px;
-  }
-
-
-  
-  .arrowLeft {
-    left: 46px; /* 20px from the left edge of the active slide */
-  }
-
-  .arrowLeft img, .arrowRight img{
-    width: 140px;
-    height: 140px;
-  }
-  
-  .arrowRight {
-    right: 30px; /* 20px from the right edge of the active slide */
   }
 
   .gallery-slider {
     height: 420px;
+  }
+}
+
+
+@media (max-width: 1050px){
+  .arrowLeft {
+    left: 75px; 
+  }
+
+  
+  .arrowRight {
+    right: 75px; 
   }
 }
 
@@ -118,11 +127,6 @@
   }
   .gallery-slider {
     height: 270px;
-  }
-
-  .arrowLeft img, .arrowRight img{
-    width: 120px;
-    height: 120px;
   }
 
   .pagination-dot img, .pagination-dotActive img{
@@ -140,11 +144,11 @@
 
 @media (max-width:650px){
   .arrowLeft {
-    left: 20px; /* 20px from the left edge of the active slide */
+    left: 50px; 
   }
 
   .arrowRight {
-    right: 5px; /* 20px from the right edge of the active slide */
+    right: 50px; 
   }
 
 }
@@ -164,10 +168,10 @@
 
 @media (max-width: 420px){
   .arrowLeft {
-    left: -10px; /* 20px from the left edge of the active slide */
+    left: 25px; /* 20px from the left edge of the active slide */
   }
 
   .arrowRight {
-    right: -25px; /* 20px from the right edge of the active slide */
+    right: 25px; /* 20px from the right edge of the active slide */
   }
 }

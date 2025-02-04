@@ -2,8 +2,8 @@ import React , { useState }  from 'react'
 import './GalleryComponent.css'
 import currPage  from '../../assets/CurrPage.svg';
 import otherPage  from '../../assets/OtherPage.svg';
-import arrowLeft from '../../assets/ArrowLeft.webp';
-import arrowRight from '../../assets/ArrowRight.webp';
+import arrowLeft from '../../assets/ArrowLeft.png';
+import arrowRight from '../../assets/ArrowRight.png';
 
 const GalleryComponent = ({images}) => {
     const [currentSlide, setCurrentSlide] = useState(0);

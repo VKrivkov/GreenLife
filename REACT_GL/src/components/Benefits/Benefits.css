@@ -31,8 +31,8 @@
   }
 
   .content-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     color: #090909;
 
@@ -43,26 +43,18 @@
   .quality-container, .solars-container, .community-container{
     display: flex;
     flex-direction: column; /* Organizes the icon and text in a column */
-    align-items: center; /* Centers the content */
+    align-items: center;
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .solars-container img{
-    margin-right: 50px;
-    margin-left: 50px;
-    
-    
+
+  .quality-container {
+    margin-left: 75px; 
   }
 
-  .quality-container img{
-    align-items: start; /* Centers the content */
-
-  }
-
-
-  .community-container img{
-    align-items: end; /* Centers the content */
+  .community-container {
+    margin-right: 75px; 
   }
 
   .quality-container img, .solars-container img, .community-container img{
@@ -104,6 +96,7 @@
   }
 
 
+
 @media (min-width: 1600px){
 
   .benefits-container{
@@ -130,6 +123,14 @@
   .quality-container img, .community-container img {
       height: 375px;
       width: 375px;
+  }
+
+  .quality-container{
+    margin-left: 100px; 
+  }
+
+  .community-container{
+    margin-right: 100px; 
   }
 
   .solars-container img {
@@ -165,14 +166,28 @@
     font-size: 20px;
   }
 
-  .solars-container img{
-    margin-right: 100px;
-    margin-left: 100px;
-    
-  }
 
 }
 
+@media (min-width: 1800px){
+  .quality-container img, .community-container img {
+    width: 450px;
+    height: 375px;
+  }
+
+  .solars-container img {
+    width: 550px;
+    height: 375px;
+  }
+
+  .solars-container p, .quality-container p, .community-container p {
+    width: 450px;
+}
+.solars-container p{
+  width: 550px;
+}
+
+}
 
 
 @media (max-width: 1280px) {
@@ -182,28 +197,33 @@
       margin: 0 40px;
   }
 
-  .content-container {
-      grid-template-columns: repeat(3, 1fr); /* Decrease number of columns */
-  }
 
   .quality-container, .solars-container, .community-container {
-      margin: 20px 0; /* Adjust spacing */
+      margin: 20px 0;
   }
 
   .quality-container img,  .community-container img {
-      height: 250px; /* Scale down image size */
-      width: 250px;
+      height: 220px;
+      width: 220px;
+  }
+
+  .quality-container{
+    margin-left: 75px;
+  }
+
+  .community-container{
+    margin-right: 75px;
   }
 
   .solars-container img{
-    height: 250px;
-    width: 350px;
+    height: 220px;
+    width: 320px;
   }
   .solars-container p, .quality-container p, .community-container p {
-      width: 250px; /* Match image width */
+      width: 220px;
   }
   .solars-container p{
-    width: 350px;
+    width: 320px;
   }
 
   .HeadlineBenefits{
@@ -269,26 +289,24 @@
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 930px){
 
-.solars-container{
-  grid-row: 1 / 2;
-}
-  .content-container {
-    grid-template-columns: 1fr;
-    gap: 50px; /* Adjust this value to control space between grid items */
-    margin: 0px 80px; /* Consider adjusting this if necessary */
+
+  .content-container{
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
   }
 
   .solars-container, .quality-container, .community-container{
-    /* Reset margins if they're no longer necessary in a single-column layout */
     margin: 0px;
   }
 
   /* Adjust image and text spacing if needed */
   .solars-container h6, .community-container h6, .quality-container h6{
-    margin-top: 50px; /* Adjust top margin to control spacing above the header */
-    margin-bottom: 25px; /* Control spacing between the header and paragraph */
+    margin-top: 35px; /* Adjust top margin to control spacing above the header */
+    margin-bottom: 10px; /* Control spacing between the header and paragraph */
   }
 
   .quality-container img, .solars-container img, .community-container img{
@@ -307,36 +325,25 @@
 
 @media (max-width:650px)
 {
-  .head-container h2{
-    font-size: 40px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
-  .head-container p{
-    width: 60%;
-    text-align: center;
-    margin-bottom: 35px;
-  }
+
   .quality-container p, .community-container p, .solars-container p {
-      font-size: 16px; /* Adjust font size */
+      font-size: 16px; 
   }
 
   .quality-container h6, .community-container h6, .solars-container h6 {
-    font-size: 16px; /* Adjust font size */
-    margin-top: 35px;
-    margin-bottom: 20px;
+    font-size: 16px; 
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
   .benefits-container{
     padding: 50px 0px 0px 0px;
   }
   .content-container {
-      grid-template-columns: 1fr;
-      gap: 35px; /* Adjust this value to control space between grid items */
+      gap: 35px; 
       margin: 0px 50px;
   }
   .quality-container img, .solars-container img, .community-container img{
-    width: 100%; /* Makes image responsive within the container */
-    height: 200px; /* Adjust height automatically to maintain aspect ratio */
+    height: 200px; 
   }
 
 

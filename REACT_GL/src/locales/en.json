@@ -103,7 +103,7 @@
   "gallery2": {
     "headline": "Architecture",
     "welcome": "Welcome to Park Residences",
-    "description": "The design of Park Residences is crafted in a modern classic style, ensuring elegance that remains timeless. Each image showcases the essence of our luxurious apartments, modern amenities, and comfortable living."
+    "description": "Park Residences are ideal for those who appreciate style, comfort and privacy combined with modern technology. It is a place to live where minimalism becomes a way to emphasise natural beauty and quality of life. Each image demonstrates the essence of our luxurious apartments, modern amenities and comfortable accommodation"
   },
 
   "units": {
@@ -151,6 +151,7 @@
   "footer": {
     "companyName": "Park Residences",
     "location": "Pervolia",
+    "companyInfo0": "Developer:",
     "companyInfo": "ZYRBAGAN RESIDENCES LTD",
     "contactUs": "Contact us",
     "telephone": "T: +35797547531",
@@ -162,7 +163,7 @@
     "benefits": "Apartments",
     "privacyPolicy": "Privacy Policy",
     "termsConditions": "Terms and Conditions",
-    "rights": "© 2024, All rights reserved"
+    "rights": "© 2025, All rights reserved"
   },
 
   "galleryFullPage": {
@@ -198,7 +199,7 @@
 
   "singleFlat": {
     "totalArea": "Total area",
-    "floor": "floor",
+    "floor": "Floor",
     "parkViews": "Park views",
     "privateVeranda": "Ground terrace",
     "rooftopGarden": "Rooftop garden",

@@ -32,13 +32,18 @@ const Footer = () => {
       <div className='footer-first-level'>
         <div onClick={handleLogoClick} className='company-container'>
           <img src={Logo} alt="Logo" className='footer-logo'/>
+          <div>
+          <p>{t('footer.companyInfo0')}</p>
           <p>{t('footer.companyInfo')}</p>
+          </div>
         </div>
         <div className='contact-info-container'>
           <h6>{t('footer.contactUs')}</h6>
-          <p>{t('footer.telephone')}</p>
-          <p>{t('footer.email')}</p>
-          <p>{t('footer.address')}</p>
+          <div className='cts'>
+            <p>{t('footer.telephone')}</p>
+            <p>{t('footer.email')}</p>
+            <p>{t('footer.address')}</p>
+          </div>
         </div>
         <div className='navigation-footer'>
           <Link to="/#exterior" className="footer-link">{t('footer.about')}</Link>
@@ -47,10 +52,14 @@ const Footer = () => {
           <Link to="/#units-section" className="footer-link">{t('footer.benefits')}</Link>
         </div>
         <div className='nobody-reads-container'>
-          <p><Link to="/privacy">{t('footer.privacyPolicy')}</Link></p>
-          <p><Link to="/terms">{t('footer.termsConditions')}</Link></p>
-          <p className='Rights'>{t('footer.rights')}</p>
-          <LanguageSwitcher />
+          <div>
+            <p><Link to="/privacy">{t('footer.privacyPolicy')}</Link></p>
+            <p><Link to="/terms">{t('footer.termsConditions')}</Link></p>
+          </div>
+          <div>
+            <p className='Rights'>{t('footer.rights')}</p>
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
     </div>

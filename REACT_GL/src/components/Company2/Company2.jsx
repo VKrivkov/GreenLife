@@ -8,11 +8,13 @@ export const Company2 = () => {
     const { t } = useTranslation();
   return (
     <>
-    <div className='location-gallery'>
-        <div className='location-gallery-header'> 
-            <h1 className='headline-units'>{t('company2.headline')}</h1>
-            <p className='first'>{t('company2.p1')}</p>
-            <p className='last'>{t('company2.p2')}</p>
+    <div className='gallery-container'>
+        <div className='gallery-header'> 
+          <h1 className='headline-company'>{t('company2.headline')}</h1>
+          <div className='text'>
+            <p>{t('company2.p1')}</p>
+            <p>{t('company2.p2')}</p>
+          </div>
         </div>
         </div>
     </>

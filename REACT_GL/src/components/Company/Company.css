@@ -1,9 +1,30 @@
-a
-.first1{
-    margin-bottom: 50px !important;
+.space{
+    margin-top: 75px;
+}
+.last1{
+    margin-bottom: 75px !important;
 }
 
+@media (min-width:1600px) {
+    .space{
+        margin-top: 80px;
+    }
+}
 
-.first1, .last1{
-    text-align: left !important;
+@media (max-width:1280px) {
+    .space{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:650px) {
+    .space{
+        margin-top: 35px;
+    }
+}
+
+@media (max-width:420px) {
+    .space{
+        margin-top: 25px;
+    }
 }

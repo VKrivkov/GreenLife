@@ -149,7 +149,12 @@ const Contact = () => {
     <div id = 'contact-section' className='contact-section'> 
       <div className="contact-background-image"></div>
 
-      <h2 className='headline-contact'>{t('contact.headline')}</h2>
+      <div className='contact-header1'>
+        <h2 className='headline-contact1'>{t('contact.headline')}</h2>
+        <p className='text'>{t('contactInfo.description')}</p>
+      </div>
+      
+
 
       <form  className="contact-form" onSubmit={handleSubmit}>
         <div className="input-row">

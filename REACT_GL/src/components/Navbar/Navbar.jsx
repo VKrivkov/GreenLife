@@ -71,6 +71,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${isMenuOpen ? "show" : ""}`}>
       <div onClick={handleLogoClick} className="navbar-brand" style={{ cursor: 'pointer' }}>
+        <img src={Logo} alt="Logo" className="navbar-logo-small" />
         <img src={LogoT} alt="Logo" className="navbar-logo" />
       </div>
       <div className={`navbar-center ${isMenuOpen ? "show" : ""}`}>

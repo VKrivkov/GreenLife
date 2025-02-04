@@ -1,6 +1,6 @@
 .about-project {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 75px;
+    padding-right: 75px;
     padding-top: 75px;
     align-items: center;
     font-family: Inter;
@@ -21,7 +21,7 @@
   }
 
   .image-container-about{
-    width: 600px;
+    width: 100%;
   }
 
   .map-container{

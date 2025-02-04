@@ -14,7 +14,7 @@
     border-width: 1px;
     position: fixed;  /* Fix the navbar's position relative to the viewport */
     box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;   /* Ensure the navbar is above other elements */
+    z-index: 10000;   /* Ensure the navbar is above other elements */
     background: rgba(255, 255, 255, 0.7); /* Example background with slight transparency */
     backdrop-filter: blur(80px);
     border-bottom: 1px solid #fff;
@@ -31,10 +31,16 @@
     display: flex;
     justify-content: flex-start;
     margin: 0 75px;
+    align-items: center;
+
   }
-  
+
+  .navbar-logo-small {
+    margin-right: 15px;
+    height: 40px; 
+  }
   .navbar-logo {
-    height: 60px; 
+    height: 20px; 
   }
   
 
@@ -114,7 +120,7 @@
     border-width: 1px;
     position: fixed;  /* Fix the navbar's position relative to the viewport */
 
-    z-index: 1000;   /* Ensure the navbar is above other elements */
+    z-index: 10000;   /* Ensure the navbar is above other elements */
     background: rgba(255, 255, 255, 0.7); /* Example background with slight transparency */
     box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(80px);
@@ -150,9 +156,6 @@
     margin: 0 100px;
   }
 
-  .navbar-logo {
-    height: 60px;     
-  }
 
     
   .navbar-text {
@@ -170,12 +173,12 @@
 
 
 .burger-menu {
-  display: none; /* Hidden by default, will be displayed in tablet view */
+  display: none; 
   cursor: pointer;
 }
 
 .menu-icon {
-  height: 30px; /* Set the size of your burger and close icons if needed */
+  height: 30px; 
 }
 .navbar-label{
 
@@ -212,7 +215,7 @@ display: none;
     margin-top: 0;   
     position: fixed;  /* Fix the navbar's position relative to the viewport */
 
-    z-index: 1000;   /* Ensure the navbar is above other elements */
+    z-index: 10000;   /* Ensure the navbar is above other elements */
     box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.7); /* Example background with slight transparency */
     backdrop-filter: blur(80px);
@@ -224,7 +227,7 @@ display: none;
   .navbar-brand{
     position: absolute;
     left: 0px;
-    top: 4.5px;
+    top: 15px;
   }
 
 
@@ -242,7 +245,7 @@ display: none;
     display: block; /* Show the burger menu */
     position: absolute;
     top: 20px;
-    right: 50px; /* You can adjust the positioning as needed */
+    right: 75px; 
   }
 
   .navbar-center {
@@ -309,7 +312,7 @@ display: none;
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   .navbar-center.show {
     padding: 80px 100px 0px 100px;
     display: grid;
@@ -321,7 +324,20 @@ display: none;
   } 
 }
 
+@media (max-width: 650px) {
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 50px
 
+  }
+
+  .burger-menu {
+    display: block; 
+    position: absolute;
+    right: 50px; 
+  }
+}
 @media (max-width: 600px) {
 
 
@@ -336,7 +352,7 @@ display: none;
 
 
   .navbar-center.show {
-    padding: 50px 50px 0px 30px;
+    padding: 50px 50px 0px 50px;
     display: grid;
     grid-template-columns: 0;
     grid-template-rows: repeat(4, 70px);
@@ -349,28 +365,15 @@ display: none;
 
   .navbar-side.show {
     display: flex;
-    font-size: 24px; /* Larger font size for better tap targets */
-    padding: 10px;
+    font-size: 24px;
     margin-top: 150px;
-    border: 2px solid transparent; /* Optional: add a border or change styling as needed */
+    border: 2px solid transparent; 
     align-self: flex-start;
     text-align: start;    
-    margin-left: 20px;
+    margin-left: 50px;
   }
 
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    margin-left: 25px
 
-  }
-
-  .burger-menu {
-    display: block; /* Show the burger menu */
-    position: absolute;
-    top: 25px;
-    right: 25px; /* You can adjust the positioning as needed */
-  }
 
   .nav-link, .contact-us {
     display: block;
@@ -381,9 +384,35 @@ display: none;
 
 
 
+@media (max-width:450px) {
+  .navbar-logo{
+
+    display: none;
+  }
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@media (max-width: 420px) {
+  .navbar-brand {
+    margin-left: 25px
+  }
+
+  .burger-menu {
+    right: 25px; 
+  }
+
+  .navbar-center.show {
+    padding: 50px 50px 0px 25px;
+  }
+
+  .navbar-side.show {
+    margin-left:25px;
+    padding: 0px;
+  }
 }
 
 .navbar-center a {

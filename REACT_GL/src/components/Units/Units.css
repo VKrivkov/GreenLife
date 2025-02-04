@@ -16,10 +16,10 @@
     font-size: 50px;
     font-weight: 300;
     color: #2E2A1C; /* Adjust the color value to match the desired shade of green */
-    margin: 75px 50px;
+    margin: 75px 0px;
   }
   .units-header {
-    width: 50%;
+    width: 100%;
     font-weight: 300;
     color: #090909;
 
@@ -30,10 +30,8 @@
     display: grid;
     justify-content: flex-end;
     grid-template-columns: repeat(2, 1fr);;
-    margin-left: 80px;
-    margin-right: 80px;
-    padding-right: 5px;
-
+    margin-left: 75px;
+    margin-right: 75px;
   }
   
   .unit-selector {
@@ -120,7 +118,6 @@
   
   .plan-container {
     display: block;
-    margin-left: 100px;
     position: relative;
     margin-top: 75px;
     z-index: 1;
@@ -180,6 +177,11 @@
     padding-top : 80px;
     font-weight: 400;
   }
+
+  .content{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
   
   .headline-units{
     font-family: Brygada1918, serif; /* Replace with the font of your choice */
@@ -199,6 +201,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
   }
 
   .unit-selector {
@@ -217,11 +222,7 @@
     margin-bottom: 50px;
 
   }
-  .units-header {
-    width: 80%;
- 
 
-  }
   .price{
     margin-top: 0px;
     margin-left: 50px;
@@ -244,7 +245,7 @@
   }
 
 .units{
-  padding:75px 50px 0px 50px;
+  padding:75px 75px 0px 75px;
 
 }
 
@@ -255,7 +256,16 @@
     position: relative;
     margin-top: 50px;
     z-index: 1;
+    width: 100%;
   }
+
+  .plan-container img{
+    width: 100%;
+    height: auto;
+
+  }
+
+
 
 }
 
@@ -270,11 +280,6 @@
     z-index: 1;
   }
   
-  .plan-container img {
-
-    width: 600px;
-    height: 350px;
-  }
   .available-units {
     bottom: -100px; /* 25px from the bottom of the image */
     width: 250px;
@@ -299,9 +304,7 @@
   }
   
   .plan-container img {
-
-    width: 450px;
-    height: 300px;
+    border-width: 1px ;
   }
   
   .plan-container button{
@@ -310,7 +313,7 @@
 
   .units {
     font-size: 16px;
-    padding-top : 50px;
+    padding: 50px 50px 0px 50px;
     font-weight: 400;
   }
 
@@ -326,6 +329,9 @@
   }
     .price{
       margin-left:20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
 
     .price .price-value{
@@ -350,14 +356,15 @@
   .available-units {
     margin-top: 50px;
   }
+
+  .units-header p{
+    text-align: left;
+  }
 }
 
 @media (max-width: 500px){
 
-  .plan-container img {
-    width: 400px;
-    height: 250px;
-  }
+
 
   .price-value{
     font-family: Brygada1918, serif; /* Replace with the font of your choice */
@@ -433,4 +440,12 @@
     row-gap: 0px;
     justify-items: center;
 }
+}
+
+@media (max-width: 420px){
+  .units {
+    font-size: 16px;
+    padding : 50px 25px 0px 25px;
+    font-weight: 400;
+  }
 }

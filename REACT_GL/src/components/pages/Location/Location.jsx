@@ -10,7 +10,7 @@ const Location = () => {
 
   const customIcon = new Icon ({
     iconUrl: smallLogo,
-    iconSize: [100,100]
+    iconSize: [65,65]
   });
 
   return (
