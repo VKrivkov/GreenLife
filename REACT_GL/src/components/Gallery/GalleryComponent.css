@@ -175,3 +175,60 @@
     right: 25px; /* 20px from the right edge of the active slide */
   }
 }
+
+
+
+/* ---------------------------
+   HOVER EFFECT & OVERLAY 
+-----------------------------*/
+
+/* Darken the active image on hover */
+.slide.active:hover .gallery-image {
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+}
+
+/* Overlay text (hidden by default) */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Allows clicks to pass through */
+  font-family: Inter;
+}
+
+/* Show overlay on hover */
+.slide.active:hover .overlay {
+  opacity: 1;
+}
+
+/* ---------------------------
+   EXPANDED MODE STYLING
+-----------------------------*/
+
+/* When expanded, adjust the container height */
+.gallery-slider.expanded {
+  height: 87vh;  /* New container height */
+  transition: height 0.3s ease;
+}
+
+/* Change the dimensions of the visible slides (active, previous, and next) when expanded */
+.gallery-slider.expanded .slide.active,
+.gallery-slider.expanded .slide.prev,
+.gallery-slider.expanded .slide.next {
+  height: 84vh;   /* New height for expanded slides */
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* The transform values for .slide.prev and .slide.next remain unchanged, 
+   so they’ll now compute using the new expanded width (i.e. 1200px) with a 20px gap.
+   For example:
+   .slide.prev { transform: translateX(calc(-100% - 20px)); }
+   .slide.next { transform: translateX(calc(100% + 20px)); }
+   which becomes translateX(calc(-1200px - 20px)) and translateX(calc(1200px + 20px)) respectively.
+*/
