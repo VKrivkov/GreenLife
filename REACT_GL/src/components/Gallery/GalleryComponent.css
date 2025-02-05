@@ -5,6 +5,7 @@
     overflow: hidden;
     height: 644px;
   }
+
   
   .slide {
     position: absolute;
@@ -222,7 +223,7 @@
 .gallery-slider.expanded .slide.prev,
 .gallery-slider.expanded .slide.next {
   height: 84vh;   /* New height for expanded slides */
-  transition: width 0.3s ease, height 0.3s ease;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
 /* The transform values for .slide.prev and .slide.next remain unchanged, 
@@ -232,3 +233,5 @@
    .slide.next { transform: translateX(calc(100% + 20px)); }
    which becomes translateX(calc(-1200px - 20px)) and translateX(calc(1200px + 20px)) respectively.
 */
+
+

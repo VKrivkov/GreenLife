@@ -10,6 +10,9 @@ import SecurityIcon from '../../../assets/SecurityIcon.svg';
 import TerraceIcon from '../../../assets/TerraceIcon.webp';
 import PoolIcon from '../../../assets/PoolIcon.svg';
 import RooftopIcon from '../../../assets/RooftopIcon.webp';
+import Parking from '../../../assets/parking.png';
+import Storage from '../../../assets/storage.png';
+
 import './SingleFlatCard.css';
 import text1 from '../../../assets/1st.pdf';
 import text2 from '../../../assets/2nd.pdf';
@@ -128,10 +131,44 @@ const SingleFlatCard = () => {
                     <img className='plan-front' src={flat[3]} alt='Plan of the flat'></img>
                     <img className='plan-back' src={flat[6]} alt='Plan of the house'></img>
                 </div>
-                <p>{t('singleFlat.clickToFlip')}</p>
+                {/* <p>{t('singleFlat.clickToFlip')}</p> */}
             </div>
 
-            <div className='flat-footer-container'>
+            <div className='wrapper-icons'>
+                <div className="icons-container-about">
+             
+                <div className="icon-item">
+                    <img src={FloorIcon} alt={t('singleFlat.floorHeating')} />
+                    <span>{t('singleFlat.floorHeating')}</span>
+                </div>
+        
+                <div className="icon-item">
+                    {handleIconChange()}
+                </div>
+        
+                <div className="icon-item">
+                    <img src={LeafIcon} alt={t('singleFlat.energyEfficiency')} />
+                    <span>{t('singleFlat.energyEfficiency')}</span>
+                </div>
+        
+                <div className="icon-item">
+                <img src={SecurityIcon} alt="Advanced Security" />
+                <span>{t('about.advancedSecurity')}</span>
+                </div>
+        
+                <div className="icon-item">
+                <img src={Storage} alt="Storage" />
+                <span>{t('singleFlat.store')}</span>
+                </div>
+        
+                <div className="icon-item">
+                    <img src={Parking} alt={t('singleFlat.privateParking')} />
+                    <span>{t('singleFlat.privateParking')}</span>
+                </div>
+        
+                </div>
+            </div>  
+          <div className='flat-footer-container'>
                 <div className='price-contact-container'>
                     {/* <p>{t('singleFlat.price')}:</p>
                     <h2>{flat[4]}</h2> */}
@@ -140,25 +177,8 @@ const SingleFlatCard = () => {
                         <p onClick={() => handlePDFDownload(flat[5])} style={{ cursor: 'pointer' }}>{t('singleFlat.viewPDF')}</p>
                     </div>
                 </div>
-
-                <div className='single-flat-icon-container'>
-                    <div className="flat-icon-item">
-                        <img src={FloorIcon} alt={t('singleFlat.floorHeating')} />
-                        <span>{t('singleFlat.floorHeating')}</span>
-                    </div>
-                    <div className="flat-icon-item">
-                        {handleIconChange()}
-                    </div>
-                    <div className="flat-icon-item">
-                        <img src={LeafIcon} alt={t('singleFlat.energyEfficiency')} />
-                        <span>{t('singleFlat.energyEfficiency')}</span>
-                    </div>
-                    <div className="flat-icon-item">
-                        <img src={SecurityIcon} alt={t('singleFlat.securitySystem')} />
-                        <span>{t('singleFlat.securitySystem')}</span>
-                    </div>
-                </div>
             </div>
+
         </div>
     );
 };
