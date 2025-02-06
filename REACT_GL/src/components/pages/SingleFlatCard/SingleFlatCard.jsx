@@ -49,6 +49,9 @@ const SingleFlatCard = () => {
         return count == 1 ? t('room.singular') : t('room.plural');
     };
 
+    const fireplace = (isProvided) => {
+        return isProvided ? <li>{t('singleFlat.fireplace')}</li> : <>{}</>;
+    };
   
     
 
@@ -123,6 +126,8 @@ const SingleFlatCard = () => {
                     <li>{t('singleFlat.livingArea')}{flat[9]}m²{t('singleFlat.balkonySpace')}{flat[8]}m².</li>
                     <li>{t('singleFlat.parkingSpotIncluded')}</li>
                     <li>{solarsHandle(flat[1])}</li>
+                    <li>{t('singleFlat.planChange')}</li>
+                    {fireplace(flat[10])}
                 </ul>
             </div>
 

@@ -218,7 +218,9 @@
     "clickToFlip": "Click to flip",
     "floors": "Warm floors are included in the total price",
     "store": "Storage room",
-    "privateParking": "Private parking"
+    "privateParking": "Private parking",
+    "fireplace": "Fireplace installation available",
+    "planChange": "Layout modification available"
   },
 
   "room": {

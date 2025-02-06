@@ -63,27 +63,27 @@ import {photos} from './photos.js';
 
 
 const flatarray = [
-    ['', '1', '57,50', oneroom1, '123,456 EUR', '1', plan1room1, photos[0], '12,5', '45,00'],
-    ['', '1', '61,00', oneroom2, '123,456 EUR', '1', plan1room2, photos[1], '7,0', '54,00'],
-    ['', '1', '64,00', oneroom3, '123,456 EUR', '1', plan1room3, photos[2], '8,0', '56,00'],
-    ['', '1', '78,00', oneroom6, '123,456 EUR', '1', plan1room6, photos[3], '22,0', '56,00'],
-    ['', '1', '61,00', oneroom4, '123,456 EUR', '2', plan1room4, photos[3], '7,0', '54,00'],
-    ['', '1', '64,00', oneroom5, '123,456 EUR', '2', plan1room5, photos[3], '8,0', '56,00'],
+    ['', '1', '57,50', oneroom1, '123,456 EUR', '1', plan1room1, photos[0], '12,5', '45,00', false],
+    ['', '1', '61,00', oneroom2, '123,456 EUR', '1', plan1room2, photos[1], '7,0', '54,00', false],
+    ['', '1', '64,00', oneroom3, '123,456 EUR', '1', plan1room3, photos[2], '8,0', '56,00', false],
+    ['', '1', '78,00', oneroom6, '123,456 EUR', '1', plan1room6, photos[3], '22,0', '56,00', false],
+    ['', '1', '61,00', oneroom4, '123,456 EUR', '2', plan1room4, photos[3], '7,0', '54,00', false],
+    ['', '1', '64,00', oneroom5, '123,456 EUR', '2', plan1room5, photos[3], '8,0', '56,00', false],
 
-    ['', '2', '83,00', tworoom1, '123,456 EUR', '1', plan2room1, photos[4], '8,0', '75,00'],
-    ['', '2', '85,00', tworoom2, '123,456 EUR', '1', plan2room2, photos[5], '12,0', '73,00'],
-    ['', '2', '90,00', tworoom3, '123,456 EUR', '1', plan2room3, photos[6], '16,0', '74,00'],
-    ['', '2', '115,00', tworoom4, '123,456 EUR', '1', plan2room4, photos[7], '35,0', '80,00'] ,
-    ['', '2', '83,00', tworoom5, '123,456 EUR', '2', plan2room5, photos[7], '8,0', '75,00'],
-    ['', '2', '85,00', tworoom6, '123,456 EUR', '2', plan2room6, photos[7], '12,0', '73,00'],
-    ['', '2', '86,00', tworoom7, '123,456 EUR', '2', plan2room7, photos[7], '12,0', '74,00'],
-    ['rooftop', '2', '151,00', tworoom8, '123,456 EUR', '2', plan2room8, photos[7], '71,00', '80,00'],
+    ['', '2', '83,00', tworoom1, '123,456 EUR', '1', plan2room1, photos[4], '8,0', '75,00', false],
+    ['', '2', '85,00', tworoom2, '123,456 EUR', '1', plan2room2, photos[5], '12,0', '73,00', false],
+    ['', '2', '90,00', tworoom3, '123,456 EUR', '1', plan2room3, photos[6], '16,0', '74,00', false],
+    ['', '2', '115,00', tworoom4, '123,456 EUR', '1', plan2room4, photos[7], '35,0', '80,00', false] ,
+    ['', '2', '83,00', tworoom5, '123,456 EUR', '2', plan2room5, photos[7], '8,0', '75,00', true],
+    ['', '2', '85,00', tworoom6, '123,456 EUR', '2', plan2room6, photos[7], '12,0', '73,00', false],
+    ['', '2', '86,00', tworoom7, '123,456 EUR', '2', plan2room7, photos[7], '12,0', '74,00', false],
+    ['rooftop', '2', '151,00', tworoom8, '123,456 EUR', '2', plan2room8, photos[7], '71,00', '80,00', true],
 
-    ['veranda', '3', '193,00', threeroom1, '123,456 EUR', '0', plan3room1, photos[8], '90,0', '103,00'],
-    ['veranda', '3', '202,00', threeroom2, '123,456 EUR', '0', plan3room2, photos[9], '104,0', '98,00'],
-    ['', '3', '177,00', threeroom3, '123,456 EUR', '1', plan3room3, photos[10], '69,0', '108,00'],
-    ['rooftop', '3', '261,00', threeroom4, '123,456 EUR', '2', plan3room4, photos[11], '153,00', '108,00'],
-    ['rooftop', '3', '212,00', threeroom5, '123,456 EUR', '2', plan3room5, photos[12], '111,00', '101,00']
+    ['veranda', '3', '193,00', threeroom1, '123,456 EUR', '0', plan3room1, photos[8], '90,0', '103,00', true],
+    ['veranda', '3', '202,00', threeroom2, '123,456 EUR', '0', plan3room2, photos[9], '104,0', '98,00', true],
+    ['', '3', '177,00', threeroom3, '123,456 EUR', '1', plan3room3, photos[10], '69,0', '108,00', false],
+    ['rooftop', '3', '261,00', threeroom4, '123,456 EUR', '2', plan3room4, photos[11], '153,00', '108,00', true],
+    ['rooftop', '3', '212,00', threeroom5, '123,456 EUR', '2', plan3room5, photos[12], '111,00', '101,00', true]
 
 ];
 
