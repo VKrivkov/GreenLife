@@ -5,6 +5,8 @@ import './LanguageSelectorPopup.css'; // Make sure to create a corresponding CSS
 import FlagEn from '../../assets/FlagEn.webp'
 import FlagGr from '../../assets/FlagGr.webp'
 import FlagRu from '../../assets/FlagRu.webp'
+import FlagDe from '../../assets/FlagDe.webp'
+
 
 const LanguageSelector = ({ onClose }) => {
   const { i18n } = useTranslation();
@@ -33,6 +35,10 @@ const LanguageSelector = ({ onClose }) => {
         <div className="language-option" onClick={() => changeLanguage('ru')}>
           <img src={FlagRu} alt="Russian" />
           <span>Русский</span>
+        </div>
+        <div className="language-option" onClick={() => changeLanguage('de')}>
+          <img src={FlagDe} alt="Deutsch" />
+          <span>Deutsch</span>
         </div>
         <button className="close-button" onClick={() => changeLanguage('en')}>Close</button>
       </div>
