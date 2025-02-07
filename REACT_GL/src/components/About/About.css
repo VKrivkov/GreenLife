@@ -9,9 +9,20 @@
 
   }
 
+  .map-image-comtainer img{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  .map-image-comtainer{
+    margin-bottom: 75px;
+  }
   .aboutp{
     margin: 0px;
   }
+
+
   .Slogan{
     left: 50%;
     font-weight: 500;
@@ -116,6 +127,11 @@
 
 
   @media (min-width: 1600px) {
+
+  .map-image-comtainer{
+    margin-bottom: 80px;
+  }
+
     .about-project {
       padding-left: 100px;
       padding-right: 100px;
@@ -244,6 +260,10 @@
 
 @media (max-width: 1050px){
 
+
+  .map-image-comtainer{
+    margin-bottom: 50px;
+  }
 
   .image-container-about {
     width: 100%; /* Full width of its parent */

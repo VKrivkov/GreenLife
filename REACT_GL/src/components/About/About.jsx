@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 import Location from '../pages/Location/Location.jsx';
+import MapImage from '../../assets/MapImg.png'
 
 
 
@@ -22,8 +23,10 @@ const About = () => {
 
   return (
     <div className="about-project">
+        <div className='map-image-comtainer'>
+          <img src={MapImage} alt='Map Image'/>
+        </div>
       <div className="content-container-about">
-
         <div className="image-container-about">
           <Location/>
         </div>
