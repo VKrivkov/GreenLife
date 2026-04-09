@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import "./Footer.css";
 import Logo from '../../assets/logo_White-2.svg'; 
 import LanguageSwitcher from './LanguageSwitcher';
+import insta from '../../assets/instaLogo.png'; 
+import tiktok from '../../assets/tiktokLogo.png'; 
 
 const Footer = () => {
   const location = useLocation();
@@ -32,6 +34,10 @@ const Footer = () => {
       <div className='footer-first-level'>
         <div onClick={handleLogoClick} className='company-container'>
           <img src={Logo} alt="Logo" className='footer-logo'/>
+          <div className='social-container'>
+            <a href='https://www.instagram.com/park_residences_pervolia?igsh=YjEzY2VtNWkzbWx5&utm_source=qr'> <img src={insta} alt="Instagram" className='social-logo'/></a>
+            <a href='https://www.tiktok.com/@park_residences'> <img src={tiktok} alt="Tiktok" className='social-logo'/></a>
+          </div>
           <div>
           <p>{t('footer.companyInfo0')}</p>
           <p>{t('footer.companyInfo')}</p>

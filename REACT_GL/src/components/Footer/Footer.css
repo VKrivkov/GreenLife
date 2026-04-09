@@ -32,6 +32,20 @@
 
 
 
+.social-container{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.social-container img{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
 .contact-info-container{
     color: #f5f5f5;
     flex-direction: column;
